@@ -9,12 +9,15 @@
   color: $color-default-white;
   cursor: pointer;
   background-color: transparent;
+  justify-content: center;
+  align-items: center;
 
   transition: opacity $trans-default;
 
   &--white {
     color: $color-default-white;
     border: 2px solid $color-default-white;
+    padding: 25px 55px;
   }
 
   &--dark {
