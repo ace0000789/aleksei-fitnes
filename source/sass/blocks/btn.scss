@@ -25,7 +25,9 @@
       outline: none;
     }
 
-    
+    @include active {
+      background-color: red;
+    }
   }
 
   &--dark {

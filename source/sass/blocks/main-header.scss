@@ -47,19 +47,17 @@
     bottom: -5px;
     left: 0;
   }
+}
 
-  /* for disabled add class main-header__phone--disabled */
+/* for disabled add class main-header__phone--disabled */
 
-  &--disabled,
-  &--disabled:hover,
-  &--disabled:focus,
-  &--disabled:active {
-    color: #f8f9fc;
-    opacity: 0.5;
-    text-decoration: none;
-    cursor: default;
-    pointer-events: none;
-  }
+.main-header__phone.main-header__phone--disabled {
+  color: #f8f9fc;
+  opacity: 0.5;
+  text-decoration: none;
+  cursor: default;
+  pointer-events: none;
+
 }
 
 .main-header__wrapper {
