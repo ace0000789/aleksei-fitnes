@@ -2,6 +2,7 @@
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   padding: 30px 0 0;
   color: $color-default-white;
+  padding-bottom: 120px;
 }
 
 .main-header__logo-wrapper {
@@ -63,9 +64,9 @@
 
 .main-header__wrapper {
   width: 82.3%;
-  gap: 7.3%;
+  gap: 7.1%;
   display: grid;
-  grid-template-columns: 40.4% 52.4%;
+  grid-template-columns: 40.6% 52.4%;
   text-align: right;
 }
 
@@ -73,7 +74,8 @@
   display: grid;
   grid-template-columns: 29.3% 70%;
   grid-template-rows: max-content max-content;
-  padding: 65px 0;
+  padding: 62px 0;
+  row-gap: 49px;
 }
 
 .main-header__services {
@@ -100,6 +102,7 @@
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 1.62px;
+  margin-bottom: 11px;
 }
 
 .main-header__title {
@@ -115,6 +118,8 @@
 .main-header__link {
   grid-row: 2/3;
   grid-column: 2/3;
+  max-width: 85.2%;
+  margin-left: auto;
 }
 
 
