@@ -1,17 +1,25 @@
 .btn {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
   display: inline-flex;
-  padding: 27px 56px;
-
+  text-transform: uppercase;
   color: $color-default-white;
-
-  background-color: $color-default-blue;
-  border: 2px solid $color-default-blue;
   cursor: pointer;
+  background-color: transparent;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-default-red;
+  &--white {
+    color: $color-default-white;
+    border: 2px solid $color-default-white;
+  }
+
+  &--dark {
+    color: $color-default-blue;
+    border: 2px solid $color-default-blue;
   }
 
   &:disabled {
