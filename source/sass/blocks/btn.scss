@@ -4,18 +4,6 @@
   }
 }
 
-@mixin hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
-  }
-
-  &.focus-visible:focus {
-    @content;
-  }
-}
-
 .btn {
   font-family: $ff-placeholder;
   font-weight: 700;
@@ -36,7 +24,6 @@
   &--white {
     color: $color-default-white;
     border: 2px solid $color-default-white;
-    padding: 25px 55px;
 
     @include hover-focus {
       background-color: $color-default-white;
@@ -56,7 +43,7 @@
   &--white-disabled {
     opacity: 0.5;
     pointer-events: none;
-    
+
     @include hover-focus {
       background-color: transparent;
       color: $color-default-white;
