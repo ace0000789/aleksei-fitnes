@@ -81,13 +81,13 @@
   }
 
   &:active {
-    color: #102654;
+    color: $color-default-blue;
   }
 
   &:active::after {
     content: "";
     position: absolute;
-    background-color: #102654;
+    background-color: $color-default-blue;
     width: 100%;
     height: 1px;
     bottom: -5px;
@@ -98,7 +98,7 @@
 /* for disabled add class main-header__phone--disabled */
 
 .main-header__phone.main-header__phone--disabled {
-  color: #f8f9fc;
+  color: $color-default-gray;
   opacity: 0.5;
   text-decoration: none;
   cursor: default;
@@ -164,7 +164,7 @@
     padding-bottom: 1px;
   }
 
-  @include vp-767{
+  @include vp-767 {
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 3px;
@@ -249,6 +249,3 @@
     display: none;
   }
 }
-
-
-/**/

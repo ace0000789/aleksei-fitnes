@@ -63,15 +63,40 @@
     </header>
     <main>
 
-
-      <section class="intro">
-        <div class="container">
-
+      <section class="about-us" data-test="about">
+        <div class="container about-us__conatiner">
+          <h2 class="visually-hidden">О нас.</h2>
+          <h3 class="about-us__title">Тренажерный зал</h3>
+          <h4 class="about-us__subtitle">Просторный зал площадью 900 кв/м</h4>
+          <p class="about-us__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела
+            и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.
+          </p>
+          <p class="about-us__text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в
+            фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="about-us__media">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="images/about-us/photos/fitnes-gym-desktop.webp 1x,
+            images/about-us/photos/fitnes-gym-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/about-us/photos/fitnes-gym-tablet.webp 1x,
+            images/about-us/photos/fitnes-gym-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/about-us/photos/fitnes-gym-mobile.webp 1x,
+            images/about-us/photos/fitnes-gym-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="images/about-us/photos/fitnes-gym-desktop.jpg 1x, images/about-us/photos/fitnes-gym-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)"
+              srcset="images/about-us/photos/fitnes-gym-tablet.jpg 1x, images/about-us/photos/fitnes-gym-tablet@2x.jpg 2x">
+            <img class="about-us__image" src="images/about-us/photos/fitnes-gym-mobile.jpg" width="320" height="313"
+              srcset="images/about-us/photos/fitnes-gym-mobile@2x.jpg 2x" alt="Изображение спортивного зала.">
+          </picture>
+          <video class="about-us__video" src="#" height="167" title="Видео спортивного зала."></video>
+          <button class="about-us__video-button" type="button" aria-label="Смотреть видео"></button>
         </div>
       </section>
+
     </main>
     <footer>
-      <div class="container"></div>
     </footer>
   </div>
 
