@@ -37,7 +37,7 @@
     line-height: 42px;
     letter-spacing: 1.26px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     width: 50%;
   }
 }
@@ -55,8 +55,9 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0 auto;
-    margin-bottom: 36px;
-    width: 46%;
+    margin-bottom: 34px;
+    padding-right: 5px;
+    width: 50%;
   }
 }
 
@@ -90,7 +91,6 @@
   object-fit: cover;
   margin-bottom: 40px;
   vertical-align: bottom;
-
 }
 
 .about-us__video {
@@ -103,7 +103,6 @@
   display: block;
   background-color: $color-black;
   background-blend-mode: multiply;
-
 }
 
 .about-us__video::before {
@@ -144,7 +143,6 @@
   outline: none;
   border: 2px solid rgba(237, 2, 51, 0.2);
   z-index: 2;
-
 }
 
 .about-us__video-button::before {
@@ -157,7 +155,6 @@
   top: 51%;
   left: 51%;
   transform: translate(-50%, -50%);
-
 }
 
 .about-us__video-button::after {
@@ -168,7 +165,6 @@
   top: 50%;
   left: 56%;
   transform: translate(-50%, -50%);
-
 }
 
 .about-us__video-button:hover,
@@ -187,7 +183,6 @@
   border-left: 12px solid $color-default-blue;
   top: 50%;
   left: 57%;
-
 }
 
 .about-us__video-button:active::before {
@@ -196,7 +191,6 @@
   transition: width 0.3s, height 0.3s;
   top: 51%;
   left: 51%;
-
 }
 
 .about-us__video-button:disabled {
@@ -209,7 +203,6 @@
   border-left: 12px solid rgba(16, 38, 84, 0.4);
   top: 50%;
   left: 57%;
-
 }
 
 .about-us__video-button:disabled::before {
@@ -220,5 +213,4 @@
 .about-us__video-button:disabled:active::before {
   width: 72px;
   height: 72px;
-
 }
