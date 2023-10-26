@@ -139,6 +139,7 @@
   max-width: 85.2%;
   margin-left: auto;
   padding: 25px 55px;
+  height: max-content;
 
   @include vp-1365 {
     padding: 20px 30px;
