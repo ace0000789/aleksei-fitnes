@@ -1,3 +1,21 @@
+@mixin active {
+  &:active:not(.focus-visible) {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+      @content;
+    }
+  }
+
+  &.focus-visible:focus {
+    @content;
+  }
+}
+
 .btn {
   font-family: $ff-placeholder;
   font-weight: 700;
@@ -11,6 +29,7 @@
   background-color: transparent;
   justify-content: center;
   align-items: center;
+  user-select: none;
 
   transition: opacity $trans-default;
 
@@ -23,10 +42,25 @@
       background-color: $color-default-white;
       color: $color-default-blue-egypt;
       outline: none;
-   }
+    }
 
     @include active {
-      background-color: red;
+      &:active:not(.focus-visible) {
+        color: $color-default-blue;
+      }
+    }
+  }
+
+  /* for disabled add class btn--white-disabled */
+
+  &--white-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    
+    @include hover-focus {
+      background-color: transparent;
+      color: $color-default-white;
+      outline: none;
     }
   }
 

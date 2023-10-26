@@ -17,6 +17,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        outline: none;
+      }
+    }
+    &.focus-visible:focus {
+      outline: none;
+    }
+  }
 }
 
 .main-header__phone {
@@ -57,7 +68,6 @@
   text-decoration: none;
   cursor: default;
   pointer-events: none;
-
 }
 
 .main-header__wrapper {
