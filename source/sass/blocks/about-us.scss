@@ -1,8 +1,13 @@
 
 .about-us {
-  margin: 0;
-  padding: 68px 0 70px;
-  
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 103px 231px;
+  display: grid;
+  grid-template-columns: 30.6% 56.9%;
+  column-gap: 145px;
+
   /*
   @media (min-width: $tablet-width) {
     padding: 101px 0 183px;
@@ -14,15 +19,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 355px 660px;
-    column-gap: 145px;
-    padding-top: 120px;
-    padding-bottom: 231px;
+  margin: 0;
+  padding: 68px 0 70px;
   }*/
 }
 
-.about-us__conatiner {
+.about-us__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   /* @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -42,12 +48,11 @@
   margin: 0;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 54px;
   font-weight: 600;
-  line-height: 32px;
-  margin-bottom: 10px;
-  letter-spacing: 0.96px;
+  line-height: 44px;
+  letter-spacing: 1.62px;
+  margin-bottom: 35px;
   /*
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -67,11 +72,10 @@
 .about-us__subtitle {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 20px;
-  font-style: normal;
+  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 45px;
+  line-height: 22px;
+  margin-bottom: 93px;
   /*
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -91,11 +95,14 @@
 .about-us__text {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 22px;
-  margin-bottom: 50px;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+  &--crossfit {
+
+  }
   /*
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -107,14 +114,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 8px;
     text-align: left;
-  }*/
-}
-
-.about-us__text:last-of-type {
-  display: none;
-  /*
-  @media (min-width: $desktop-width) {
-    display: block;
   }*/
 }
 
@@ -141,8 +140,12 @@
 }
 
 .about-us__video {
+  position: absolute;
   object-fit: cover;
-  width: 100%;
+  width: 364px;
+  height: 228px;
+  left: 119px;
+  bottom: -111px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
