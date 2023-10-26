@@ -244,7 +244,12 @@
   }
 }
 
-.main-header__image {
+.main-header__image img {
+  @include vp-1365 {
+    width: 324px;
+    height: 390px;
+  }
+
   @include vp-767 {
     display: none;
   }
