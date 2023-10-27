@@ -13,6 +13,11 @@
     text-align: center;
   }
 
+  @include vp-767 {
+    padding: 70px 0;
+    text-align: left;
+  }
+
   h2 {
     margin: 0;
     padding: 0;
@@ -30,6 +35,15 @@
       letter-spacing: 1.26px;
       margin: 0 auto 19px;
       width: 50%;
+    }
+
+    @include vp-767 {
+      margin: 0 0 13px;
+      padding: 0 15px;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      width: 100%;
     }
   }
 
@@ -49,7 +63,16 @@
       padding-right: 5px;
       width: 50%;
     }
+
+    @include vp-767 {
+      margin: 0 0 40px;
+      padding: 0 15px;
+      font-size: 18px;
+      line-height: 20px;
+      width: 100%;
+    }
   }
+
 
   p {
     margin: 0;
@@ -62,6 +85,15 @@
     @include vp-1365 {
       width: 74%;
       margin: 0 auto 38px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      margin: 0 0 50px;
+      padding: 0 15px;
+      font-size: 14px;
+      line-height: 22px;
+
     }
   }
 
