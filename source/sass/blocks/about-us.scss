@@ -66,7 +66,7 @@
   }
 
   p + p {
-      @include vp-1365 {
+    @include vp-1365 {
       display: none;
     }
   }
@@ -95,10 +95,10 @@
   background-blend-mode: multiply;
 
   @include vp-1365 {
-    width: 40%;
-    height: 167px;
+    width: 39%;
+    height: 48.4%;
     left: 50%;
-    top: 46%;
+    top: 50%;
     transform: translate(-50%, 50.2%);
   }
 }
@@ -119,7 +119,6 @@
   width: 100%;
   height: 100%;
   background-color: $color-black;
-
   position: absolute;
   top: 0;
   right: 0;
