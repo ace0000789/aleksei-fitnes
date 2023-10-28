@@ -57,6 +57,7 @@
   padding: 0;
   margin: 0;
   position: relative;
+  transition: color 0.2s;
 
   @include vp-1365 {
     font-size: 24px;
@@ -68,7 +69,7 @@
     line-height: 22px;
     padding-right: 1px;
   }
-
+  
   &:hover,
   &:focus {
     color: #1c3374;

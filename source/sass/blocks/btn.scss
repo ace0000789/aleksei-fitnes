@@ -13,6 +13,7 @@
   align-items: center;
   user-select: none;
   transition: opacity $trans-default;
+  transition: color 0.1s, background-color 0.2s;
 
   &--white {
     color: $color-default-white;
