@@ -155,7 +155,7 @@
 
 .hero__image img {
   max-height: 524px;
-  object-fit: cover;
+  object-fit: contain;
 
   @include vp-1365 {
     width: 100%;
