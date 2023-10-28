@@ -1,8 +1,8 @@
 .subscription {
-  background-color: #f8f9fc;
-  padding-top: 126px;
+  background-color: $color-default-gray;
+  padding-top: 129px;
   padding-bottom: 120px;
-  position: relative;
+  letter-spacing: 1.62px;
 }
 /*
 .subscription::after {
@@ -39,27 +39,28 @@
 .subscription__title {
   padding: 0;
   margin: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: $second-font;
+  font-weight: 600;
   font-size: 54px;
   line-height: 54px;
   letter-spacing: 1.62px;
-  margin-bottom: 22px;
   text-align: center;
-  color: #102654;
-  margin-bottom: 22px;
+  color: $color-default-blue;
+  margin-bottom: 29px;
 }
 
 .subscription__period-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 51px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.3);
-  min-height: 41px;
+  min-height: 36px;
   margin-bottom: 38px;
-  max-width: 341px;
+  max-width: max-content;
 }
 
 .subscription__period-item {
@@ -71,24 +72,23 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-placeholder;
   font-style: normal;
   font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
   font-size: 20px;
   line-height: 30px;
-  background-color: #f8f9fc;
-  min-height: 36px;
+  background-color: $color-default-gray;
   display: flex;
   align-items: flex-start;
   cursor: pointer;
   position: relative;
-  min-height: 41px;
+  min-height: 36px;
 }
 
 .subscription__period-button:hover,
 .subscription__period-button:focus {
-  color: #102654;
+  color: $color-default-blue;
   outline: none;
   transition: color 0.3s;
 }
@@ -105,7 +105,7 @@
 }
 
 .subscription__period-button:disabled {
-  color: #102654;
+  color: $color-default-blue;
   opacity: 0.3;
   cursor: default;
 }
@@ -142,7 +142,7 @@
   flex-wrap: wrap;
   row-gap: 36px;
   z-index: 1;
-/*
+  /*
   @media (min-width: $tablet-width) {
     row-gap: 40px;
   }
@@ -155,13 +155,13 @@
 }
 
 .subscription__plan-item {
-  background-color: #ffffff;
+  background-color: $color-default-white;
   padding: 51px 42px 55px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-/*
+  /*
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-bottom: 68px;
@@ -180,7 +180,7 @@
   border-width: 7px;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
   padding: 44px 35px 48px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     padding-top: 58px;
     padding-bottom: 61px;
@@ -199,7 +199,7 @@
   font-weight: 700;
   line-height: 22px;
   margin-bottom: 10px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
@@ -219,7 +219,7 @@
   font-weight: 300;
   line-height: 22px;
   margin-bottom: 57px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     font-size: 16px;
     font-weight: 300;
@@ -233,7 +233,7 @@
   padding: 0;
   position: relative;
   margin-bottom: 30px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;
   }
@@ -246,7 +246,7 @@
 .subscription__plan-price {
   margin: 0;
   padding: 0;
-  color: #103aae;
+  color: $color-default-blue-egypt;
   font-size: 48px;
   font-weight: 700;
   line-height: 150%;
@@ -257,7 +257,7 @@
   background-position: 100% 48%;
   position: relative;
   z-index: 1;
-/*
+  /*
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-bottom: 59px;
@@ -270,7 +270,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 150%;
   color: #e8e8e8;
@@ -281,9 +281,4 @@
   max-height: 130%;
   max-width: 120%;
   overflow: hidden;
-/*
-  @media (min-width: $tablet-width) {
-    font-size: 100px;
-    top: -55px;
-  }*/
 }
