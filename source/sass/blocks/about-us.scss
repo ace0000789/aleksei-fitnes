@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 71px 0 70px;
     text-align: left;
   }
 
@@ -38,7 +38,7 @@
     }
 
     @include vp-767 {
-      margin: 0 0 13px;
+      margin: 0 0 12px;
       padding: 0 15px;
       font-size: 32px;
       line-height: 32px;
@@ -65,7 +65,7 @@
     }
 
     @include vp-767 {
-      margin: 0 0 40px;
+      margin: 0 0 37px;
       padding: 0 15px;
       font-size: 18px;
       line-height: 20px;
@@ -88,7 +88,7 @@
 
     @include vp-767 {
       width: 100%;
-      margin: 0 0 50px;
+      margin: 0 0 53px;
       padding: 0 15px;
       font-size: 14px;
       line-height: 22px;
@@ -109,7 +109,8 @@
 }
 
 .about-us__media {
-    position: relative;
+  position: relative;
+
   @include vp-767 {
     display: flex;
     flex-direction: column;
@@ -190,6 +191,10 @@
     width: 72px;
     height: 72px;
   }
+
+  @include vp-767 {
+    transform: translate(-50%, 49%);
+  }
 }
 
 .about-us__video-button::before {
@@ -224,6 +229,10 @@
     border: 5px solid transparent;
     border-left: 9px solid #ffffff;
   }
+
+  @include vp-767 {
+    transform: translate(-54%, -50%);
+  }
 }
 
 .about-us__video-button:hover,
@@ -235,17 +244,20 @@
 .about-us__video-button:hover::before,
 .about-us__video-button:focus::before {
   background: #ffffff;
+  top: 50%;
+  left: 50%;
 }
 
 .about-us__video-button:hover::after,
 .about-us__video-button:focus::after {
   border-left: 12px solid $color-default-blue;
   top: 50%;
-  left: 57%;
+  left: 56%;
 
   @include vp-1365 {
     border: 5px solid transparent;
     border-left: 9px solid $color-default-blue;
+    left: 57%;
   }
 }
 
@@ -253,8 +265,8 @@
   width: 58px;
   height: 58px;
   transition: width 0.3s, height 0.3s;
-  top: 51%;
-  left: 51%;
+  top: 50%;
+  left: 50%;
 
   @include vp-1365 {
     width: 41px;
@@ -273,12 +285,19 @@
 .about-us__video-button:disabled::after {
   border-left: 10px solid rgba(16, 38, 84, 0.4);
   top: 50%;
-  left: 57%;
+  left: 55%;
+
+  @include vp-1365 {
+    left: 57%;
+    border-left: 9px solid rgba(16, 38, 84, 0.4);
+  }
 }
 
 .about-us__video-button:disabled::before {
   background: #ffffff;
   opacity: 0.4;
+  top: 50%;
+  left: 50%;
 }
 
 .about-us__video-button:disabled:active::before {
