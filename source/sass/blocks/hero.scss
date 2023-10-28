@@ -154,9 +154,11 @@
 }
 
 .hero__image img {
+  max-height: 524px;
+  object-fit: cover;
+
   @include vp-1365 {
     width: 100%;
-    height: auto;
   }
 
   @include vp-767 {
