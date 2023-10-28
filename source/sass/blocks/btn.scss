@@ -12,7 +12,6 @@
   justify-content: center;
   align-items: center;
   user-select: none;
-  transition: opacity $trans-default;
   transition: color 0.1s, background-color 0.2s;
 
   &--white {
@@ -31,6 +30,25 @@
       }
     }
   }
+
+  &--black {
+    color: $color-default-blue;
+    border: 2px solid $color-default-blue;
+
+    @include hover-focus {
+      color: #ffffff;
+      border: none;
+      background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+      outline: none;
+    }
+
+    @include active {
+      &:active:not(.focus-visible) {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
 
   /* for disabled add class btn--white-disabled */
 
@@ -52,7 +70,6 @@
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 }

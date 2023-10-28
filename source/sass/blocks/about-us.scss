@@ -198,9 +198,18 @@
 
   @include hover-focus {
     border: 2px solid $color-default-blue;
-    box-shadow: none;
-    transition: border 0.1s;
   }
+
+  @include active {
+    &:active:not(.focus-visible) {
+      border: 2px solid $color-default-blue;
+    }
+  }
+}
+
+.about-us__video-button:hover,
+.about-us__video-button:focus {
+  border: 2px solid #102654;
 }
 
 .about-us__video-button::before {

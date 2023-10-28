@@ -81,14 +81,14 @@
   }
 
   &:active::after {
-      display: block;
-      content: "";
-      position: absolute;
-      background-color: $color-default-blue;
-      width: 100%;
-      height: 1px;
-      bottom: -5px;
-      left: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: $color-default-blue;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
   }
 }
 /* for disabled add class main-header__phone--disabled */
