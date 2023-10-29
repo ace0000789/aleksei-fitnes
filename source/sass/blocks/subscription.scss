@@ -55,13 +55,19 @@
   cursor: pointer;
   position: relative;
   min-height: 36px;
-}
 
-.subscription__period-button:hover,
-.subscription__period-button:focus {
-  color: $color-default-blue;
-  outline: none;
-  transition: color 0.3s;
+
+  @include hover-focus {
+    color: $color-default-blue;
+    outline: none;
+    transition: color 0.2s;
+  }
+
+  @include active {
+    &:active:not(.focus-visible) {
+      color: $color-default-blue;
+    }
+  }
 }
 
 .subscription__period-button:hover::after,
