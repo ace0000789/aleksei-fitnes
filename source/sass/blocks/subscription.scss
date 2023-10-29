@@ -94,7 +94,7 @@
 .subscription__period-button:disabled:hover::after {
   display: none;
 }
-/*
+
 .subscription__period-button--active {
   color: #102654;
 }
@@ -107,7 +107,7 @@
   background-color: #d10a42;
   bottom: -2px;
 }
-*/
+
 .subscription__plan-list {
   margin: 0;
   padding: 0;
@@ -177,6 +177,11 @@
   background-position: 100% 48%;
   position: relative;
   z-index: 1;
+  display: none;
+}
+
+.subscription__plan-price.subscription__plan-price--active {
+  display: block;
 }
 
 .subscription__plan-shadow {
@@ -194,7 +199,8 @@
   max-height: 130%;
   max-width: 120%;
   overflow: hidden;
-}
+  display: none;
+  }
 
 .subscription__plan-button {
   margin-left: 1px;

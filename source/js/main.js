@@ -65,4 +65,41 @@ button.addEventListener('click', function () {
   button.style.display = 'none';
 });
 
+// Абонементы
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.subscription__period-button');
+  const prices = document.querySelectorAll('.subscription__plan-price ');
+  const fadedPrices = document.querySelectorAll('.tabsfaded-price');
+
+  const pricesPerPeriod = [
+    // Цены для 1 месяца (остаются неизменными)
+    [5000, 1700, 2700],
+
+    // Цены для 6 месяцев (1-я, 2-я и 3-я карточки соответственно)
+    [30000, 10200, 16200],
+
+    // Цены для 12 месяцев (1-я, 2-я и 3-я карточки соответственно)
+    [60000, 20400, 32400]
+  ];
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      prices.forEach((price, idx) => {
+        price.textContent = pricesPerPeriod[index][idx];
+      });
+
+      fadedPrices.forEach((fadedPrice, idx) => {
+        fadedPrice.textContent = pricesPerPeriod[index][idx];
+      });
+
+      buttons.forEach((btn) => {
+        btn.classList.remove('tabsbutton--is-selected');
+      });
+
+      button.classList.add('tabs__button--is-selected');
+    });
+  });
+});
+
 /**/
