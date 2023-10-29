@@ -56,7 +56,6 @@
   position: relative;
   min-height: 36px;
 
-
   @include hover-focus {
     color: $color-default-blue;
     outline: none;
@@ -68,13 +67,6 @@
       color: $color-default-blue;
     }
   }
-}
-
-.subscription__period-button:hover,
-.subscription__period-button:focus {
-  color: $color-default-blue;
-  outline: none;
-  transition: color 0.3s;
 }
 
 .subscription__period-button:hover::after,
@@ -102,7 +94,7 @@
 .subscription__period-button:disabled:hover::after {
   display: none;
 }
-
+/*
 .subscription__period-button--active {
   color: #102654;
 }
@@ -115,7 +107,7 @@
   background-color: #d10a42;
   bottom: -2px;
 }
-
+*/
 .subscription__plan-list {
   margin: 0;
   padding: 0;
@@ -213,7 +205,6 @@
   line-height: 12px;
   width: 205px;
 }
-
 
 .subscription__image {
   position: absolute;
