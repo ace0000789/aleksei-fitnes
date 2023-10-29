@@ -64,10 +64,17 @@
   }
 
   @include active {
-    &:active:not(.focus-visible) {
+    &.focus-visible:active {
       color: $color-default-blue;
     }
   }
+}
+
+.subscription__period-button:hover,
+.subscription__period-button:focus {
+  color: $color-default-blue;
+  outline: none;
+  transition: color 0.3s;
 }
 
 .subscription__period-button:hover::after,
@@ -117,7 +124,6 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .subscription__plan-item {
@@ -127,7 +133,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .subscription__plan-item:focus-within,
@@ -136,9 +141,7 @@
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
-
   padding: 60px 70px 58px;
-
 }
 
 .subscription__plan-title {
@@ -160,7 +163,6 @@
   line-height: 24px;
   margin-bottom: 69px;
   letter-spacing: 0;
-
 }
 
 .subscription__price-wrapper {
@@ -183,7 +185,6 @@
   background-position: 100% 48%;
   position: relative;
   z-index: 1;
-
 }
 
 .subscription__plan-shadow {
@@ -219,4 +220,3 @@
   bottom: -149px;
   z-index: -1;
 }
-
