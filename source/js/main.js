@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.classList.remove('tabsbutton--is-selected');
       });
 
-      button.classList.add('tabs__button--is-selected');
+      button.classList.add('subscription__period-button--active');
     });
   });
 });
