@@ -4,37 +4,6 @@
   padding-bottom: 120px;
   letter-spacing: 1.62px;
 }
-/*
-.subscription::after {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "";
-    width: 347px;
-    height: 444px;
-    background-image: url("../../images/subscription/iron-discs-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    right: 0;
-    bottom: -125px;
-    z-index: 0;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/subscription/iron-discs-tablet@2x.png");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../images/subscription/iron-discs-desktop.png");
-    width: 287px;
-    height: 444px;
-    bottom: -124px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/subscription/iron-discs-desktop@2x.png");
-    }
-  }
-}*/
 
 .subscription__title {
   padding: 0;
@@ -133,44 +102,24 @@
 }
 
 .subscription__plan-list {
-  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 36px;
-  z-index: 1;
-  /*
-  @media (min-width: $tablet-width) {
-    row-gap: 40px;
-  }
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }*/
 }
 
 .subscription__plan-item {
   background-color: $color-default-white;
-  padding: 51px 42px 55px;
+  padding: 65px 77px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  /*
-  @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 68px;
-  }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 64px;
-    padding-bottom: 69px;
-  }*/
 }
 
 .subscription__plan-item:focus-within,
@@ -179,91 +128,54 @@
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
-  padding: 44px 35px 48px;
-  /*
-  @media (min-width: $tablet-width) {
-    padding-top: 58px;
-    padding-bottom: 61px;
-  }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 57px;
-    padding-bottom: 61px;
-  }*/
+  padding: 58px 70px;
+
 }
 
 .subscription__plan-title {
   margin: 0;
   padding: 0;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 22px;
-  margin-bottom: 10px;
-  /*
-  @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 12px;
-  }
+  line-height: 26px;
+  margin-bottom: 7px;
+  letter-spacing: 0;
 
-  @media (min-width: $desktop-width) {
-    font-size: 26px;
-    line-height: 26px;
-  }*/
 }
 
 .subscription__plan-text {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 22px;
-  margin-bottom: 57px;
-  /*
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 67px;
-  }*/
+  line-height: 24px;
+  margin-bottom: 69px;
+  letter-spacing: 0;
+
 }
 
 .subscription__price-wrapper {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-bottom: 30px;
-  /*
-  @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
-  }*/
+  margin-bottom: 34px;
+  letter-spacing: 0;
 }
 
 .subscription__plan-price {
   margin: 0;
   padding: 0;
   color: $color-default-blue-egypt;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 150%;
-  padding-right: 34px;
-  background-image: url("../../images/icons/stack.svg#ruble");
-  background-repeat: no-repeat;
+  line-height: 90px;
+  padding-right: 45px;
   background-size: 24px 33px;
   background-position: 100% 48%;
   position: relative;
   z-index: 1;
-  /*
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    margin-bottom: 59px;
-    padding-right: 45px;
-    background-size: 30px 42px;
-  }*/
+
 }
 
 .subscription__plan-shadow {
@@ -272,13 +184,22 @@
   position: absolute;
   font-size: 100px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 150px;
   color: #e8e8e8;
   opacity: 0.48;
   left: 50%;
-  transform: translateX(-50%);
-  top: -45px;
+  transform: translateX(-51%);
+  top: -56px;
   max-height: 130%;
   max-width: 120%;
   overflow: hidden;
+}
+
+.subscription__plan-button {
+  margin-left: 1px;
+  padding: 25px 42px 25px 42px;
+  letter-spacing: 0.6px;font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  width: 205px;
 }
