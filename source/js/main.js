@@ -68,7 +68,7 @@ buttonVideo.addEventListener('click', function () {
 // Абонементы
 const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
 const prices = document.querySelectorAll('.subscription__plan-price ');
-const fadedPrices = document.querySelectorAll('.tabsfaded-price');
+const fadedPrices = document.querySelectorAll('.subscription__plan-shadow');
 
 const pricesPerPeriod = [
   // Цены для 1 месяца (остаются неизменными)
