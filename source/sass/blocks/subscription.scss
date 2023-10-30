@@ -121,6 +121,7 @@
 .subscription__plan-item {
   background-color: $color-default-white;
   padding: 67px 77px 65px;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -140,6 +141,7 @@
   color: #ffffff;
   border: none;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  padding: 27px 42px;
   outline: none;
 }
 
@@ -179,6 +181,12 @@
   position: relative;
   margin-bottom: 34px;
   letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subscription__price-wrapper svg {
+  margin-bottom: 2px;
 }
 
 .subscription__plan-price {
@@ -188,7 +196,7 @@
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;
-  padding-right: 45px;
+  padding-right: 14px;
   background-size: 24px 33px;
   background-position: 100% 48%;
   position: relative;
