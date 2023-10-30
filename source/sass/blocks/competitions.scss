@@ -16,7 +16,7 @@
 .competitions__content {
   background: $color-default-red;
   color: $color-default-white;
-  padding: 81px 77px 0 80px;
+  padding: 81px 77px 50px 80px;
   width: 500px;
 }
 
@@ -141,9 +141,10 @@
 }
 
 .competitions__image {
-  vertical-align: bottom;
+  height: 100%;
 }
 
 .competitions__image img {
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
