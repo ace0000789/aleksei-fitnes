@@ -182,6 +182,31 @@
   padding: 60px 70px 58px;
 }
 
+.subscription__plan-item--full:focus-within,
+.subscription__plan-item--full:hover {
+  @include vp-1365 {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
+    padding: 59px 70px 57px;
+  }
+}
+
+
+
+.subscription__plan-item:focus-within .subscription__plan-button {
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  padding: 27px 42px;
+  outline: none;
+
+  @include vp-1365 {
+    padding: 27px 42px
+  }
+}
+
 .subscription__plan-item:hover .subscription__plan-button {
   color: #ffffff;
   border: none;
@@ -190,9 +215,12 @@
   outline: none;
 
   @include vp-1365 {
-    padding: 22px 42px
+    padding: 27px 42px
   }
 }
+
+
+
 
 .subscription__plan-item:hover .btn--black-disabled {
   background: none;
