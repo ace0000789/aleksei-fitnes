@@ -49,7 +49,6 @@
     }
   }
 
-
   /* for disabled add class btn--white-disabled or btn--black-disabled*/
 
   &--white-disabled {
@@ -73,15 +72,4 @@
       outline: none;
     }
   }
-
-/*
-  &--dark {
-    color: $color-default-blue;
-    border: 2px solid $color-default-blue;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }*/
 }

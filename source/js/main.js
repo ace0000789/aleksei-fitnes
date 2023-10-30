@@ -81,25 +81,37 @@ const pricesPerPeriod = [
   [60000, 20400, 32400]
 ];
 
-buttonsPeriod[0].classList.add('subscription__period-button--active');
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
+
+  buttonsPeriod[0].classList.add('subscription__period-button--active');
 
   buttonsPeriod.forEach((button, index) => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', handleButtonClick.bind(null, index));
 
-      prices.forEach((price, idx) => {
-        price.textContent = pricesPerPeriod[index][idx];
-      });
-
-      fadedPrices.forEach((fadedPrice, idx) => {
-        fadedPrice.textContent = pricesPerPeriod[index][idx];
-      });
-
-      buttonsPeriod.forEach((btn) => {
-        btn.classList.remove('subscription__period-button--active');
-      });
-
-      button.classList.add('subscription__period-button--active');
-    });
   });
+
+  function handleButtonClick(index) {
+    updatePrices(index);
+    updateButtons(index);
+  }
+
+  function updatePrices(index) {
+
+    prices.forEach((price, idx) => {
+      price.textContent = pricesPerPeriod[index][idx];
+    });
+
+    fadedPrices.forEach((fadedPrice, idx) => {
+      fadedPrice.textContent = pricesPerPeriod[index][idx];
+    });
+  }
+
+  function updateButtons(index, activeButton) {
+    buttonsPeriod.forEach((btn) => {
+      btn.classList.remove('subscription__period-button--active');
+    });
+
+    activeButton.classList.add('subscription__period-button--active');
+  }
+
 });
