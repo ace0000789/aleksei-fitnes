@@ -189,11 +189,9 @@
     border-image-slice: 1;
     border-width: 7px;
     border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
-    padding: 59px 70px 57px;
+    padding: 58px 70px 58px;
   }
 }
-
-
 
 .subscription__plan-item:focus-within .subscription__plan-button {
   color: #ffffff;
@@ -203,7 +201,7 @@
   outline: none;
 
   @include vp-1365 {
-    padding: 27px 42px
+    padding: 22px 42px
   }
 }
 
@@ -215,7 +213,7 @@
   outline: none;
 
   @include vp-1365 {
-    padding: 27px 42px
+    padding: 22px 42px
   }
 }
 
