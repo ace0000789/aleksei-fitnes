@@ -148,7 +148,7 @@
 .subscription__plan-item:hover .btn--black-disabled {
   background: none;
   color: $color-default-blue;
-  border: 2px solid #102654;
+  border: 2px solid $color-default-blue;
   outline: none;
   opacity: 0.3;
   pointer-events: none;
@@ -187,6 +187,7 @@
 
 .subscription__price-wrapper svg {
   margin-bottom: 2px;
+  z-index: 2;
 }
 
 .subscription__plan-price {
@@ -200,12 +201,7 @@
   background-size: 24px 33px;
   background-position: 100% 48%;
   position: relative;
-  z-index: 1;
-  display: none;
-}
-
-.subscription__plan-price.subscription__plan-price--active {
-  display: block;
+  z-index: 2;
 }
 
 .subscription__plan-shadow {
@@ -223,7 +219,7 @@
   max-height: 130%;
   max-width: 120%;
   overflow: hidden;
-  display: none;
+  z-index: 1;
 }
 
 .subscription__plan-button {
