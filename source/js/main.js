@@ -50,41 +50,43 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Видео
 
-let button = document.querySelector('.about-us__video-button');
+let buttonVideo = document.querySelector('.about-us__video-button');
 let container = document.querySelector('.about-us__video');
 
-button.addEventListener('click', function () {
+buttonVideo.addEventListener('click', function () {
 
-  if (button.classList.contains('ready')) {
+  if (buttonVideo.classList.contains('ready')) {
     return;
   }
 
-  button.classList.add('ready');
+  buttonVideo.classList.add('ready');
   container.innerHTML = '<iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=VTjj2qUjkgYfiWLC&amp;autoplay=1" preload="auto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 
-  button.style.display = 'none';
+  buttonVideo.style.display = 'none';
 });
 
 // Абонементы
+const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
+const prices = document.querySelectorAll('.subscription__plan-price ');
+const fadedPrices = document.querySelectorAll('.tabsfaded-price');
 
-document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('.subscription__period-button');
-  const prices = document.querySelectorAll('.subscription__plan-price ');
-  const fadedPrices = document.querySelectorAll('.tabsfaded-price');
+const pricesPerPeriod = [
+  // Цены для 1 месяца (остаются неизменными)
+  [5000, 1700, 2700],
 
-  const pricesPerPeriod = [
-    // Цены для 1 месяца (остаются неизменными)
-    [5000, 1700, 2700],
+  // Цены для 6 месяцев (1-я, 2-я и 3-я карточки соответственно)
+  [30000, 10200, 16200],
 
-    // Цены для 6 месяцев (1-я, 2-я и 3-я карточки соответственно)
-    [30000, 10200, 16200],
+  // Цены для 12 месяцев (1-я, 2-я и 3-я карточки соответственно)
+  [60000, 20400, 32400]
+];
 
-    // Цены для 12 месяцев (1-я, 2-я и 3-я карточки соответственно)
-    [60000, 20400, 32400]
-  ];
 
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+  buttonsPeriod.forEach((button, index) => {
+    button.addEventListener('click', function () {
+
       prices.forEach((price, idx) => {
         price.textContent = pricesPerPeriod[index][idx];
       });
@@ -93,8 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
         fadedPrice.textContent = pricesPerPeriod[index][idx];
       });
 
-      buttons.forEach((btn) => {
-        btn.classList.remove('tabsbutton--is-selected');
+      buttonsPeriod.forEach((btn) => {
+        btn.classList.remove('subscription__period-button--active');
       });
 
       button.classList.add('subscription__period-button--active');
