@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initVideo} from './vendor/video';
+import {initTabs} from './vendor/init-tabs';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initVideo();
+    initTabs();
     const form = new Form();
     window.form = form;
     form.init();
@@ -49,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // используйте .closest(el)
 
 // Абонементы
-const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
+/* const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
 const prices = document.querySelectorAll('.subscription__plan-price ');
 const fadedPrices = document.querySelectorAll('.subscription__plan-shadow');
 
@@ -85,4 +87,4 @@ document.addEventListener('DOMContentLoaded', function () {
       button.classList.add('subscription__period-button--active');
     });
   });
-});
+}); */
