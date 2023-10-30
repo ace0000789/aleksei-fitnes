@@ -1,146 +1,81 @@
-@import "../global/variables.scss";
-@import "../global/global.scss";
-
 .competitions {
-  padding-top: 70px;
-  padding-bottom: 70px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
     padding-top: 119px;
     padding-bottom: 120px;
-  }
+
 }
 
 .competitions__wrapper {
-  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
     padding-right: 0;
-  }
 }
 
 .competitions__content {
   background: #ed0233;
   color: #ffffff;
-  padding: 35px 44px 40px;
+ padding: 77px 79px 87px 78px;
 
-  @media (min-width: $tablet-width) {
-    padding: 35px 45px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 77px 79px 87px 78px;
-  }
 }
 
 .competitions__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 202px;
-  gap: 29px;
-  margin-bottom: 20px;
+  gap: 71px;
+  margin-bottom: 21px;
+  max-width: 343px;
   word-break: break-all;
-
-  @media (min-width: $tablet-width) {
-    gap: 40px;
-    margin-bottom: 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 71px;
-    margin-bottom: 21px;
-    max-width: 343px;
-  }
 }
 
 .competitions__title {
   padding: 0;
   margin: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 48px;
+  font-size: 82px;
   font-weight: 600;
-  line-height: 46px;
-  letter-spacing: 1.44px;
+  line-height: 76px;
+  letter-spacing: 2.46px;
   text-transform: uppercase;
-  max-width: 117px;
+  max-width: 180px;
 
-  @media (min-width: $tablet-width) {
-    max-width: 106px;
-  }
 
-  @media (min-width: $desktop-width) {
-    font-size: 82px;
-    line-height: 76px;
-    letter-spacing: 2.46px;
-    max-width: 180px;
-  }
 }
 
 .competitions__date-wrapper {
-  max-width: 56px;
-  padding-top: 5px;
+  max-width: none;
+  padding-top: 3px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 11px;
-
-  @media (min-width: $tablet-width) {
-    gap: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 92px;
-    max-width: none;
-    gap: 18px;
-    padding-top: 3px;
-  }
+  gap: 18px;
 }
 
 .competitions__date-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
-
-  @media (min-width: $desktop-width) {
-    gap: 9px;
-  }
+  gap: 9px;
 }
 
 .competitions__date-name {
   padding: 0;
   margin: 0;
-  font-size: 12px;
-  line-height: 10px;
+  font-size: 18px;
+  line-height: 27px;
   word-break: break-all;
 
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 27px;
-  }
 }
 
 .competitions__date-day {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 7px;
   position: relative;
   word-break: break-all;
-
-  @media (min-width: $desktop-width) {
-    gap: 7px;
-    padding-top: 1px;
-  }
 }
 
 .competitions__date-day::after {
@@ -150,10 +85,6 @@
   height: 1px;
   background-color: #ffffff;
   top: -5px;
-
-  @media (min-width: $desktop-width) {
-    top: -4px;
-  }
 }
 
 .competitions__date-day--month::after {
@@ -163,110 +94,59 @@
   height: 1px;
   background-color: #ffffff;
   top: -5px;
-
-  @media (min-width: $desktop-width) {
-    top: -4px;
-    width: 72%;
-  }
 }
 
 .competitions__date-number {
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 40px;
   align-self: center;
   word-break: break-all;
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-  }
 }
 
 .competitions__date-mounth {
   padding: 0;
   margin: 0;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 19px;
   max-width: max-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   min-height: 20px;
-  gap: 2px;
+  gap: 0;
   word-break: break-all;
-
-  @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 19px;
-    max-width: max-content;
-    gap: 0;
-  }
 }
 
 .competitions__text {
   padding: 0;
   margin: 0;
-  font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 49px;
   word-break: break-all;
 
-  @media (min-width: $tablet-width) {
-    max-width: 202px;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: none;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 49px;
-  }
 }
 
 .competitions__link {
-  font-size: 10px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
-  border: 1px solid #ffffff;
-  outline: 2px solid #ffffff;
-  outline-offset: -1px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  border: 2px solid #ffffff;
+  padding-top: 25px;
+  padding-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-    border: 2px solid #ffffff;
-    outline: 3px solid #ffffff;
-    padding-top: 25px;
-    padding-bottom: 24px;
-    font-size: 12px;
-    letter-spacing: 0.6px;
-  }
 }
 
 .competitions__image {
   vertical-align: bottom;
-
-  @media (min-width: $tablet-width) {
-    width: 386px;
-    height: 292px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 660px;
-    height: 500px;
-  }
+  width: 660px;
+  height: 500px;
 }
