@@ -1,5 +1,5 @@
 .competitions {
-    padding-top: 119px;
+    padding-top: 120px;
     padding-bottom: 120px;
 
 }
@@ -14,17 +14,17 @@
 }
 
 .competitions__content {
-  background: #ed0233;
-  color: #ffffff;
- padding: 77px 79px 87px 78px;
-
+  background: $color-default-red;
+  color: $color-default-white;
+  padding: 81px 77px 0 80px;
+  width: 500px;
 }
 
 .competitions__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 71px;
+  gap: 68px;
   margin-bottom: 21px;
   max-width: 343px;
   word-break: break-all;
@@ -33,24 +33,21 @@
 .competitions__title {
   padding: 0;
   margin: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 82px;
   font-weight: 600;
   line-height: 76px;
   letter-spacing: 2.46px;
   text-transform: uppercase;
   max-width: 180px;
-
-
 }
 
 .competitions__date-wrapper {
   max-width: none;
-  padding-top: 3px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 20px;
 }
 
 .competitions__date-item {
@@ -63,8 +60,10 @@
 .competitions__date-name {
   padding: 0;
   margin: 0;
+  font-weight: 300;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 19px;
+  padding-bottom: 7px;
   word-break: break-all;
 
 }
@@ -76,6 +75,7 @@
   gap: 7px;
   position: relative;
   word-break: break-all;
+  padding-top: 1px;
 }
 
 .competitions__date-day::after {
@@ -83,17 +83,12 @@
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #ffffff;
+  background-color: $color-default-white;
   top: -5px;
 }
 
 .competitions__date-day--month::after {
-  position: absolute;
-  content: "";
-  width: 80%;
-  height: 1px;
-  background-color: #ffffff;
-  top: -5px;
+  width: 70%;
 }
 
 .competitions__date-number {
@@ -137,7 +132,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-default-white;
   padding-top: 25px;
   padding-bottom: 24px;
   display: flex;
@@ -147,6 +142,8 @@
 
 .competitions__image {
   vertical-align: bottom;
-  width: 660px;
-  height: 500px;
+}
+
+.competitions__image img {
+  object-fit: contain;
 }
