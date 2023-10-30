@@ -176,6 +176,7 @@
 
   @include vp-767 {
     max-width: 100%;
+    row-gap: 35px;
   }
 }
 
@@ -202,6 +203,10 @@
     @include vp-1365 {
       padding: 65px 77px 65px;
     }
+
+    @include vp-767 {
+      padding:  52px 42px 50px;
+    }
   }
 }
 
@@ -212,6 +217,10 @@
   border-width: 7px;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
   padding: 60px 70px 58px;
+
+  @include vp-767 {
+    padding:  45px 35px 43px;
+  }
 }
 
 .subscription__plan-item--full:focus-within,
@@ -222,6 +231,10 @@
     border-width: 7px;
     border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
     padding: 58px 70px 58px;
+
+    @include vp-767 {
+      padding:  45px 35px 43px;
+    }
   }
 }
 
@@ -284,6 +297,12 @@
     @include vp-1365 {
       margin-bottom: 18px;
     }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -310,6 +329,12 @@
     @include vp-1365 {
       margin-bottom: 72px;
     }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 63px;
+    }
   }
 }
 
@@ -333,6 +358,10 @@
   &--full {
     @include vp-1365 {
       margin-bottom: 24px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 22px;
     }
   }
 }
@@ -398,6 +427,12 @@
   &--full {
     @include vp-1365 {
       top: -54px;
+    }
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+      top: -44px;
     }
   }
 }
