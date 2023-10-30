@@ -10,6 +10,11 @@
     padding-top: 101px;
     padding-bottom: 100px;
   }
+
+  @include vp-767 {
+    padding-top: 74px;
+    padding-bottom: 70px;
+  }
 }
 
 .subscription__title {
@@ -30,6 +35,13 @@
     letter-spacing: 1.26px;
     margin-bottom: 36px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 22px;
+  }
 }
 
 .subscription__period-list {
@@ -49,6 +61,12 @@
     gap: 55px;
     margin-bottom: 44px;
     min-height: 30px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+    max-width: 100%;
+    margin-bottom: 33px;
   }
 }
 
@@ -78,6 +96,12 @@
     font-size: 18px;
     line-height: 18px;
     min-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+    min-height: 31px;
   }
 
   @include hover-focus {
@@ -140,14 +164,18 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 40px;
 
   @include vp-1365 {
     flex-direction: column;
-    row-gap: 40px;
     justify-content: center;
     align-items: center;
     max-width: 65%;
     margin: 0 auto;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 
@@ -164,6 +192,10 @@
     max-width: none;
     width: 100%;
     padding: 67px 77px 65px;
+  }
+
+  @include vp-767 {
+    padding:  52px 42px 50px;
   }
 
   &--full {
@@ -217,9 +249,6 @@
   }
 }
 
-
-
-
 .subscription__plan-item:hover .btn--black-disabled {
   background: none;
   color: $color-default-blue;
@@ -245,6 +274,12 @@
     margin-bottom: 14px;
   }
 
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 13px;
+  }
+
   &--full {
     @include vp-1365 {
       margin-bottom: 18px;
@@ -263,6 +298,12 @@
 
   @include vp-1365 {
     margin-bottom: 75px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 65px;
   }
 
   &--full {
@@ -285,6 +326,10 @@
     margin-bottom: 23px;
   }
 
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
+
   &--full {
     @include vp-1365 {
       margin-bottom: 24px;
@@ -295,6 +340,12 @@
 .subscription__price-wrapper svg {
   margin-bottom: 2px;
   z-index: 2;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription__plan-price {
@@ -309,6 +360,12 @@
   background-position: 100% 48%;
   position: relative;
   z-index: 2;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    padding-right: 10px;
+  }
 }
 
 .subscription__plan-shadow {
@@ -332,6 +389,12 @@
     transform: translateX(-50%);
   }
 
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+    top: -44px;
+  }
+
   &--full {
     @include vp-1365 {
       top: -54px;
@@ -350,7 +413,6 @@
 
   @include vp-1365 {
     padding: 20px 42px 20px 42px;
-
   }
 }
 
@@ -359,4 +421,8 @@
   right: 0;
   bottom: -149px;
   z-index: -1;
+
+  @include vp-767 {
+    display: none;
+  }
 }
