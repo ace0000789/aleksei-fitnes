@@ -81,7 +81,7 @@ const pricesPerPeriod = [
   [60000, 20400, 32400]
 ];
 
-
+buttonsPeriod[0].classList.add('subscription__period-button--active');
 document.addEventListener('DOMContentLoaded', function () {
 
   buttonsPeriod.forEach((button, index) => {
@@ -103,5 +103,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-/**/

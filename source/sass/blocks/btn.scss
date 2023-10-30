@@ -50,7 +50,7 @@
   }
 
 
-  /* for disabled add class btn--white-disabled */
+  /* for disabled add class btn--white-disabled or btn--black-disabled*/
 
   &--white-disabled {
     opacity: 0.5;
@@ -63,6 +63,18 @@
     }
   }
 
+  &--black-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+    @include hover-focus {
+      background-color: transparent;
+      color: $color-default-blue;
+      outline: none;
+    }
+  }
+
+/*
   &--dark {
     color: $color-default-blue;
     border: 2px solid $color-default-blue;
@@ -71,5 +83,5 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
-  }
+  }*/
 }
