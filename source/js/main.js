@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-
+import {initVideo} from './vendor/video';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    initVideo();
     const form = new Form();
     window.form = form;
     form.init();
@@ -46,24 +47,6 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-
-
-// Видео
-
-let buttonVideo = document.querySelector('.about-us__video-button');
-let container = document.querySelector('.about-us__video');
-
-buttonVideo.addEventListener('click', function () {
-
-  if (buttonVideo.classList.contains('ready')) {
-    return;
-  }
-
-  buttonVideo.classList.add('ready');
-  container.innerHTML = '<iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=VTjj2qUjkgYfiWLC&amp;autoplay=1" preload="auto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-
-  buttonVideo.style.display = 'none';
-});
 
 // Абонементы
 const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
