@@ -148,11 +148,11 @@
   display: none;
 }
 
-.subscription__period-button--active {
+.is-active {
   color: #102654;
 }
 
-.subscription__period-button--active::after {
+.is-active::after {
   content: "";
   position: absolute;
   width: 100%;
