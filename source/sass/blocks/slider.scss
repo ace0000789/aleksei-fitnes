@@ -4,8 +4,11 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 70px;
-/*
+  width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 120px;
+  /*
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
@@ -15,6 +18,14 @@
   }
 
   @media (min-width: $desktop-width) {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+
+
     width: 1366px;
     margin: 0 auto;
     position: relative;
@@ -34,7 +45,7 @@
   padding-left: 15px;
   padding-right: 15px;
   max-width: 320px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
@@ -70,7 +81,7 @@
   position: relative;
   max-width: 320px;
   height: 274px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     max-width: 768px;
     position: static;
@@ -86,7 +97,7 @@
 
 .slider__slides-container.swiper-wrapper {
   position: relative;
-/*
+  /*
   @media (min-width: $tablet-width) {
     width: 566px;
   }
@@ -95,7 +106,6 @@
     min-width: 1160px;
   }*/
 }
-
 /* Слайд */
 
 .slider__slide {
@@ -106,7 +116,7 @@
 
 .slider__slide.swiper-slide {
   width: 226px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     width: 268px;
   }
@@ -131,7 +141,7 @@
   object-fit: cover;
   z-index: 1;
   background-color: rgba(16, 38, 84, 0.89);
-/*
+  /*
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 294px;
@@ -154,7 +164,7 @@
   min-height: 274px;
   padding: 69px 33px 0 33px;
   height: 274px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     width: 268px;
     padding-top: 75px;
@@ -183,7 +193,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 226px;
-/*
+  /*
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
