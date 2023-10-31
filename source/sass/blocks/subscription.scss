@@ -115,15 +115,20 @@
       color: $color-default-blue;
     }
   }
+
+  &:focus {
+    color: $color-default-blue;
+  }
 }
 
 .subscription__period-button:hover::after,
-.subscription__period-button:focus-visible::after {
+.subscription__period-button:focus::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   background-color: #d10a42;
+      color: $color-default-blue;
   bottom: -2px;
   transition: background-color 0.3s;
 }
