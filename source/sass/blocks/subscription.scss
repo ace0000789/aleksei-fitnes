@@ -111,14 +111,14 @@
   }
 
   @include active {
-    &.focus-visible:active {
+    &:active:not(.focus-visible) {
       color: $color-default-blue;
     }
   }
 }
 
 .subscription__period-button:hover::after,
-.subscription__period-button:focus::after {
+.subscription__period-button:focus-visible::after {
   content: "";
   position: absolute;
   width: 100%;
