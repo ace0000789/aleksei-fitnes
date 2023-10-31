@@ -1,15 +1,18 @@
 .competitions {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
 }
 
 .competitions__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .competitions__content {
@@ -17,6 +20,11 @@
   color: $color-default-white;
   padding: 81px 77px 50px 80px;
   width: 500px;
+
+  @include vp-1365 {
+    padding: 40px 45px 45px 45px;
+    width: 43%;
+  }
 }
 
 .competitions__info {
@@ -27,6 +35,13 @@
   margin-bottom: 21px;
   max-width: 343px;
   word-break: break-all;
+
+  @include vp-1365 {
+    max-width: none;
+    gap: 0;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
 }
 
 .competitions__title {
@@ -39,6 +54,13 @@
   letter-spacing: 2.46px;
   text-transform: uppercase;
   max-width: 180px;
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+    width: 55%;
+  }
 }
 
 .competitions__date-wrapper {
@@ -47,6 +69,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
+
+  @include vp-1365 {
+    gap: 11px;
+    padding-top: 3px;
+  }
 }
 
 .competitions__date-item {
@@ -54,6 +81,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 9px;
+
+  @include vp-1365 {
+    gap: 4px;
+  }
 }
 
 .competitions__date-name {
@@ -64,6 +95,12 @@
   line-height: 19px;
   padding-bottom: 7px;
   word-break: break-all;
+
+  @include vp-1365 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 0;
+  }
 }
 
 .competitions__date-day {
@@ -74,6 +111,10 @@
   position: relative;
   word-break: break-all;
   padding-top: 1px;
+
+  @include vp-1365 {
+    gap: 3px;
+  }
 }
 
 .competitions__date-day::after {
@@ -83,10 +124,18 @@
   height: 1px;
   background-color: $color-default-white;
   top: -5px;
+
+  @include vp-1365 {
+    top: -2px;
+  }
 }
 
 .competitions__date-day--month::after {
   width: 70%;
+
+  @include vp-1365 {
+    width: 75%;
+  }
 }
 
 .competitions__date-number {
@@ -97,6 +146,11 @@
   line-height: 40px;
   align-self: center;
   word-break: break-all;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .competitions__date-mounth {
@@ -111,6 +165,12 @@
   min-height: 20px;
   gap: 0;
   word-break: break-all;
+
+  @include vp-1365 {
+    padding-top: 2px;
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 .competitions__text {
@@ -121,6 +181,10 @@
   line-height: 24px;
   margin-bottom: 56px;
   word-break: break-all;
+
+  @include vp-1365 {
+    margin-bottom: 21px;
+  }
 }
 
 .competitions__link {
@@ -136,13 +200,29 @@
   justify-content: center;
   align-items: center;
   margin-right: 3px;
+
+  @include vp-1365 {
+    margin-right: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+  }
 }
 
 .competitions__image {
   height: 100%;
+
+  @include vp-1365 {
+    width: 57%;
+    height: auto;
+  }
 }
 
 .competitions__image img {
   height: 100%;
   object-fit: cover;
+
+  @include vp-1365 {
+    width: 100%;
+  }
 }
