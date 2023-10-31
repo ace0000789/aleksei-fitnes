@@ -467,7 +467,8 @@
   z-index: -1;
 
   @include vp-1365 {
-    bottom: -147px;
+    bottom: -148px;
+    width: 42.6%;
   }
 
   @include vp-767 {
