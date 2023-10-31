@@ -479,7 +479,7 @@
 .subscription__image img{
   @include vp-1365 {
     right: -45px;
-    width: 327px;
-    height: 422px;
+    width: 100%;
+    height: 100%;
   }
 }
