@@ -1,16 +1,15 @@
 .competitions {
-    padding-top: 120px;
-    padding-bottom: 120px;
-
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .competitions__wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .competitions__content {
@@ -65,7 +64,6 @@
   line-height: 19px;
   padding-bottom: 7px;
   word-break: break-all;
-
 }
 
 .competitions__date-day {
@@ -121,9 +119,8 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 49px;
+  margin-bottom: 56px;
   word-break: break-all;
-
 }
 
 .competitions__link {
@@ -134,10 +131,11 @@
   text-transform: uppercase;
   border: 2px solid $color-default-white;
   padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 3px;
 }
 
 .competitions__image {
