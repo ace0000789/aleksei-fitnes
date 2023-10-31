@@ -25,7 +25,7 @@
     }
 
     @include active {
-      &.focus-visible:active {
+      &:active:not(.focus-visible) {
         color: $color-default-blue;
       }
     }
@@ -43,7 +43,7 @@
     }
 
     @include active {
-      &.focus-visible:active {
+      &:active:not(.focus-visible) {
         color: rgba(255, 255, 255, 0.7);
       }
     }
