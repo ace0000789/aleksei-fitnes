@@ -1,7 +1,7 @@
 export function initTabs() {
-  const buttonsPeriod = document.querySelectorAll('.subscription__period-button');
-  const prices = document.querySelectorAll('.subscription__plan-price ');
-  const fadedPrices = document.querySelectorAll('.subscription__plan-shadow');
+  const buttonsPeriod = document.querySelectorAll('[data-validate="period-tab"]');
+  const prices = document.querySelectorAll('[data-validate="price"]');
+  const fadedPrices = document.querySelectorAll('[data-validate="shadow"]');
 
   const pricesPerPeriod = [
     // Цены для 1 месяца (остаются неизменными)
@@ -14,7 +14,7 @@ export function initTabs() {
     [60000, 20400, 32400]
   ];
 
-  buttonsPeriod[0].classList.add('subscription__period-button--active');
+  buttonsPeriod[0].classList.add('is-active');
     buttonsPeriod.forEach((button, index) => {
       button.addEventListener('click', function () {
 
@@ -27,10 +27,10 @@ export function initTabs() {
         });
 
         buttonsPeriod.forEach((btn) => {
-          btn.classList.remove('subscription__period-button--active');
+          btn.classList.remove('is-active');
         });
 
-        button.classList.add('subscription__period-button--active');
+        button.classList.add('is-active');
       });
     });
 }
