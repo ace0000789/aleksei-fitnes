@@ -241,7 +241,14 @@
   @include vp-1365 {
     padding: 22px 42px;
   }
+}
 
+.subscription__plan-item--day .subscription__plan-button.btn--black-disabled {
+  background: transparent;
+  color: $color-default-blue;
+  outline: none;
+  padding: 25px 42px;
+  border: 2px solid $color-default-blue;
 }
 
 .subscription__plan-item:focus-within,
@@ -256,6 +263,9 @@
     padding: 45px 35px 43px;
   }
 }
+
+
+
 
 .subscription__plan-item--full:focus-within,
 .subscription__plan-item--full:hover {
@@ -272,7 +282,7 @@
     }
 }
 
-.subscription__plan-item:focus-within .subscription__plan-button {
+.subscription__plan-item:focus-within .subscription__plan-button:not(.btn--black-disabled) {
   color: #ffffff;
   border: none;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
@@ -284,25 +294,21 @@
   }
 }
 
-.subscription__plan-item:hover .subscription__plan-button {
-  color: #ffffff;
-  border: none;
-  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
-  padding: 27px 42px;
-  outline: none;
-
-  @include vp-1365 {
-    padding: 22px 42px;
-  }
-}
-
-.subscription__plan-item:hover .btn--black-disabled {
-  background: none;
-  color: $color-default-blue;
+.subscription__plan-item:focus-within .btn--black-disabled {
+  background: #ffffff;
   border: 2px solid $color-default-blue;
+}
+
+.subscription__plan-item:hover .subscription__plan-button:not(.btn--black-disabled) {
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  padding: 27px 42px;
   outline: none;
-  opacity: 0.3;
-  pointer-events: none;
+
+  @include vp-1365 {
+    padding: 22px 42px;
+  }
 }
 
 .subscription__plan-title {
