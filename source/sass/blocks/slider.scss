@@ -52,7 +52,7 @@
   overflow: hidden;
 
   @include vp-1365 {
-    margin: 0 55px 0 55px;
+    margin: 0 45px 0 44px;
   }
 
   @include vp-767 {
@@ -111,14 +111,6 @@
 
 .swiper-slide:focus .slider__info {
   z-index: 2;
-}
-
-.slider__image {
-  max-width: 100%;
-  vertical-align: top;
-  object-fit: cover;
-  z-index: 1;
-  background-color: $color-transparent;
 }
 
 .slider__info {
