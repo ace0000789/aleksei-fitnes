@@ -60,11 +60,6 @@
   }
 }
 
-/* Второй div */
-
-.swiper-wrapper {
-
-}
 /* Слайд */
 .swiper-slide {
   width: 260px;
@@ -79,7 +74,21 @@
     width: 226px;
     height: 274px;
   }
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        outline: none;
+      }
+    }
+
+    &.focus-visible:focus,
+    &:focus-visible {
+      outline: none;
+    }
+  }
 }
+
 
 .swiper-slide img {
   width: 260px;
@@ -96,7 +105,6 @@
   }
 }
 
-/*
 .swiper-slide:hover .slider__info {
   z-index: 2;
 }
@@ -104,7 +112,7 @@
 .swiper-slide:focus .slider__info {
   z-index: 2;
 }
-*/
+
 .slider__image {
   max-width: 100%;
   vertical-align: top;
@@ -116,7 +124,7 @@
 .slider__info {
   position: absolute;
   color: $color-default-white;
-  z-index: 5;
+  z-index: -1;
   width: 260px;
   top: 0;
   left: 50%;
@@ -128,6 +136,11 @@
   text-align: center;
 
   @include vp-1365 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
   }
 }
 
@@ -170,7 +183,7 @@
 }
 
 .swiper-slide:focus .slider__name {
-  top: 27px;
+  top: 46px;
 }
 
 .slider__sport {
