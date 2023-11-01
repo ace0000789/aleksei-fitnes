@@ -249,6 +249,10 @@
   outline: none;
   padding: 25px 42px;
   border: 2px solid $color-default-blue;
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
 }
 
 .subscription__plan-item:focus-within,
@@ -263,9 +267,6 @@
     padding: 45px 35px 43px;
   }
 }
-
-
-
 
 .subscription__plan-item--full:focus-within,
 .subscription__plan-item--full:hover {
