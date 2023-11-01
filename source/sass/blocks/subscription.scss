@@ -213,6 +213,31 @@
       padding: 52px 42px 50px;
     }
   }
+
+  &--day {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
+    padding: 60px 70px 58px;
+
+    @include vp-767 {
+      padding: 45px 35px 43px;
+    }
+  }
+}
+
+.subscription__plan-item--day .subscription__plan-button {
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  outline: none;
+  padding: 27px 42px;
+
+  @include vp-1365 {
+    padding: 22px 42px;
+  }
+
 }
 
 .subscription__plan-item:focus-within,
@@ -236,11 +261,11 @@
     border-width: 7px;
     border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
     padding: 58px 70px 58px;
-
+    }
     @include vp-767 {
       padding: 45px 35px 43px;
+
     }
-  }
 }
 
 .subscription__plan-item:focus-within .subscription__plan-button {
@@ -446,7 +471,7 @@
 
 .subscription__plan-button {
   margin-left: 1px;
-  padding: 25px 42px 25px 42px;
+  padding: 25px 40px 25px 40px;
   letter-spacing: 0.6px;
   font-size: 12px;
   font-weight: 700;
