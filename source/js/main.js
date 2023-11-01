@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initVideo} from './vendor/video';
+import {initVideo} from './vendor/init-video';
 import {initTabs} from './vendor/init-tabs';
-import {initSlider} from './vendor/my-image-slider';
+import {initSlider} from './vendor/init-slider';
 
 // ---------------------------------
 
