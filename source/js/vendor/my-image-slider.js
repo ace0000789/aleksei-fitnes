@@ -54,7 +54,6 @@ const myImageSlider = new Swiper('.slider__container', {
       0: {
         slidesPerView: 1,
         spaceBetween: 0,
-        centeredSlides: true,
         initialSlide: 2,
       },
     }

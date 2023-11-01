@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 }
 
-.container--slider {
+.container--jury {
   position: relative;
 }
 
@@ -22,6 +22,10 @@
 
 .slider__container.swiper-container {
   overflow: hidden;
+
+  @include vp-1365 {
+    margin: 0 58px 0 52px;
+  }
 }
 
 /* Второй div */
@@ -30,9 +34,13 @@
 
 }
 /* Слайд */
-.swiper-slide {
+.slider__slide.swiper-slide {
   width: 260px;
   height: 294px;
+
+  @include vp-1365 {
+    width: 268px;
+  }
 }
 
 .swiper-slide img{
