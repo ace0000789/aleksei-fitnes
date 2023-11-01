@@ -1,87 +1,29 @@
 
 .slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 1366px;
-  margin: 0 auto;
-  position: relative;
   padding-bottom: 120px;
-  /*
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-    position: relative;
-    padding-top: 1px;
-    padding-bottom: 106px;
-  }
+}
 
-  @media (min-width: $desktop-width) {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 70px;
-
-
-    width: 1366px;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 120px;
-  }*/
+.container--slider {
+  position: relative;
 }
 
 .slider__title {
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 32px;
-  letter-spacing: 0.96px;
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 320px;
-  /*
-  @media (min-width: $tablet-width) {
-    font-size: 42px;
-    line-height: 42px;
-    letter-spacing: 1.26px;
-    margin-bottom: 39px;
-    padding-left: 45px;
-    padding-right: 45px;
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    display: block;
-    font-family: "Alumni Sans", "Arial", sans-serif;
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 54px;
-    letter-spacing: 1.62px;
-    align-self: flex-start;
-    padding-left: 103px;
-    margin-bottom: 44px;
-    padding-left: 103px;
-    padding-right: 103px;
-    max-width: 1366px;
-  }*/
+  font-family: $second-font;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin-bottom: 45px;
 }
 
 /* Первый div */
 
 .slider__container.swiper-container {
   overflow: hidden;
-  position: relative;
-  max-width: 320px;
-  height: 274px;
-  /*
+  /*position: relative;
+
   @media (min-width: $tablet-width) {
     max-width: 768px;
     position: static;
@@ -100,10 +42,6 @@
   /*
   @media (min-width: $tablet-width) {
     width: 566px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1160px;
   }*/
 }
 /* Слайд */
@@ -115,7 +53,8 @@
 }
 
 .slider__slide.swiper-slide {
-  width: 226px;
+  width: 260px;
+  height: 294px;
   /*
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -263,18 +202,7 @@
   flex-direction: column;
   gap: 10px;
   padding-left: 17px;
-  list-style-type: none;/*
-
-  @media (min-width: $tablet-width) {
-    margin-top: 39px;
-    padding-left: 43px;
-    gap: 12px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 38px;
-    margin-top: 33px;
-  }*/
+  list-style-type: none;
 }
 
 .slider__item {
@@ -299,69 +227,48 @@
 
 /* Стрелки */
 
-.slider__container .swiper-button-prev,
-.slider__container .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
-  width: 34px;
-  height: 34px;
-  stroke: #102654;/*
-
-  @media (min-width: $tablet-width) {
-    width: 56px;
-    height: 56px;
-  }*/
+  width: 56px;
+  height: 56px;
+  stroke: #102654;
 }
 
-.slider__container .swiper-button-prev {
-  left: 8px;
-  top: 52%;/*
-
-  @media (min-width: $tablet-width) {
-    left: 24px;
-    top: 46%;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 28px;
-    top: 47%;
-  }*/
+.swiper-button-prev {
+  left: 28px;
+  top: 61%;
 }
 
-.slider__container .swiper-button-next {
-  right: 8px;
-  top: 52%;/*
-
-  @media (min-width: $tablet-width) {
-    right: 24px;
-    top: 46%;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 28px;
-    top: 47%;
-  }*/
+.swiper-button-next {
+  right: 28px;
+  top: 61%;
 }
 
-.slider__container .swiper-button-prev:hover,
-.slider__container .swiper-button-prev:focus,
-.slider__container .swiper-button-next:hover,
-.slider__container .swiper-button-next:focus {
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
   border-radius: 50%;
   outline: 1px solid #102654;
 }
 
-.slider__container .swiper-button-prev:active,
-.slider__container .swiper-button-next:active {
+.swiper-button-prev:active,
+.swiper-button-next:active {
   outline: none;
-  stroke: #ffffff;
   background-color: #102654;
   transition: background-color 0.1s;
 }
 
+.swiper-button-prev:active svg,
+.swiper-button-next:active svg{
+  stroke: #ffffff;
+}
+
 /* for Disabled add class swiper-button--disabled */
 
-.slider__container .swiper-button-prev.swiper-button--disabled,
-.slider__container .swiper-button-next.swiper-button--disabled {
+.swiper-button-prev.swiper-button--disabled,
+.swiper-button-next.swiper-button--disabled {
   opacity: 0.3;
   cursor: default;
   border: none;
@@ -369,45 +276,37 @@
   background-color: none;
 }
 
-.slider__container .swiper-button-prev:active.swiper-button--disabled,
-.slider__container .swiper-button-next:active.swiper-button--disabled {
+.swiper-button-prev:active.swiper-button--disabled,
+.swiper-button-next:active.swiper-button--disabled {
   pointer-events: none;
   background-color: #ffffff;
   stroke: #102654;
 }
 
+.swiper-button--disabled:active svg {
+  stroke: #102654;
+}
+
 /* SVG */
 
-.slider__container .swiper-button-prev svg,
-.slider__container .swiper-button-next svg {
-  width: 12px;
-  height: 19px;
-  position: absolute;/*
-
-  @media (min-width: $tablet-width) {
-    width: 16px;
-    height: 32px;
-  }*/
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 16px;
+  height: 32px;
+  position: absolute;
+  stroke: #102654;
 }
 
-.slider__container .swiper-button-prev svg {
-  right: 35%;/*
-
-  @media (min-width: $tablet-width) {
-    right: 40%;
-  }*/
+.swiper-button-prev svg {
+  right: 40%;
 }
 
-.slider__container .swiper-button-next svg {
-  left: 35%;
-  transform: rotate(180deg);/*
-
-  @media (min-width: $tablet-width) {
-    left: 40%;
-  }*/
+.swiper-button-next svg {
+  left: 40%;
+  transform: rotate(180deg);
 }
 
-.slider__container .swiper-button-prev::after,
-.slider__container .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   content: "";
 }

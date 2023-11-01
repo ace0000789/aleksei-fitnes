@@ -37,25 +37,25 @@ const myImageSlider = new Swiper('.slider__container', {
     // Листание
     effect: 'slide',
     breakpoints: {
-      320: {
-        slidesPerView: 'auto',
-        slidesPerGroup: 1,
-        centeredSlides: true,
-        spaceBetween: 50,
-        initialSlide: 2,
-      },
-      768: {
-        slidesPerView: 'auto',
-        slidesPerGroup: 1,
-        centeredSlides: false,
-        spaceBetween: 30,
-        initialSlide: 2,
-      },
       1366: {
         slidesPerView: 4,
         slidesPerGroup: 1,
         centeredSlides: false,
         spaceBetween: 40,
+        allowTouchMove: false,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        initialSlide: 2,
+        allowTouchMove: true,
+      },
+
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        initialSlide: 2,
       },
     }
   });
