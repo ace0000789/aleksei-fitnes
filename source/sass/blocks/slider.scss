@@ -254,6 +254,22 @@
     top: 62.4%;
     left: -8px;
   }
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        border-radius: 50%;
+        outline: 1px solid $color-default-blue;
+      }
+    }
+
+    &.focus-visible:focus,
+    &:focus-visible {
+      border-radius: 50%;
+      outline: 1px solid $color-default-blue;
+    }
+  }
+
 }
 
 .swiper-button-next {
@@ -269,14 +285,21 @@
     top: 62.4%;
     right: -8px;
   }
-}
 
-.swiper-button-prev:hover,
-.swiper-button-prev:focus,
-.swiper-button-next:hover,
-.swiper-button-next:focus {
-  border-radius: 50%;
-  outline: 1px solid $color-default-blue;
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        border-radius: 50%;
+        outline: 1px solid $color-default-blue;
+      }
+    }
+
+    &.focus-visible:focus,
+    &:focus-visible {
+      border-radius: 50%;
+      outline: 1px solid $color-default-blue;
+    }
+  }
 }
 
 .swiper-button-prev:active,
