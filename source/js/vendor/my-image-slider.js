@@ -3,8 +3,8 @@ function initSlider() {
 const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
   //Стрелки
     navigation: {
-      nextEl: '[data-validate="button-prev"]',
-      prevEl: '[data-validate="button-next"]',
+      nextEl: '[data-validate="button-next"]',
+      prevEl: '[data-validate="button-prev"]',
     },
 
     //перетаскивание на ПК
