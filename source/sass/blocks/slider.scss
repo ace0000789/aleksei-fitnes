@@ -302,6 +302,14 @@
   }
 }
 
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  border-radius: 50%;
+  outline: 1px solid $color-default-blue;
+}
+
 .swiper-button-prev:active,
 .swiper-button-next:active {
   outline: none;
