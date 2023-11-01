@@ -119,6 +119,10 @@
   &:focus {
     color: $color-default-blue;
   }
+
+  &:disabled {
+    user-select: none;
+  }
 }
 
 .subscription__period-button:hover::after,
