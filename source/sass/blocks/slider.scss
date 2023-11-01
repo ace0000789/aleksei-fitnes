@@ -22,104 +22,63 @@
 
 .slider__container.swiper-container {
   overflow: hidden;
-  /*position: relative;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-    position: static;
-    height: 294px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1366px;
-  }*/
 }
 
 /* Второй div */
 
 .slider__slides-container.swiper-wrapper {
-  position: relative;
-  /*
-  @media (min-width: $tablet-width) {
-    width: 566px;
-  }*/
+
 }
 /* Слайд */
-
-.slider__slide {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.slider__slide.swiper-slide {
+.swiper-slide {
   width: 260px;
   height: 294px;
-  /*
-  @media (min-width: $tablet-width) {
-    width: 268px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 260px;
-  }*/
 }
 
+.swiper-slide img{
+  width: 260px;
+  height: 294px;
+
+  @include vp-1365 {
+    width: 268px;
+    margin: 0 auto;
+  }
+}
+
+/*
 .swiper-slide:hover .slider__info {
   z-index: 2;
-  transition: 0.1s;
 }
 
 .swiper-slide:focus .slider__info {
   z-index: 2;
 }
-
+*/
 .slider__image {
   max-width: 100%;
   vertical-align: top;
   object-fit: cover;
   z-index: 1;
-  background-color: rgba(16, 38, 84, 0.89);
-  /*
-  @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 294px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 260px;
-    height: 294px;
-  }*/
+  background-color: $color-transparent;
 }
 
 .slider__info {
   position: absolute;
-  color: #ffffff;
+  color: $color-default-white;
   z-index: -1;
-  width: 226px;
+  width: 260px;
   top: 0;
   left: 0;
-  background-color: rgba(16, 38, 84, 0.89);
+  background-color: $color-transparent;
   min-height: 274px;
   padding: 69px 33px 0 33px;
   height: 274px;
-  /*
-  @media (min-width: $tablet-width) {
-    width: 268px;
-    padding-top: 75px;
-    padding-left: 27px;
-    height: 294px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 260px;
-  }*/
 }
 
 .slider__name {
   padding: 0;
   margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-placeholder;
   font-size: 18px;
   line-height: 18px;
   font-style: normal;
@@ -127,22 +86,11 @@
   margin-bottom: 0;
   position: absolute;
   z-index: 3;
-  color: #ffffff;
+  color: $color-default-white;
   bottom: 27px;
   left: 50%;
   transform: translateX(-50%);
   width: 226px;
-  /*
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 22px;
-    line-height: 22px;
-    bottom: 25px;
-  }*/
 }
 
 .slider__slide:not(:has(.slider__image)) .slider__name {
@@ -158,27 +106,11 @@
 }
 
 .swiper-slide:hover .slider__name {
-  top: 46px;/*
-
-  @media (min-width: $tablet-width) {
-    top: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 46px;
-  }*/
+  top: 46px;
 }
 
 .swiper-slide:focus .slider__name {
-  top: 27px;/*
-
-  @media (min-width: $tablet-width) {
-    top: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 46px;
-  }*/
+  top: 27px;
 }
 
 .slider__sport {
@@ -186,12 +118,7 @@
   font-weight: 300;
   line-height: 14px;
   color: #b6bdcc;
-  margin-bottom: 38px;/*
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }*/
+  margin-bottom: 38px;
 }
 
 .slider__list {
@@ -219,7 +146,7 @@
   content: "";
   width: 6px;
   height: 6px;
-  background-color: #ffffff;
+  background-color: $color-default-white;
   border-radius: 50%;
   left: -16px;
   top: 8px;
@@ -232,7 +159,7 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  stroke: #102654;
+  stroke: $color-default-blue;
 }
 
 .swiper-button-prev {
@@ -250,13 +177,13 @@
 .swiper-button-next:hover,
 .swiper-button-next:focus {
   border-radius: 50%;
-  outline: 1px solid #102654;
+  outline: 1px solid $color-default-blue;
 }
 
 .swiper-button-prev:active,
 .swiper-button-next:active {
   outline: none;
-  background-color: #102654;
+  background-color: $color-default-blue;
   transition: background-color 0.1s;
 }
 
@@ -279,12 +206,12 @@
 .swiper-button-prev:active.swiper-button--disabled,
 .swiper-button-next:active.swiper-button--disabled {
   pointer-events: none;
-  background-color: #ffffff;
-  stroke: #102654;
+  background-color: $color-default-white;
+  stroke: $color-default-blue;
 }
 
 .swiper-button--disabled:active svg {
-  stroke: #102654;
+  stroke: $color-default-blue;
 }
 
 /* SVG */
@@ -294,7 +221,7 @@
   width: 16px;
   height: 32px;
   position: absolute;
-  stroke: #102654;
+  stroke: $color-default-blue;
 }
 
 .swiper-button-prev svg {
