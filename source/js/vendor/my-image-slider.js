@@ -1,10 +1,10 @@
 //СЛАЙДЕР
 function initSlider() {
-const myImageSlider = new Swiper('.slider__container', {
+const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
   //Стрелки
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '[data-validate="button-prev"]',
+      prevEl: '[data-validate="button-next"]',
     },
 
     //перетаскивание на ПК
