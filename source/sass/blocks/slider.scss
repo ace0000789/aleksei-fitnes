@@ -259,7 +259,7 @@
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         border-radius: 50%;
-      outline: 1px solid $color-default-blue;
+        outline: 1px solid $color-default-blue;
       }
     }
 
@@ -289,7 +289,7 @@
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         border-radius: 50%;
-      outline: 1px solid $color-default-blue;
+        outline: 1px solid $color-default-blue;
       }
     }
 
@@ -335,7 +335,7 @@
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         border-radius: 50%;
-      outline: none;
+        outline: none;
       }
     }
 
