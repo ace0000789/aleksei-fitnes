@@ -112,10 +112,37 @@
 
 .swiper-slide:hover .slider__info {
   z-index: 2;
+
+  @include vp-1365 {
+    z-index: -1;
+  }
 }
 
 .swiper-slide:focus .slider__info {
   z-index: 2;
+
+  @include vp-1365 {
+    z-index: -1;
+  }
+}
+
+.swiper-slide:active .slider__info {
+  @include vp-1365 {
+    z-index: 2;
+  }
+}
+
+.swiper-slide:active .slider__name {
+  @include vp-1365 {
+    top: 46px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @include vp-767 {
+    top: 36px;
+  }
 }
 
 .slider__info {
@@ -159,7 +186,6 @@
   text-align: center;
   bottom: 25px;
 
-
   @include vp-1365 {
     font-size: 20px;
     line-height: 20px;
@@ -169,6 +195,16 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+  }
+
+  &--alexandr {
+    @include vp-1365 {
+      padding-right: 18px;
+    }
+
+    @include vp-767 {
+      padding-right: 5px;
+    }
   }
 }
 
@@ -189,13 +225,29 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
+
+    @include vp-1365 {
+      top: 248px;
+    }
+
+    @include vp-767 {
+      top: 226px;
+    }
+  }
 
 .swiper-slide:focus .slider__name {
   top: 46px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  @include vp-1365 {
+    top: 248px;
+  }
+
+  @include vp-767 {
+    top: 226px;
+  }
 }
 
 .slider__sport {
@@ -221,6 +273,10 @@
   list-style-type: none;
   max-height: 140px;
   overflow: hidden;
+
+  @include vp-767 {
+    margin-top: 25px;
+  }
 }
 
 .slider__item {
