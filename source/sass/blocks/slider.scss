@@ -5,6 +5,7 @@
   @include vp-1365 {
     padding-top: 1px;
     padding-bottom: 100px;
+    height: 100%;
   }
 
   @include vp-767 {
@@ -49,7 +50,9 @@
 
 /* Первый div */
 .swiper-container {
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
+  height: auto;
 
   @include vp-1365 {
     margin: 0 45px 0 44px;
@@ -60,19 +63,28 @@
   }
 }
 
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+ .swiper-autoheight .swiper-wrapper {
+  align-items: stretch;
+}
+
 /* Слайд */
 .swiper-slide {
-  width: 260px;
-  height: 294px;
+  width: 100%;
   position: relative;
 
   @include vp-1365 {
-    width: 268px;
+    width: 100%;
+    height: auto;
   }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    width: 100%;
+    height: auto;
   }
 
   @include hover-focus {
@@ -91,22 +103,21 @@
 
 .swiper-container .swiper-wrapper .swiper-slide {
   @include vp-767 {
-    height: 274px;
   }
 }
 
 .swiper-slide img {
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  height: auto;
 
   @include vp-1365 {
-    width: 268px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    width: 100%;
   }
 }
 
@@ -135,9 +146,6 @@
 .swiper-slide:active .slider__name {
   @include vp-1365 {
     top: 46px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 
   @include vp-767 {
@@ -146,26 +154,26 @@
 }
 
 .slider__info {
-  position: absolute;
   color: $color-default-white;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
   background-color: $color-transparent;
-  height: 294px;
+  height: 100%;
+  min-height: 294px;
   margin: 0 auto;
-  padding: 75px 50px 50px;
+  padding: 45px 35px 50px;
   text-align: center;
 
   @include vp-1365 {
-    width: 268px;
+    width: 100%;
+    height: 100%;
   }
 
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    width: 100%;
+    height: 100%;
     padding: 75px 25px 50px 25px;
   }
 }
@@ -175,16 +183,12 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
-  position: absolute;
   z-index: 3;
   color: $color-default-white;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 226px;
-  padding: 0 5px;
   margin: 0;
+  padding: 0;
   text-align: center;
-  bottom: 25px;
+  margin-bottom: 8px;
 
   @include vp-1365 {
     font-size: 20px;
@@ -196,23 +200,10 @@
     font-size: 22px;
     line-height: 22px;
   }
-
-  &--alexandr {
-    @include vp-1365 {
-      padding-right: 18px;
-    }
-
-    @include vp-767 {
-      padding-right: 5px;
-    }
-  }
 }
 
 .swiper-slide:not(:has(img)) .slider__name {
   top: 46px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   height: 22px;
 
   @include vp-1365 {
@@ -223,18 +214,12 @@
 .swiper-slide:hover .slider__name {
   @media (min-width: 1366px) {
     top: 46px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 
 .swiper-slide:focus .slider__name {
   @media (min-width: 1366px) {
     top: 46px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 
@@ -243,24 +228,17 @@
   font-weight: 300;
   line-height: 24px;
   color: #b6bdcc;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  -webkit-line-clamp: 2;
-  height: 40px;
-  white-space: nowrap;
 }
 
 .slider__list {
   margin: 0;
-  margin-top: 33px;
+  margin-top: 32px;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
   list-style-type: none;
-  max-height: 140px;
-  overflow: hidden;
+  padding-left: 15px;
 
   @include vp-767 {
     margin-top: 25px;
@@ -275,8 +253,6 @@
   padding-left: 16px;
   text-align: left;
   position: relative;
-  max-height: 44px;
-  overflow: hidden;
 }
 
 .slider__item::before {
