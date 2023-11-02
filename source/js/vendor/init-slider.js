@@ -46,7 +46,7 @@ const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 11,
+        spaceBetween: 32,
         initialSlide: 2,
         allowTouchMove: true,
       },
