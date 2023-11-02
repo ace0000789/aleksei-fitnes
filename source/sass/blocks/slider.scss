@@ -221,32 +221,20 @@
 }
 
 .swiper-slide:hover .slider__name {
-  top: 46px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-    @include vp-1365 {
-      top: 248px;
-    }
-
-    @include vp-767 {
-      top: 226px;
-    }
+  @media (min-width: 1366px) {
+    top: 46px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
+}
 
 .swiper-slide:focus .slider__name {
-  top: 46px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-
-  @include vp-1365 {
-    top: 248px;
-  }
-
-  @include vp-767 {
-    top: 226px;
+  @media (min-width: 1366px) {
+    top: 46px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
