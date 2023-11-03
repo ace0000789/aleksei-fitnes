@@ -1,20 +1,3 @@
-
-.features__number {
-  font-family: $ff-placeholder;
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 71px;
-  line-height: 71px;
-  background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  word-break: break-all;
-  width: 115px;
-  max-width: none;
-}
-
 .features {
   margin: 0;
   background-color: $color-default-gray;
@@ -36,21 +19,90 @@
     display: grid;
     padding: 0;
     margin: 0 60px;
-    grid-template-columns: 32.7% 24.08% 32.7%;
+    grid-template-columns: 32.7% 23.08% 32.7%;
     grid-template-rows: 1fr 1fr;
-    column-gap: 5.26%;
+    column-gap: 5.76%;
     list-style-type: none;
   }
 
   li {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    &:first-of-type {
+    &:first-child {
       grid-column: 2/3;
       grid-row: 1/-1;;
+      background-color: #1c3374;;
+      color: $color-default-white;
+      flex-direction: column;
+      padding: 70px 34px 86px;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0;
+      margin-top: 4px;
     }
   }
 
+  li:first-child span {
+    background-image: none;
+    color: $color-default-white;
+    -webkit-text-fill-color: $color-default-white;
+    margin-bottom: 11px;
+    padding-left: 5px;
+  }
+
+  li:first-child h3 {
+    margin-bottom: 35px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  li:first-child p {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  span {
+    font-family: $ff-placeholder;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 71px;
+    background-image: linear-gradient(143deg, #d10a42 0%, #0041ca 87.33%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-break: break-all;
+    width: 115px;
+    max-width: none;
+  }
+
+  div {
+    font-size: 14px;
+    line-height: 22px;
+    color: #2e35ac;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 22px
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 }
 
