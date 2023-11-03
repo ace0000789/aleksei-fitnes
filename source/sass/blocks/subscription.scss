@@ -91,6 +91,7 @@
   cursor: pointer;
   position: relative;
   min-height: 36px;
+  user-select: none;
 
   @include vp-1365 {
     font-size: 18px;
