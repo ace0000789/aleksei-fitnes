@@ -104,7 +104,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
-/*
+  /*
   @include vp-1365 {
     margin: 0 auto;
   }
@@ -121,11 +121,12 @@
   position: static;
   transform: none;
   margin-bottom: 8px;
-/*
+  /*
   @include vp-1365 {
     z-index: -1;
   }*/
 }
+
 .swiper-slide:focus img {
   z-index: -1;
 }
@@ -134,7 +135,6 @@
   position: static;
   transform: none;
   margin-bottom: 8px;
-
 }
 
 .swiper-slide:active img {
