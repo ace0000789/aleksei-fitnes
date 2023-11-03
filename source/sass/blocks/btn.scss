@@ -18,15 +18,27 @@
     color: $color-default-white;
     border: 2px solid $color-default-white;
 
+
     @include hover-focus {
-      background-color: $color-default-white;
-      color: $color-default-blue-egypt;
-      outline: none;
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-default-white;
+          color: $color-default-blue-egypt;
+          outline: none;
+        }
+      }
+
+      &.focus-visible:focus {
+        background-color: $color-default-white;
+        color: $color-default-blue-egypt;
+        outline: none;
+      }
     }
 
     @include active {
       &:active:not(.focus-visible) {
         color: $color-default-blue;
+        background-color: $color-default-white;
       }
     }
   }
@@ -36,10 +48,21 @@
     border: 2px solid $color-default-blue;
 
     @include hover-focus {
-      color: #ffffff;
-      border: none;
-      background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
-      outline: none;
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          color: #ffffff;
+          border: none;
+          background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+          outline: none;
+        }
+      }
+
+      &.focus-visible:focus {
+        color: #ffffff;
+        border: none;
+        background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+        outline: none;
+      }
     }
 
     @include active {
