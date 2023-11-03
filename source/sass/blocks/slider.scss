@@ -52,27 +52,27 @@
 .swiper-container {
   overflow: hidden;
   height: auto;
-  /*
+
   @include vp-1365 {
     margin: 0 8.1%;
   }
 
   @include vp-767 {
     margin: 0 6.2%;
-  }*/
+  }
 }
 
 
 .swiper-wrapper {
   display: flex;
-  /*min-height: 294px;*/
+  min-height: 294px;
   height: 100%;
   align-items: stretch;
-/*
+
 
   @include vp-767 {
     min-height: 274px;
-  }*/
+  }
 }
 
 /* Слайд */
@@ -160,7 +160,7 @@
   top: 0;
   left: 50%;
   background-color: $color-transparent;
-  /*min-height: 294px;*/
+  min-height: 294px;
   height: 100%;
   margin: 0 auto;
   padding: 45px 35px 50px;
