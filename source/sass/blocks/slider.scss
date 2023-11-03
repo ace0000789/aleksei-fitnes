@@ -80,17 +80,8 @@
   width: 100%;
   position: relative;
   height: 100%;
-  /*
-  @include vp-1365 {
-    width: 100%;
-    height: 100%;
-  }
 
-  @include vp-767 {
-    width: 100%;
-    height: auto;
-  }*/
-  /*
+
   @include hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -102,7 +93,7 @@
     &:focus-visible {
       outline: none;
     }
-  }*/
+  }
 }
 
 /*
@@ -165,7 +156,7 @@
   margin: 0 auto;
   padding: 45px 35px 50px;
   text-align: center;
-/*
+
   @include vp-1365 {
     width: 100%;
     height: 100%;
@@ -174,9 +165,9 @@
   @include vp-767 {
     width: 100%;
     height: 100%;
-    height: 274px;
+    min-height: 274px;
     padding: 30px 22px 50px 22px;
-  }*/
+  }
 }
 
 .slider__name {
@@ -190,7 +181,7 @@
   padding: 0;
   text-align: center;
   margin-bottom: 8px;
-/*
+
   @include vp-1365 {
     font-size: 20px;
     line-height: 20px;
@@ -200,7 +191,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-  }*/
+  }
 }
 /*
 .swiper-slide:not(:has(img)) .slider__name {
@@ -267,7 +258,7 @@
 }
 
 /* Стрелки */
-/*
+
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -279,8 +270,8 @@
     width: 33px;
     height: 33px;
   }
-}*/
-/*
+}
+
 .swiper-button-prev {
   left: 28px;
   top: 61%;
@@ -309,8 +300,8 @@
       outline: 1px solid $color-default-blue;
     }
   }
-}*/
-/*
+}
+
 .swiper-button-next {
   right: 28px;
   top: 61%;
@@ -339,8 +330,8 @@
       outline: 1px solid $color-default-blue;
     }
   }
-}*/
-/*
+}
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover,
 .swiper-button-prev:focus,
@@ -348,7 +339,7 @@
   border-radius: 50%;
   outline: 1px solid $color-default-blue;
 }
-*//*
+
 .swiper-button-prev:active,
 .swiper-button-next:active {
   outline: none;
@@ -360,9 +351,9 @@
 .swiper-button-next:active svg {
   stroke: #ffffff;
 }
-*/
+
 /* for Disabled add class swiper-button--disabled */
-/*
+
 .swiper-button-prev.swiper-button--disabled,
 .swiper-button-next.swiper-button--disabled {
   opacity: 0.3;
@@ -396,10 +387,10 @@
 
 .swiper-button--disabled:active svg {
   stroke: $color-default-blue;
-}*/
+}
 
 /* SVG */
-/*
+
 .swiper-button-prev svg,
 .swiper-button-next svg {
   width: 16px;
@@ -431,4 +422,3 @@
 .swiper-button-next::after {
   content: "";
 }
-*/
