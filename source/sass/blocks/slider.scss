@@ -1,17 +1,14 @@
 
 .slider {
   padding-bottom: 120px;
-  /*
+
   @include vp-1365 {
-    padding-top: 1px;
     padding-bottom: 100px;
-    height: 100%;
   }
 
   @include vp-767 {
-    padding-top: 0;
     padding-bottom: 70px;
-  }*/
+  }
 }
 
 .container--jury {
@@ -62,13 +59,11 @@
   }
 }
 
-
 .swiper-wrapper {
   display: flex;
   min-height: 294px;
   height: 100%;
   align-items: stretch;
-
 
   @include vp-767 {
     min-height: 274px;
@@ -104,13 +99,6 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  /*
-  @include vp-1365 {
-    margin: 0 auto;
-  }
-
-  @include vp-767 {
-  }*/
 }
 
 .swiper-slide:hover img {
@@ -121,10 +109,6 @@
   position: static;
   transform: none;
   margin-bottom: 8px;
-  /*
-  @include vp-1365 {
-    z-index: -1;
-  }*/
 }
 
 .swiper-slide:focus img {
@@ -198,26 +182,6 @@
     line-height: 22px;
   }
 }
-/*
-.swiper-slide:not(:has(img)) .slider__name {
-  top: 46px;
-
-  @include vp-1365 {
-    top: 46px;
-  }
-}
-
-.swiper-slide:hover .slider__name {
-  @media (min-width: 1366px) {
-    top: 46px;
-  }
-}
-
-.swiper-slide:focus .slider__name {
-  @media (min-width: 1366px) {
-    top: 46px;
-  }
-}*/
 
 .slider__sport {
   font-size: 16px;
