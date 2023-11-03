@@ -28,6 +28,29 @@
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 1.62px;
+    text-align: center;
     margin-bottom: 50px;
   }
+
+  ul {
+    display: grid;
+    padding: 0;
+    margin: 0 60px;
+    grid-template-columns: 32.7% 24.08% 32.7%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5.26%;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+
+    &:first-of-type {
+      grid-column: 2/3;
+      grid-row: 1/-1;;
+    }
+  }
+
 }
+

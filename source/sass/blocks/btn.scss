@@ -18,7 +18,6 @@
     color: $color-default-white;
     border: 2px solid $color-default-white;
 
-
     @include hover-focus {
       @media (hover: hover) {
         &:hover:not(.focus-visible) {
