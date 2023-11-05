@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    column-gap: 30px;
+    column-gap: 29px;
 
 
     &:first-child {
@@ -48,9 +48,9 @@
       margin-top: 4px;
     }
 
-  &:nth-child(odd):not(:first-child) b {
-    width: 72px;
-  }
+    &:nth-child(odd):not(:first-child) b {
+      width: 72px;
+    }
   }
 
   li:first-child b {
@@ -100,8 +100,10 @@
   h3 {
     margin: 0;
     padding: 0;
+    padding-top: 1px;
     font-size: 22px;
     line-height: 22px;
+    font-weight: 400;
   }
 
   p {
@@ -123,5 +125,8 @@
 
 .features__text-block {
   max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 /**/
