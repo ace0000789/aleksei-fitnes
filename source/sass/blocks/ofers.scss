@@ -161,6 +161,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .ofers__promo {
