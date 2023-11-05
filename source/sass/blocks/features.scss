@@ -7,6 +7,10 @@
     padding: 101px 0 100px;
   }
 
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
   h2 {
     font-family: $second-font;
     margin: 0;
@@ -24,6 +28,14 @@
       line-height: 42px;
       letter-spacing: 1.26px;
       margin-bottom: 48px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      padding-left: 3px;
+      margin-bottom: 55px;
     }
   }
 
@@ -43,6 +55,11 @@
       row-gap: 39px;
       margin: 0;
     }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      row-gap: 35px;
+    }
   }
 
   li {
@@ -55,6 +72,11 @@
 
     @include vp-1365 {
       column-gap: 13px;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: center;
     }
 
 
@@ -76,6 +98,10 @@
         grid-row: 2/3;
         margin: 1px 20.5% 0;
         padding: 34px 95px 35px;
+      }
+
+      @include vp-767 {
+        grid-row: 3/4;
       }
     }
 
@@ -107,6 +133,10 @@
       @include vp-1365 {
         display: none;
       }
+    }
+
+    &:nth-child(even) p { // нечетные (и не первый)
+      padding: 0 27px;
     }
 
     &:nth-child(odd):not(:first-child) b { // нечетные (и не первый)
@@ -226,6 +256,10 @@
       font-size: 16px;
       line-height: 24px;
     }
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 }
 
@@ -233,6 +267,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @include vp-767 {
+    align-items: center;
+  }
 }
 
 
@@ -245,6 +283,11 @@
   @include vp-1365 {
     row-gap: 12px;
     max-width: none;
+  }
+
+  @include vp-767 {
+    align-items: center;
+    padding: 0 41px;
   }
 }
 /**/
