@@ -59,7 +59,7 @@
     &:first-child + li + li + li + li { // 5й
       padding-top: 58px;
       justify-content: flex-start;
-      gap: 0;
+      gap: 27px;
     }
   }
 
@@ -128,7 +128,6 @@
 }
 
 .features__number-block {
-  width: 108px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -140,6 +139,5 @@
   display: flex;
   flex-direction: column;
   row-gap: 7px;
-
 }
 /**/
