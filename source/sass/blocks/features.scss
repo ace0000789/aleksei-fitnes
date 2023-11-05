@@ -167,6 +167,7 @@
     &:nth-child(odd):not(:first-child):not(.features__item--parking) h3 { //  (li 5)
       @include vp-767 {
         margin-bottom: 11px;
+        padding-right: 1px;
       }
     }
 
@@ -180,6 +181,7 @@
     &:nth-child(even):not(.features__item--surface) h3 { // (li 4)
       @include vp-767 {
         margin-bottom: 5px;
+        padding-right: 1px;
       }
     }
   }
