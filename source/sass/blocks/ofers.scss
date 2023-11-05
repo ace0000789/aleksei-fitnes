@@ -79,6 +79,14 @@
       padding: 10px;
       margin-top: auto;
       width: max-content;
+
+      @include focus {
+        &.focus-visible:focus {
+          opacity: 1;
+          outline: 1px solid $color-default-white;;
+          outline-offset: -1px;
+        }
+      }
     }
 
     a::after {
@@ -90,12 +98,6 @@
       left: 0;
       bottom: 6px;
       background-color: $color-default-white;
-    }
-
-    a:focus {
-      opacity: 1;
-      outline: 1px solid $color-default-white;
-      outline-offset: 1px;
     }
   }
 
@@ -111,6 +113,22 @@
     padding: 10px;
     margin-top: auto;
     width: max-content;
+
+    @include hover {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    @include focus {
+      &.focus-visible:focus {
+        opacity: 1;
+        outline: 1px solid #1c3374;
+        outline-offset: -1px;
+      }
+    }
   }
 
   a::after {
@@ -122,16 +140,6 @@
     left: 0;
     bottom: 5px;
     background-color: #1c3374;
-  }
-
-  a:hover {
-    opacity: 0.8;
-  }
-
-  a:focus {
-    opacity: 1;
-    outline: 1px solid #1c3374;
-    outline-offset: -2px;
   }
 
   a:focus::after {
