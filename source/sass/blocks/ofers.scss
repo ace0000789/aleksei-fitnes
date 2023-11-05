@@ -79,14 +79,12 @@
       padding: 10px;
       margin-top: auto;
       width: max-content;
+    }
 
-      @include focus {
-        &.focus-visible:focus {
-          opacity: 1;
-          outline: 1px solid $color-default-white;;
-          outline-offset: -1px;
-        }
-      }
+    a:focus {
+      opacity: 1;
+      outline: 1px solid $color-default-white;
+      outline-offset: -1px;
     }
 
     a::after {
@@ -113,22 +111,22 @@
     padding: 10px;
     margin-top: auto;
     width: max-content;
+    user-select: none;
+  }
 
-    @include hover {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          opacity: 0.8;
-        }
-      }
-    }
+  a:hover {
+    opacity: 0.8;
+  }
 
-    @include focus {
-      &.focus-visible:focus {
-        opacity: 1;
-        outline: 1px solid #1c3374;
-        outline-offset: -1px;
-      }
-    }
+  a:focus {
+    opacity: 1;
+    outline: 1px solid #1c3374;
+    outline-offset: -1px;
+  }
+
+  a:active {
+    outline: none;
+    opacity: 1;
   }
 
   a::after {
@@ -144,6 +142,10 @@
 
   a:focus::after {
     display: none;
+  }
+
+  a:active::after {
+    display: block;
   }
 
   img {
@@ -165,21 +167,6 @@
 }
 /*
 
-.ofers__link:focus.ofers__link::after {
-  display: none;
-}
-
-.ofers__link:focus {
-  opacity: 1;
-  outline: 1px solid #1c3374;
-  outline-offset: 1px;
-}
-
-.ofers__link--white:focus {
-  opacity: 1;
-  color: $color-default-white;
-  outline-offset: 1px;
-}
 
 .ofers__link:active.ofers__link::after {
   display: block;
