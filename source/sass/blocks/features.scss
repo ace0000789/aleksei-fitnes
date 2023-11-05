@@ -35,21 +35,31 @@
     column-gap: 29px;
 
 
-    &:first-child {
+    &:first-child { //первый
       grid-column: 2/3;
       grid-row: 1/-1;
       background-color: #1c3374;
       color: $color-default-white;
       flex-direction: column;
-      padding: 70px 34px 86px;
+      padding: 70px 34px 79px;
       align-items: center;
       justify-content: flex-start;
       gap: 0;
       margin-top: 4px;
     }
 
-    &:nth-child(odd):not(:first-child) b {
+    &:nth-child(odd):not(:first-child) b { //нечетные (и не первый)
       width: 72px;
+    }
+
+    &:first-child + li + li + li { // 4й
+      padding-top: 58px;
+    }
+
+    &:first-child + li + li + li + li { // 5й
+      padding-top: 58px;
+      justify-content: flex-start;
+      gap: 0;
     }
   }
 
@@ -66,6 +76,7 @@
     margin-bottom: 35px;
     font-size: 26px;
     line-height: 26px;
+    font-weight: 700;
   }
 
   li:first-child p {
@@ -82,8 +93,9 @@
     margin: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 71px;
-    line-height: 71px;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0;
     background-image: linear-gradient(142deg, #d10a42 0%, #0041ca 88.33%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -127,6 +139,7 @@
   max-width: 240px;
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 7px;
+
 }
 /**/
