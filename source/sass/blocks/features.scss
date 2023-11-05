@@ -59,7 +59,7 @@
 
     @include vp-767 {
       grid-template-columns: 1fr;
-      row-gap: 36px;
+      row-gap: 35px;
     }
   }
 
@@ -75,9 +75,9 @@
     }
 
     @include vp-767 {
-      flex-direction: column;
+      grid-template-columns: 1fr;
       align-items: center;
-      row-gap: 9px;
+      gap: 11px;
     }
 
 
