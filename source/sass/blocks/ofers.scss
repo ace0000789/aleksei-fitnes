@@ -165,20 +165,9 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-/*
 
-
-.ofers__link:active.ofers__link::after {
-  display: block;
-}
-
-.ofers__link:active {
-  outline: none;
-  opacity: 1;
-}
-*/
 /* for disabled add class ofers__link--disabled */
-/*
+
 .ofers__link.ofers__link--disabled {
   opacity: 0.3;
   cursor: default;
@@ -195,21 +184,6 @@
 
 .ofers__link--disabled:focus.ofers__link::after {
   display: block;
-}
-
-*/
-.ofers__promo-image {
-
-/*
-  @media (min-width: $tablet-width) {
-    width: 399px;
-    height: 462px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 280px;
-    height: 462px;
-  }*/
 }
 
 .ofers__discount {
