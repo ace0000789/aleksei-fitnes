@@ -40,7 +40,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto auto;
       column-gap: 50px;
-      row-gap: 40px;
+      row-gap: 39px;
       margin: 0;
     }
   }
@@ -74,7 +74,7 @@
       @include vp-1365 {
         grid-column: 1/-1;
         grid-row: 2/3;
-        margin: 0 20.5%;
+        margin: 1px 20.5% 0;
         padding: 34px 95px 35px;
       }
     }
@@ -121,12 +121,22 @@
 
     &:first-child + li + li + li { // 4й
       padding-top: 58px;
+
+      @include vp-1365 {
+        padding-top: 0;
+        gap: 14px;
+      }
     }
 
     &:first-child + li + li + li + li { // 5й
       padding-top: 58px;
       justify-content: flex-start;
       gap: 27px;
+
+      @include vp-1365 {
+        padding-top: 0;
+        gap: 12px;
+      }
     }
   }
 
@@ -181,7 +191,7 @@
     width: 108px;
 
     @include vp-1365 {
-    padding-top: 1px;
+      padding-top: 1px;
     }
   }
 
