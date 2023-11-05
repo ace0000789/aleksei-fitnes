@@ -58,7 +58,7 @@
 
     @include vp-767 {
       grid-template-columns: 1fr;
-      row-gap: 35px;
+      row-gap: 36px;
     }
   }
 
@@ -77,6 +77,7 @@
     @include vp-767 {
       flex-direction: column;
       align-items: center;
+      row-gap: 9px;
     }
 
 
@@ -102,6 +103,8 @@
 
       @include vp-767 {
         grid-row: 3/4;
+        margin: 1px 0;
+        padding: 31px 74px 40px;
       }
     }
 
@@ -135,30 +138,56 @@
       }
     }
 
-    &:nth-child(even) p { // нечетные (и не первый)
-      padding: 0 27px;
+    &:nth-child(even) p { // четьные
+      @include vp-767 {
+        padding: 0 36px;
+      }
     }
 
-    &:nth-child(odd):not(:first-child) b { // нечетные (и не первый)
+    &:nth-child(odd):not(:first-child) b { // нечетные (и не первый) 2 и 4
       width: 72px;
+
+      @include vp-767 {
+        margin-right: 3px;
+      }
     }
 
-    &:first-child + li + li { // 3й
+
+
+
+    &:nth-child(odd):not(:first-child):not(:last-child) h3 { // нечетные (и не первый не последний) (3)
+      @include vp-767 {
+        margin-bottom: 6px;
+      }
+    }
+
+    &:first-child + li + li { // 3й li
       @include vp-1365 {
         column-gap: 14px;
       }
     }
 
-    &:first-child + li + li + li { // 4й
+    &:first-child + li + li + li { // 4й li
       padding-top: 58px;
 
       @include vp-1365 {
         padding-top: 0;
         gap: 14px;
       }
+
+      @include vp-767 {
+        margin-top: 4px;
+        padding-top: 0;
+        gap: 10px;
+        padding-right: 1px;
+
+        h3 {
+          margin-bottom: 5px;
+        }
+      }
     }
 
-    &:first-child + li + li + li + li { // 5й
+    &:first-child + li + li + li + li { // 5й  li
       padding-top: 58px;
       justify-content: flex-start;
       gap: 27px;
@@ -182,6 +211,11 @@
       padding-left: 3px;
       margin-bottom: 24px;
     }
+
+    @include vp-767 {
+      margin-bottom: 5px;
+      padding-left: 8px;
+    }
   }
 
   li:first-child h3 {
@@ -195,6 +229,12 @@
       line-height: 24px;
       margin-bottom: 25px;
     }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 19px;
+    }
   }
 
   li:first-child p {
@@ -203,6 +243,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 300;
+    }
   }
 
   b {
@@ -223,12 +269,23 @@
     @include vp-1365 {
       padding-top: 1px;
     }
+
+    @include vp-767 {
+      font-size: 64px;
+      line-height: 63px;
+      padding-top: 0;
+      padding-left: 7px;
+    }
   }
 
   span {
     font-size: 14px;
     line-height: 22px;
     color: #2e35ac;
+
+    @include vp-767 {
+      padding-left: 3px;
+    }
   }
 
   h3 {
@@ -242,6 +299,12 @@
     @include vp-1365 {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 12px;
     }
   }
 
@@ -259,6 +322,8 @@
 
     @include vp-767 {
       text-align: center;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 }
@@ -270,6 +335,7 @@
 
   @include vp-767 {
     align-items: center;
+    row-gap: 0;
   }
 }
 
@@ -288,6 +354,10 @@
   @include vp-767 {
     align-items: center;
     padding: 0 41px;
+    margin-left: 4px;
+    row-gap: 0;
   }
 }
+
+
 /**/
