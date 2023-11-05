@@ -142,11 +142,9 @@
     &:nth-child(odd):not(:first-child){ // нечетные и не первый (3 и 5)
      column-gap: 30px;
 
-    @include vp-1365 {
-      column-gap: 15px;
-    }
-
-
+      @include vp-1365 {
+        column-gap: 15px;
+      }
     }
 /*
     &:nth-child(even) p { // четные (2 и 4)
