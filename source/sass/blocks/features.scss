@@ -46,6 +46,7 @@
     grid-template-columns: 32.7% 23.08% 32.7%;
     grid-template-rows: 1fr 1fr;
     column-gap: 5.76%;
+    row-gap: 115px;
     list-style-type: none;
 
     @include vp-1365 {
@@ -65,10 +66,9 @@
   li {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    column-gap: 29px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 31px;
 
     @include vp-1365 {
       column-gap: 13px;
@@ -88,6 +88,7 @@
       color: $color-default-white;
       flex-direction: column;
       padding: 70px 34px 79px;
+      display: flex;
       align-items: center;
       justify-content: flex-start;
       gap: 0;
@@ -137,7 +138,7 @@
         display: none;
       }
     }
-
+/*
     &:nth-child(even) p { // четные (2 и 4)
       @include vp-767 {
         padding: 0 36px;
@@ -191,7 +192,7 @@
         padding-top: 0;
         gap: 12px;
       }
-    }
+    }*/
   }
 
   li:first-child b {
@@ -259,7 +260,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     word-break: break-all;
-    width: 108px;
 
     @include vp-1365 {
       padding-top: 1px;
