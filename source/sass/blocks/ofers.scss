@@ -32,6 +32,7 @@
     font-size: 70px;
     line-height: 70px;
     margin-top: 5px;
+    word-break: break-all;
   }
 
   p {
@@ -78,7 +79,7 @@
       text-decoration: 0;
       padding: 10px;
       margin-top: auto;
-      width: max-content;
+      word-break: break-all;
     }
 
     a:focus {
@@ -110,8 +111,8 @@
     text-decoration: 0;
     padding: 10px;
     margin-top: auto;
-    width: max-content;
     user-select: none;
+    width: fit-content;
   }
 
   a:hover {
@@ -150,6 +151,8 @@
 
   img {
     vertical-align: bottom;
+    object-fit: cover;
+    height: 100%;
   }
 }
 
@@ -161,9 +164,9 @@
 }
 
 .ofers__promo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
 }
 
 /* for disabled add class ofers__link--disabled */
@@ -187,6 +190,7 @@
 }
 
 .ofers__discount {
+  max-width: 560px;
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr;
@@ -202,5 +206,4 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: left;
 }
