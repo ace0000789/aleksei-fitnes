@@ -138,13 +138,13 @@
       }
     }
 
-    &:nth-child(even) p { // четьные
+    &:nth-child(even) p { // четные (2 и 4)
       @include vp-767 {
         padding: 0 36px;
       }
     }
 
-    &:nth-child(odd):not(:first-child) b { // нечетные (и не первый) 2 и 4
+    &:nth-child(odd):not(:first-child) b { // нечетные и не первый (3 и 5)
       width: 72px;
 
       @include vp-767 {
@@ -152,22 +152,17 @@
       }
     }
 
+    &--parking { // 3й li
+      @include vp-1365 {
+        column-gap: 14px;
+      }
 
-
-
-    &:nth-child(odd):not(:first-child):not(:last-child) h3 { // нечетные (и не первый не последний) (3)
       @include vp-767 {
         margin-bottom: 6px;
       }
     }
 
-    &:first-child + li + li { // 3й li
-      @include vp-1365 {
-        column-gap: 14px;
-      }
-    }
-
-    &:first-child + li + li + li { // 4й li
+    &--comfort { // 4й li
       padding-top: 58px;
 
       @include vp-1365 {
@@ -187,7 +182,7 @@
       }
     }
 
-    &:first-child + li + li + li + li { // 5й  li
+    &-skill { // 5й  li
       padding-top: 58px;
       justify-content: flex-start;
       gap: 27px;
