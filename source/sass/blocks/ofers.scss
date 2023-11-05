@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 71px 0 70px;
   }
 
   h2 {
@@ -27,6 +27,14 @@
       letter-spacing: 1.26px;
       margin-bottom: 39px;
     }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin-bottom: 41px;
+      padding-left: 1px;
+    }
   }
 
   h3 {
@@ -41,6 +49,14 @@
     @include vp-1365 {
       font-size: 24px;
       line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      padding-left: 0;
+      padding-right: 1px;
+      margin-bottom: 9px;
     }
   }
 
@@ -57,6 +73,12 @@
     @include vp-1365 {
       margin-bottom: 20px;
     }
+
+    @include vp-767 {
+      font-size: 64px;
+      line-height: 64px;
+      margin-bottom: 19px;
+    }
   }
 
   p {
@@ -69,6 +91,13 @@
 
     @include vp-1365 {
       margin-bottom: 35px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 21px;
+      padding-left: 0;
     }
   }
 
@@ -88,21 +117,43 @@
       padding: 45px 45px 39px 35px;
     }
 
+    @include vp-767 {
+      padding: 46px 15px 40px;
+      text-align: center;
+    }
+
+
     h3 {
       padding-left: 10px;
 
       @include vp-1365 {
         margin-bottom: 0;
       }
+
+      @include vp-767 {
+        padding-left: 0;
+        margin-bottom: 4px;
+      }
     }
 
     b {
       padding-left: 10px;
+
+      @include vp-767 {
+        padding-left: 0;
+      }
     }
 
     p {
       padding-left: 10px;
       font-size: 18px;
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 0;
+        margin-bottom: 26px;
+      }
     }
 
     a {
@@ -150,6 +201,10 @@
     margin-top: auto;
     user-select: none;
     width: fit-content;
+
+    @include vp-767 {
+      margin: 0 auto;
+    }
   }
 
   a:hover {
@@ -195,6 +250,11 @@
       width: 100%;
       min-height: 462px;
     }
+
+    @include vp-767 {
+      width: 100%;
+      min-height: 330px;
+    }
   }
 }
 
@@ -209,6 +269,10 @@
     grid-template-rows: auto auto;
     gap: 30px;
   }
+
+  @include vp-767 {
+    gap: 40px;
+  }
 }
 
 .ofers__promo {
@@ -218,6 +282,10 @@
 
   @include vp-1365 {
     grid-template-columns: 41.15% 58.85%;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -252,6 +320,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 .ofers__discount-item {
@@ -264,4 +337,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @include vp-767 {
+    padding: 39px 44px 28px;
+    text-align: center;
+  }
 }
