@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 70px;
+    padding: 71px 0 70px;
   }
 
   h2 {
@@ -33,7 +33,7 @@
       font-size: 32px;
       line-height: 32px;
       letter-spacing: 0.96px;
-      margin-bottom: 37px;
+      margin-bottom: 36px;
     }
   }
 
@@ -50,6 +50,14 @@
     @include vp-1365 {
       min-width: 162px;
       width: 100%;
+    }
+
+    @include vp-1365 {
+      min-width: 141px;
+      width: 100%;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 15px 0 11px;
     }
 
     @include hover-focus {
@@ -110,6 +118,12 @@
         line-height: 22px;
         padding-top: 1px;
       }
+
+      @include vp-767 {
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 240px;
+      }
     }
 
     p {
@@ -124,6 +138,12 @@
       @include vp-1365 {
         max-width: 550px;
       }
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 273px;
+      }
     }
 
     button {
@@ -136,6 +156,12 @@
 
       @include vp-1365 {
         min-width: 40px;
+      }
+
+      @include vp-1365 {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
       }
       // +
       &::after {
@@ -208,7 +234,7 @@
   }
 
   @include vp-767 {
-    gap: 30px;
+    gap: 29px;
   }
 }
 
@@ -238,7 +264,7 @@
   border: none;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
   color: $color-default-white;
-  padding: 20px 0 16px;
+  padding: 16px 0 12px;
 }
 
 .faq__info-wrapper {
@@ -246,11 +272,19 @@
   grid-template-columns: auto 40px;
   gap: auto;
   align-items: center;
+
+  @include vp-767 {
+  grid-template-columns: auto 30px;
+  }
 }
 
 .faq__info-wrapper--treners {
   @include vp-1365 {
     gap: 220px
+  }
+
+  @include vp-767 {
+    gap: 0;
   }
 }
 
