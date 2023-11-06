@@ -2,6 +2,10 @@
   background-color: $color-default-gray;
   padding: 120px 0;
 
+  @include vp-1365 {
+    padding: 101px 0 100px;
+  }
+
   h2 {
     margin: 0;
     padding: 0;
@@ -12,6 +16,14 @@
     line-height: 54px;
     letter-spacing: 1.62px;
     margin-bottom: 50px;
+
+    @include vp-1365 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 1.26px;
+      margin-bottom: 49px;
+      text-align: center;
+    }
   }
 
   button {
@@ -23,6 +35,11 @@
     padding: 19px 0 15px;
     font-size: 18px;
     line-height: 18px;
+
+    @include vp-1365 {
+      min-width: 162px;
+      width: 100%;
+    }
 
     @include hover-focus {
       @media (hover: hover) {
@@ -72,6 +89,11 @@
       font-size: 24px;
       font-weight: 400;
       line-height: 24px;
+
+      @include vp-1365 {
+        font-size: 22px;
+        line-height: 22px
+      }
     }
 
     p {
@@ -82,6 +104,10 @@
       line-height: 24px;
       max-width: 660px;
       margin-top: 0;
+
+      @include vp-1365 {
+        max-width: 550px;
+      }
     }
 
     button {
@@ -91,6 +117,10 @@
       border: 1px solid $color-default-blue;
       background-color: $color-default-gray;
       position: relative;
+
+      @include vp-1365 {
+        min-width: 40px;
+      }
       // +
       &::after {
         position: absolute;
@@ -154,6 +184,12 @@
   display: grid;
   grid-template-columns: 260px 860px;
   gap: 40px;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 39px;
+  }
 }
 
 .faq__button-list {
@@ -163,6 +199,13 @@
   width: 260px;
   align-self: start;
   margin-top: 1px;
+
+  @include vp-1365 {
+    grid-template-columns: repeat(4, 1fr);
+    align-self: auto;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .faq button.is-active:not(:disabled) {
@@ -177,6 +220,12 @@
   grid-template-columns: auto 40px;
   gap: auto;
   align-items: center;
+}
+
+.faq__info-wrapper--treners {
+  @include vp-1365 {
+    gap: 220px
+  }
 }
 
 .faq__info-item.is-active p {
