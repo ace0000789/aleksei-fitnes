@@ -81,6 +81,10 @@
       margin: 0;
       padding: 25px 0 24px;
       border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+
+      @include vp-1365 {
+        padding: 25px 0 24px;
+      }
     }
 
     h3 {
@@ -92,7 +96,8 @@
 
       @include vp-1365 {
         font-size: 22px;
-        line-height: 22px
+        line-height: 22px;
+        padding-top: 1px;
       }
     }
 
@@ -230,6 +235,10 @@
 
 .faq__info-item.is-active p {
   margin-top: 4px;
+
+  @include vp-1365 {
+  margin-top: 2px;
+  }
 }
 
 // button +/-
