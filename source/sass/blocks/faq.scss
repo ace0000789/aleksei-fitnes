@@ -278,13 +278,13 @@
   align-items: center;
 
   @include vp-767 {
-  grid-template-columns: auto 30px;
+    grid-template-columns: auto 30px;
   }
 }
 
 .faq__info-wrapper--treners {
   @include vp-1365 {
-    gap: 220px
+    gap: 220px;
   }
 
   @include vp-767 {
@@ -296,7 +296,7 @@
   margin-top: 4px;
 
   @include vp-1365 {
-  margin-top: 2px;
+    margin-top: 2px;
   }
 }
 
