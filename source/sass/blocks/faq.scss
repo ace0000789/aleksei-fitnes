@@ -17,7 +17,7 @@
   button {
     width: 260px;
     text-align: center;
-    border: 1px solid rgba(16, 38, 84, 0.20);
+    border: 1px solid rgba(16, 38, 84, 0.2);
     background-color: $color-default-gray;
     color: $color-default-blue;
     padding: 18px 0;
@@ -29,13 +29,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid rgba(28, 51, 116, 0.20);
+    border-top: 1px solid rgba(28, 51, 116, 0.2);
     width: 100%;
 
     li {
       margin: 0;
       padding: 25px 0 24px;
-      border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+      border-bottom: 1px solid rgba(28, 51, 116, 0.2);
     }
 
     h3 {
@@ -63,9 +63,6 @@
       border: 1px solid $color-default-blue;
       background-color: $color-default-gray;
       position: relative;
-      display: block;
-      width: 100%;
-      
       // +
       &::after {
         position: absolute;
@@ -152,7 +149,7 @@
 
 // button +/-
 .faq__info-item.is-active button {
-  background-color:  $color-default-blue;
+  background-color: $color-default-blue;
 }
 
 .faq__info-item.is-active button::after {
@@ -162,9 +159,5 @@
 .faq__info-item.is-active button::before {
   background-color: $color-default-white;
 }
-
-
-
-
 
 /**/
