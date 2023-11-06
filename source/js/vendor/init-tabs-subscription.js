@@ -1,4 +1,4 @@
-export function initTabs() {
+export function initTabsSubscription() {
   const buttonsPeriod = document.querySelectorAll('[data-validate="period-tab"]');
   const prices = document.querySelectorAll('[data-validate="price"]');
   const fadedPrices = document.querySelectorAll('[data-validate="shadow"]');
@@ -14,7 +14,7 @@ export function initTabs() {
     [60000, 20400, 32400]
   ];
 
-  buttonsPeriod[0].classList.add('is-active');
+  buttonsPeriod[0].classList.add('is-active-subscription');
     buttonsPeriod.forEach((button, index) => {
       button.addEventListener('click', function () {
 
@@ -27,10 +27,10 @@ export function initTabs() {
         });
 
         buttonsPeriod.forEach((btn) => {
-          btn.classList.remove('is-active');
+          btn.classList.remove('is-active-subscription');
         });
 
-        button.classList.add('is-active');
+        button.classList.add('is-active-subscription');
       });
     });
 }

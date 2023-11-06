@@ -150,11 +150,11 @@
   display: none;
 }
 
-.is-active {
+.is-active-subscription {
   color: #102654;
 }
 
-.is-active::after {
+.is-active-subscription::after {
   content: "";
   position: absolute;
   width: 100%;
