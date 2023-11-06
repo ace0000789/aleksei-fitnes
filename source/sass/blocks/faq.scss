@@ -20,7 +20,7 @@
     border: 1px solid rgba(16, 38, 84, 0.2);
     background-color: $color-default-gray;
     color: $color-default-blue;
-    padding: 18px 0;
+    padding: 19px 0 15px;
     font-size: 18px;
     line-height: 18px;
 
@@ -42,13 +42,13 @@
       outline: none;
     }
 
-    &:focus{
+    &:focus {
       border: 1px solid $color-default-blue;
       outline: none;
     }
 
     &:disabled {
-      border: 1px solid rgba(16, 38, 84, 0.20);
+      border: 1px solid rgba(16, 38, 84, 0.2);
       color: #c8c9cc;
     }
   }
@@ -162,12 +162,14 @@
   gap: 10px;
   width: 260px;
   align-self: start;
+  margin-top: 1px;
 }
 
 .faq button.is-active:not(:disabled) {
   border: none;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
   color: $color-default-white;
+  padding: 20px 0 16px;
 }
 
 .faq__info-wrapper {
@@ -193,5 +195,3 @@
 .faq__info-item.is-active button::before {
   background-color: $color-default-white;
 }
-
-/**/
