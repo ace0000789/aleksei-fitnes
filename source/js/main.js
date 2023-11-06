@@ -4,6 +4,7 @@ import {initVideo} from './vendor/init-video';
 import {initTabsSubscription} from './vendor/init-tabs-subscription';
 import {initSlider} from './vendor/init-slider';
 import {initAccordions} from './vendor/init-accordion';
+import {initTabs} from './vendor/init-tabs';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabsSubscription();
   initSlider();
   initAccordions();
+  initTabs();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
