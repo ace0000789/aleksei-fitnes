@@ -23,6 +23,34 @@
     padding: 18px 0;
     font-size: 18px;
     line-height: 18px;
+
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          outline: none;
+        }
+      }
+
+      &.focus-visible:focus,
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $color-default-blue;
+      outline: none;
+    }
+
+    &:focus{
+      border: 1px solid $color-default-blue;
+      outline: none;
+    }
+
+    &:disabled {
+      border: 1px solid rgba(16, 38, 84, 0.20);
+      color: #c8c9cc;
+    }
   }
 
   ul {
@@ -134,6 +162,12 @@
   gap: 10px;
   width: 260px;
   align-self: start;
+}
+
+.faq button.is-active:not(:disabled) {
+  border: none;
+  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  color: $color-default-white;
 }
 
 .faq__info-wrapper {
