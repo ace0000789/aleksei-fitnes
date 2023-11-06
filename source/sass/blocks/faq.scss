@@ -18,6 +18,8 @@
     background-color: $color-default-gray;
     color: $color-default-blue;
     padding: 18px 0;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   ul {
@@ -25,6 +27,7 @@
     margin: 0;
     padding: 0;
     border-top: 1px solid rgba(28, 51, 116, 0.20);
+    width: 100%;
 
     li {
       margin: 0;
@@ -46,6 +49,7 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 24px;
+      max-width: 660px;
     }
 
     button {
@@ -54,6 +58,62 @@
       border-radius: 50%;
       border: 1px solid $color-default-blue;
       background-color: $color-default-gray;
+      position: relative;
+      // +
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 1px;
+        background-color: $color-default-blue;
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+      // -
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 1px;
+        background-color: $color-default-blue;
+        transform: translate(-50%, -50%);
+      }
+
+      @include hover-focus {
+        @media (hover: hover) {
+          &:hover:not(.focus-visible) {
+            outline: none;
+          }
+        }
+
+        &.focus-visible:focus,
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $color-default-blue;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        background-color: $color-default-white;
+      }
+
+      &:hover::before,
+      &:focus::before {
+        background-color: $color-default-white;
+      }
+
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -71,18 +131,30 @@
   width: 260px;
   align-self: start;
 }
-/*
-.is-active {
-  color: $color-default-white;
-  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
-  border: none;
-}*/
 
 .faq__info-wrapper {
   display: grid;
   grid-template-columns: auto 40px;
   gap: auto;
 }
+
+// button +/-
+.faq__info-item.is-active button {
+  background-color:  $color-default-blue;
+}
+
+.faq__info-item.is-active button::after {
+  display: none;
+}
+
+.faq__info-item.is-active button::before {
+  background-color: $color-default-white;
+}
+
+
+
+
+
 
 
 /**/
