@@ -50,6 +50,7 @@
 
     button {
       width: 40px;
+      height: 40px;
       border-radius: 50%;
       border: 1px solid $color-default-blue;
       background-color: $color-default-gray;
@@ -80,7 +81,7 @@
 .faq__info-wrapper {
   display: grid;
   grid-template-columns: auto 40px;
-  gap: 160px;
+  gap: auto;
 }
 
 
