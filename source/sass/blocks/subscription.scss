@@ -150,12 +150,11 @@
   display: none;
 }
 
-.subscription.is-active {
+.is-active {
   color: #102654;
-  background: none;
 }
 
-.subscription.is-active::after {
+.is-active::after {
   content: "";
   position: absolute;
   width: 100%;
