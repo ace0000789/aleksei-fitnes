@@ -483,25 +483,27 @@
     <section class="faq">
       <div class="container">
         <h2 class="faq__title">Вопросы и ответы</h2>
-        <div class="faq__wrapper">
 
-          <div class="faq__button-list">
+
+        <div class="faq__wrapper" data-tabs="parent">
+
+          <div class="faq__button-list" data-tabs="controls">
             <div class="faq__button-item">
-              <button class="faq__button is-active" type="button" data-validate="faq-tab">Центр</button>
+              <button class="faq__button is-active" type="button" data-tabs="control">Центр</button>
             </div>
             <div class="faq__button-item">
-              <button class="faq__button" type="button" data-validate="faq-tab">Абонемент</button>
+              <button class="faq__button" type="button" data-tabs="control">Абонемент</button>
             </div>
             <div class="faq__button-item">
-              <button class="faq__button" type="button" data-validate="faq-tab">Услуги</button>
+              <button class="faq__button" type="button" data-tabs="control">Услуги</button>
             </div>
             <div class="faq__button-item">
-              <button class="faq__button" type="button" data-validate="faq-tab">Правила</button>
+              <button class="faq__button" type="button" data-tabs="control">Правила</button>
             </div>
           </div>
 
-          <div class="faq__info">
-            <ul class="faq__info-list" data-accordion="parent">
+          <div class="faq__info" data-tabs="content">
+            <ul class="faq__info-list" data-tabs="element" data-accordion="parent">
               <li class="faq__info-item" data-accordion="element">
                 <div class="faq__info-wrapper">
                   <h3 class="faq__info-title">Как стать членом фитнес-центра?</h3>
@@ -534,6 +536,27 @@
                 </div>
                 <p class="faq__info-text" data-accordion="content">У нас работает 12 опытных тренеров с высшим профильным образованием. </p>
               </li>
+            </ul>
+
+            <ul class="faq__info-list" data-tabs="element" data-accordion="parent">
+              <li class="faq__info-item" data-accordion="element">
+                <div class="faq__info-wrapper">
+                  <h3 class="faq__info-title">Как стать членом фитнес-центра?</h3>
+                  <button class="faq__info-button" type="button" data-accordion="button"></button>
+                </div>
+                <p class="faq__info-text" data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить анкету и
+                  подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет
+                  вам на почту.</p>
+              </li>
+              <li class="faq__info-item" data-accordion="element">
+                <div class="faq__info-wrapper">
+                  <h3 class="faq__info-title">Где можно посмотреть расписание?</h3>
+                  <button class="faq__info-button" type="button" data-accordion="button"></button>
+                </div>
+                <p class="faq__info-text" data-accordion="content">Расписание занятий вы можете посмотреть на нашем сайте в разделе
+                  "Расписание". Также оно размещено на информационном стенде в холле фитнес-центра.</p>
+              </li>
+        
             </ul>
           </div>
 
