@@ -179,8 +179,8 @@
   align-items: center;
 }
 
-.faq__info-item.is-active :first-child {
-  margin-bottom: 4px;
+.faq__info-item.is-active p {
+  margin-top: 4px;
 }
 
 // button +/-
