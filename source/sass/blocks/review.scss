@@ -1,0 +1,44 @@
+.review {
+  padding: 120px 0;
+
+  h2 {
+    font-family: $second-font;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.62px;
+    text-align: center;
+  }
+
+  p {
+    width: 330px;
+  }
+}
+
+.review .swiper-container {
+  overflow: hidden;
+  height: auto;
+  background-color: #1c3374;
+  color: $color-default-white;
+  width: 48.15%;
+  margin: 0 auto;
+}
+
+
+.review .swiper-wrapper {
+  width: 100%;
+  padding: 60px;
+}
+
+.review .swiper-slide {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.review__info {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 30px;
+
+}
+/**/
