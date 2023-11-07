@@ -147,8 +147,8 @@
   }
 }
 
-.review .swiper-button-next:hover,
-.review .swiper-button-prev:hover,
+.review .swiper-button-next:hover:not(.swiper-button-disabled),
+.review .swiper-button-prev:hover:not(.swiper-button-disabled),
 .review .swiper-button-prev:focus:not(.swiper-button-disabled),
 .review .swiper-button-next:focus:not(.swiper-button-disabled){
   border-radius: 50%;
