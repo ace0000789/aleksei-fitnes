@@ -1,6 +1,6 @@
 .subscription {
   background-color: $color-default-gray;
-  padding-top: 120px;
+  padding-top: 126px;
   padding-bottom: 120px;
   letter-spacing: 1.62px;
   position: relative;
@@ -27,7 +27,7 @@
   letter-spacing: 1.62px;
   text-align: center;
   color: $color-default-blue;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 
   @include vp-1365 {
     font-size: 42px;
@@ -415,7 +415,6 @@
 }
 
 .subscription__price-wrapper svg {
-  margin-bottom: 2px;
   z-index: 2;
 
   @include vp-767 {
