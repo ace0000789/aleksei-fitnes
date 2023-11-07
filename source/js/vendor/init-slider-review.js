@@ -43,9 +43,6 @@ function initSliderReview() {
           allowTouchMove: false,
         },
         768: {
-          slidesPerView: 1,
-          spaceBetween: 32,
-          initialSlide: 2,
           allowTouchMove: true,
         },
 
