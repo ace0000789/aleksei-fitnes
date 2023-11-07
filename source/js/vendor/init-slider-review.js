@@ -23,7 +23,7 @@ function initSliderReview() {
       },
 
       //Автовысота картинки
-      autoHeight: true,
+      autoHeight: false,
       //Бесконечный слайдер
       loop: false,
       //Количнство дублирущих слайдов
@@ -50,7 +50,7 @@ function initSliderReview() {
           slidesPerView: 1,
           spaceBetween: 40,
           spaceBetween: 0,
-          initialSlide: 2,
+          initialSlide: 0,
         },
       }
     });

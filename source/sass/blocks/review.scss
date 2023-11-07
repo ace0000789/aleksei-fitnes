@@ -30,6 +30,13 @@
     height: 80px;
     border-radius: 50%;
     mask-image: radial-gradient(circle, white 100%, transparent 0);
+
+    @include vp-767 {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto;
+    }
+
   }
 
   h3 {
@@ -45,6 +52,13 @@
       line-height: 20px;
       margin-bottom: 13px;
     }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
   }
 
   p {
@@ -55,9 +69,16 @@
     font-weight: 300;
     line-height: 24px;
 
-  @include vp-1365 {
-    width: calc(100% - 10px);
-  }
+    @include vp-1365 {
+      width: calc(100% - 10px);
+    }
+
+    @include vp-767 {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -74,6 +95,10 @@
   @include vp-1365 {
     width: 85.6%;
     min-height: 249px;
+  }
+
+  @include vp-767 {
+    width: 77.9%;
   }
 }
 
@@ -94,12 +119,23 @@
     min-height: 249px;
     padding: 60px 65px 60px 65px;
   }
+
+  @include vp-767 {
+    padding: 30px 25px;
+    min-height: 328px;
+  }
 }
 
 .review__info {
   display: grid;
   grid-template-columns: 80px auto;
   gap: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-template-rows: 68px auto;
+    gap: 10px;
+  }
 }
 
 /* стрелки */
