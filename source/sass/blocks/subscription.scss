@@ -215,7 +215,7 @@
       padding: 52px 42px 50px;
     }
   }
-/*
+
   &--day {
     border: 7px solid;
     border-image-slice: 1;
@@ -234,9 +234,9 @@
     @include vp-767 {
       padding: 45px 35px 43px;
     }
-  }*/
+  }
 }
-/*
+
 .subscription__plan-item--day .subscription__plan-button {
   color: #ffffff;
   border: none;
@@ -260,7 +260,7 @@
     padding: 20px 42px;
   }
 }
-*/
+
 .subscription__plan-item:focus-within,
 .subscription__plan-item:hover {
   border: 7px solid;
@@ -268,6 +268,7 @@
   border-width: 7px;
   border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
   padding: 60px 70px 58px;
+  outline: none;
 
   @include vp-767 {
     padding: 45px 35px 43px;
