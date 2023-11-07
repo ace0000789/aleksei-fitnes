@@ -4,7 +4,7 @@ function initSliderReview() {
     //Стрелки
       navigation: {
         nextEl: '[data-validate="button-next-review"]',
-        prevEl: '[data-validate="button-prev-review]',
+        prevEl: '[data-validate="button-prev-review"]',
       },
 
       //перетаскивание на ПК
@@ -27,7 +27,7 @@ function initSliderReview() {
       //Автовысота картинки
       autoHeight: true,
       //Бесконечный слайдер
-      loop: true,
+      loop: false,
       //Количнство дублирущих слайдов
       loopedSlides: 0,
       // Свободный режим (перетаскивание по 1 фрагменту)
@@ -41,11 +41,11 @@ function initSliderReview() {
           slidesPerView: 1,
           slidesPerGroup: 1,
           centeredSlides: false,
-          spaceBetween: 40,
+          spaceBetween: 60,
           allowTouchMove: false,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 32,
           initialSlide: 2,
           allowTouchMove: true,
