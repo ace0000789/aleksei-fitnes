@@ -7,8 +7,6 @@ function initSliderReview() {
         prevEl: '[data-validate="button-prev-review"]',
       },
 
-      //перетаскивание на ПК
-      simulateTouch: true,
       //чувствительность свайпа
       touchRatio: 1,
       //угол срабатывания свайпа
