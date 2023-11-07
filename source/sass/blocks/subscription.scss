@@ -189,7 +189,11 @@
 
 .subscription__plan-item {
   background-color: $color-default-white;
-  padding: 67px 77px 65px;
+  border: 7px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(to right bottom, transparent, transparent);
+  padding: 60px 70px 58px;
   max-width: 360px;
   display: flex;
   flex-direction: column;
