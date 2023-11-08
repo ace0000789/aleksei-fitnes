@@ -5,7 +5,7 @@ import {initTabsSubscription} from './vendor/init-tabs-subscription';
 import {initSlider} from './vendor/init-slider';
 import {initAccordions} from './vendor/init-accordion';
 import {initTabsFaq} from './vendor/init-tabs';
-import {initButtonAccordion} from './vendor/init-button-accordion';
+import {initButtonAccordion} from './vendor/init-click-element-accordion';
 import {initSliderReview} from './vendor/init-slider-review';
 
 // ---------------------------------
