@@ -201,7 +201,7 @@
   }
 
   @include active {
-    &:active:not(.focus-visible) {
+    &:active:not(.focus-visible):not(:disabled) {
       border: 2px solid $color-default-blue;
     }
   }
@@ -285,7 +285,8 @@
   }
 }
 
-.about-us__video-button:disabled {
+.about-us__video-button:disabled,
+.about-us__video-button:disabled:hover {
   border: 2px solid rgba(16, 38, 84, 0.4);
   cursor: default;
   box-shadow: none;
