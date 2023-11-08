@@ -41,7 +41,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    mask-image: radial-gradient(circle, #ffffff 100%, transparent 0);
+    mask-image: radial-gradient(circle, $color-default-white 100%, transparent 0);
 
     @include vp-767 {
       width: 68px;
