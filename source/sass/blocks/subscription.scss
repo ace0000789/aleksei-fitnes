@@ -183,7 +183,7 @@
   }
 
   @include vp-767 {
-    max-width: 100%;
+    width: 100%;
     gap: 35px;
   }
 }
@@ -213,81 +213,36 @@
   }
 
   &--day {
-    border: 7px solid;
-    border-image-slice: 1;
-    border-width: 7px;
     border-image-source: $border-gradient;
-    padding: 60px 70px 58px;
-
-    @include vp-767 {
-      padding: 45px 20px 42px;
-    }
-  }
-}
-
-.subscription__plan-item--day .subscription__plan-button {
-  color: $color-default-white;
-  background: $red-to-blue;
-  border: 2px solid transparent;
-  border-image-slice: 1;
-  border-image-source: $red-to-blue;
-  padding: 25px 42px;
-  outline: none;
-  text-align: center;
-
-  @include vp-1365 {
-    padding: 20px 42px;
-  }
-}
-
-.subscription__plan-item--day .subscription__plan-button.btn--black-disabled {
-  background: transparent;
-  color: $color-default-blue;
-  outline: none;
-  padding: 25px 42px;
-  border: 2px solid $color-default-blue;
-
-  @include vp-1365 {
-    padding: 20px 42px;
   }
 }
 
 .subscription__plan-item:focus-within,
 .subscription__plan-item:hover {
-  border: 7px solid;
-  border-image-slice: 1;
   border-image-source: $border-gradient;
-  padding: 60px 70px 58px;
   outline: none;
-
-  @include vp-767 {
-    padding: 45px 20px 42px;
-  }
 }
 
-.subscription__plan-item:focus-within .subscription__plan-button:not(.btn--black-disabled) {
-  color: $color-default-white;
-  background: $red-to-blue;
-  border: 2px solid transparent;
-  border-image-slice: 1;
-  border-image-source: $red-to-blue;
-  padding: 25px 42px;
-  outline: none;
-  text-align: center;
-  outline: none;
+.subscription__plan-button {
+  margin-left: 1px;
+  padding: 25px 40px 25px 40px;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  width: 205px;
+  z-index: 2;
+  text-transform: uppercase;
+  border: 2px solid $color-default-blue;
   text-align: center;
 
   @include vp-1365 {
-    padding: 20px;
+    padding: 20px 42px;
   }
 }
 
-.subscription__plan-item:focus-within .btn--black-disabled {
-  background: $color-default-white;
-  border: 2px solid $color-default-blue;
-}
-
-.subscription__plan-item:hover .subscription__plan-button:not(.btn--black-disabled) {
+.subscription__plan-item:hover .subscription__plan-button,
+.subscription__plan-item:focus-within .subscription__plan-button {
   color: $color-default-white;
   background: $red-to-blue;
   border: 2px solid transparent;
@@ -303,10 +258,17 @@
 
   @include vp-1365 {
     padding: 20px;
-    border: 2px solid transparent;
-    border-image-slice: 1;
-    border-image-source: $red-to-blue;
   }
+}
+
+.subscription__plan-item--day .subscription__plan-button {
+  color: $color-default-white;
+  background: $red-to-blue;
+  border: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: $red-to-blue;
+  padding: 25px 42px;
+  outline: none;
 }
 
 .subscription__plan-title {
@@ -427,24 +389,6 @@
     font-size: 80px;
     line-height: 120px;
     top: -44px;
-  }
-}
-
-.subscription__plan-button {
-  margin-left: 1px;
-  padding: 25px 40px 25px 40px;
-  letter-spacing: 0.6px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  width: 205px;
-  z-index: 2;
-  text-transform: uppercase;
-  border: 2px solid #102654;
-  text-align: center;
-
-  @include vp-1365 {
-    padding: 20px 42px;
   }
 }
 
