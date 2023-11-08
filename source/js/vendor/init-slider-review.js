@@ -49,7 +49,6 @@ function initSliderReview() {
         0: {
           slidesPerView: 1,
           spaceBetween: 40,
-          spaceBetween: 0,
           initialSlide: 0,
         },
       }

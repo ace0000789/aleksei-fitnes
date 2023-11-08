@@ -1,5 +1,5 @@
 //СЛАЙДЕР
-function initSlider() {
+function initSliderJury() {
 const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
   //Стрелки
     navigation: {
@@ -60,4 +60,4 @@ const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
     }
   });
 }
-export {initSlider};
+export {initSliderJury};
