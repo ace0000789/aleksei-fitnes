@@ -239,14 +239,15 @@
   text-transform: uppercase;
   border: 2px solid $color-default-blue;
   text-align: center;
+  user-select: none;
 
   @include vp-1365 {
     padding: 20px 42px;
   }
 }
 
-.subscription__plan-item:hover .subscription__plan-button,
-.subscription__plan-item:focus-within .subscription__plan-button {
+.subscription__plan-item:hover .subscription__plan-button:not(.subscription__plan-button--disabled),
+.subscription__plan-item:focus-within .subscription__plan-button:not(.subscription__plan-button--disabled) {
   color: $color-default-white;
   background: $red-to-blue;
   border: 2px solid transparent;
@@ -277,6 +278,21 @@
   @include vp-1365 {
     padding: 20px 42px;
   }
+}
+/* for disabled add class subscription__plan-button--disabled */
+.subscription__plan-button--disabled {
+  color: $color-default-blue;
+  background-color: $color-default-white;
+  opacity: 0.3;
+  outline: none;
+  pointer-events: none;
+}
+
+.subscription__plan-item--day .subscription__plan-button--disabled {
+  color: $color-default-blue;
+  background-color: $color-default-white;
+  background: $color-default-white;
+  border: 2px solid $color-default-blue;
 }
 
 .subscription__plan-title {
