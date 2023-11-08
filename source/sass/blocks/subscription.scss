@@ -171,7 +171,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 40px;
+  gap: 40px;
   align-items: flex-start;
 
   @include vp-1365 {
@@ -184,7 +184,7 @@
 
   @include vp-767 {
     max-width: 100%;
-    row-gap: 35px;
+    gap: 35px;
   }
 }
 
@@ -216,7 +216,7 @@
     border: 7px solid;
     border-image-slice: 1;
     border-width: 7px;
-    border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
+    border-image-source: $border-gradient;
     padding: 60px 70px 58px;
 
     @include vp-767 {
@@ -227,10 +227,10 @@
 
 .subscription__plan-item--day .subscription__plan-button {
   color: $color-default-white;
-  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  background: $red-to-blue;
   border: 2px solid transparent;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  border-image-source: $red-to-blue;
   padding: 25px 42px;
   outline: none;
   text-align: center;
@@ -256,7 +256,7 @@
 .subscription__plan-item:hover {
   border: 7px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
+  border-image-source: $border-gradient;
   padding: 60px 70px 58px;
   outline: none;
 
@@ -267,10 +267,10 @@
 
 .subscription__plan-item:focus-within .subscription__plan-button:not(.btn--black-disabled) {
   color: $color-default-white;
-  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  background: $red-to-blue;
   border: 2px solid transparent;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  border-image-source: $red-to-blue;
   padding: 25px 42px;
   outline: none;
   text-align: center;
@@ -289,10 +289,10 @@
 
 .subscription__plan-item:hover .subscription__plan-button:not(.btn--black-disabled) {
   color: $color-default-white;
-  background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  background: $red-to-blue;
   border: 2px solid transparent;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+  border-image-source: $red-to-blue;
   padding: 25px 42px;
   outline: none;
   text-align: center;
@@ -305,7 +305,7 @@
     padding: 20px;
     border: 2px solid transparent;
     border-image-slice: 1;
-    border-image-source: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+    border-image-source: $red-to-blue;
   }
 }
 

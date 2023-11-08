@@ -51,7 +51,7 @@
         &:hover:not(.focus-visible) {
           color: #ffffff;
           border: none;
-          background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+          background: $red-to-blue;
           outline: none;
         }
       }
@@ -59,7 +59,7 @@
       &.focus-visible:focus {
         color: #ffffff;
         border: none;
-        background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
+        background: $red-to-blue;
         outline: none;
       }
     }
