@@ -205,11 +205,15 @@
   @include vp-1365 {
     max-width: none;
     padding: 60px 20px 58px;
+
+    &--full {
+      padding: 58px 20px 58px;
+    }
   }
 
   @include vp-767 {
     width: 100%;
-    padding: 45px 20px 42px;
+    padding: 45px 20px 43px;
   }
 
   &--day {
@@ -289,6 +293,10 @@
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 14px;
+
+    &--full {
+      margin-bottom: 16px;
+    }
   }
 
   @include vp-767 {
