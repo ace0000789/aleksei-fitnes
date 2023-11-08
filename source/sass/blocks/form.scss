@@ -57,9 +57,14 @@
   color: $color-default-white;
 }
 
-.form__field:focus::placeholder:not(:disabled),
-.form__field:active::placeholder:not(:disabled) {
+.form__field:focus::placeholder,
+.form__field:active::placeholder {
   color: $color-default-blue;
+}
+
+.form__field:focus:disabled::placeholder,
+.form__field:active:disabled::placeholder {
+  color: $color-default-white;
 }
 
 
