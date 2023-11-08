@@ -179,6 +179,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: 64.9%;
   }
 
   @include vp-767 {
@@ -199,10 +200,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 
   @include vp-1365 {
     max-width: none;
-    width: 64.9%;
     padding: 60px 20px 58px;
   }
 
@@ -210,16 +211,6 @@
     width: 100%;
     padding: 45px 20px 42px;
   }
-/*
-  &--full {
-    @include vp-1365 {
-      padding: 65px 77px 65px;
-    }
-
-    @include vp-767 {
-      padding: 52px 42px 50px;
-    }
-  }*/
 
   &--day {
     border: 7px solid;
@@ -228,14 +219,6 @@
     border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
     padding: 60px 70px 58px;
 
-    @include vp-1365 {
-      border: 7px solid;
-      border-image-slice: 1;
-      border-width: 7px;
-      border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
-      padding: 60px 70px 58px;
-    }
-
     @include vp-767 {
       padding: 45px 20px 42px;
     }
@@ -243,7 +226,7 @@
 }
 
 .subscription__plan-item--day .subscription__plan-button {
- color: $color-default-white;
+  color: $color-default-white;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
   border: 2px solid transparent;
   border-image-slice: 1;
@@ -281,23 +264,6 @@
     padding: 45px 20px 42px;
   }
 }
-/*
-.subscription__plan-item--full:focus-within,
-.subscription__plan-item--full:hover {
-  @include vp-1365 {
-    border: 7px solid;
-    border-image-slice: 1;
-    border-width: 7px;
-    border-image-source: linear-gradient(to right bottom, #d10a42, #00359f);
-    padding: 58px 70px 58px;
-  }
-
-  @include vp-767 {
-    padding: 45px 35px 43px;
-  }
-}*/
-
-
 
 .subscription__plan-item:focus-within .subscription__plan-button:not(.btn--black-disabled) {
   color: $color-default-white;
@@ -364,18 +330,6 @@
     line-height: 22px;
     margin-bottom: 13px;
   }
-/*
-  &--full {
-    @include vp-1365 {
-      margin-bottom: 18px;
-    }
-
-    @include vp-767 {
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 15px;
-    }
-  }*/
 }
 
 .subscription__plan-text {
@@ -396,18 +350,6 @@
     line-height: 22px;
     margin-bottom: 65px;
   }
-/*
-  &--full {
-    @include vp-1365 {
-      margin-bottom: 73px;
-    }
-
-    @include vp-767 {
-      font-size: 14px;
-      line-height: 22px;
-      margin-bottom: 63px;
-    }
-  }*/
 }
 
 .subscription__price-wrapper {
@@ -426,16 +368,6 @@
   @include vp-767 {
     margin-bottom: 22px;
   }
-/*
-  &--full {
-    @include vp-1365 {
-      margin-bottom: 23px;
-    }
-
-    @include vp-767 {
-      margin-bottom: 22px;
-    }
-  }*/
 }
 
 .subscription__price-wrapper svg {
@@ -496,18 +428,6 @@
     line-height: 120px;
     top: -44px;
   }
-/*
-  &--full {
-    @include vp-1365 {
-      top: -54px;
-    }
-
-    @include vp-767 {
-      font-size: 80px;
-      line-height: 120px;
-      top: -44px;
-    }
-  }*/
 }
 
 .subscription__plan-button {
