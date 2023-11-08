@@ -1,11 +1,72 @@
 .form__title {
-  color: #FFF;
-
-/* desktop/heading/h3 */
-font-family: Alumni Sans;
-font-size: 54px;
-font-style: normal;
-font-weight: 600;
-line-height: 54px; /* 100% */
-letter-spacing: 1.62px;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  font-family: $second-font;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin-bottom: 33px;
 }
+
+.form__wrapper {
+  display: grid;
+  max-width: 410px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+
+.form__element {
+  width: 100%;
+}
+
+.form__field {
+  width: 100%;
+  background-color: $color-default-blue;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  height: 36px;
+  color: $color-default-white;
+  border-bottom: 1px solid #74819c;
+  border-left: 1px solid $color-default-blue;
+
+  &:hover:not(:disabled) {
+    border-bottom: 1px solid  $color-default-white;
+  }
+
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    border: 1px solid  $color-default-white;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.form__field::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.form__field:focus::placeholder:not(:disabled),
+.form__field:active::placeholder:not(:disabled) {
+  color: $color-default-blue;
+}
+
+
+.form__button {
+  width: 410px;
+  padding: 27px;
+}
+
+
+/**/
