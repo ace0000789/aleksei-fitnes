@@ -171,7 +171,6 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
   align-items: flex-start;
 
   @include vp-1365 {
@@ -180,6 +179,7 @@
     align-items: center;
     margin: 0 auto;
     width: 64.9%;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -269,6 +269,10 @@
   border-image-source: $red-to-blue;
   padding: 25px 42px;
   outline: none;
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
 }
 
 .subscription__plan-title {
