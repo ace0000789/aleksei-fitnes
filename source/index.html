@@ -743,53 +743,78 @@
           <h2 class="visually-hidden">Feedback</h2>
           <div class="feedback__wrapper">
 
-            <form class="form" action="http://echo.htmlacademy.ru" method="get">
-              <h3 class="form__title">Бесплатное занятие</h3>
-              <div class="form__wrapper">
-                <label class="form__element">
-                  <input class="form__field" type="text" name="name "placeholder="Имя" required>
-                  <span class="visually-hidden">Поле для заполнения имя</span>
-                </label>
-                <label class="form__element">
-                  <input class="form__field" type="phone" name="phone" required pattern="[0-9]{10}"
-                    placeholder="Телефон">
-                    <span class="visually-hidden">Поле для заполнения телефона</span>
-                </label>
-              </div>
-              <button class=" btn btn--white form__button" type="submit">Отправить</button>
-            </form>
+
+            <div class="form"  data-form-validate  data-callback="base">
+              <form action="http://echo.htmlacademy.ru" method="post">
+                <h3 class="form__title">Бесплатное занятие</h3>
+                <div class="form__wrapper">
+                  <label class="form__element" data-validate-type="text" data-limitation="name" ,
+                  data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
+                  data-on-input-validate data-required>
+                    <input class="form__field" type="text" name="name " placeholder="Имя" aria-label="Имя" required>
+                    <span class="visually-hidden">Поле для заполнения имя.</span>
+                  </label>
+                  <label class="form__element" data-validate-type="phone" data-on-input-validate
+                  data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
+                    <input class="form__field" type="text" name="phone" required aria-label="Телефон" placeholder="Телефон">
+                    <span class="visually-hidden">Поле для заполнения телефона.</span>
+                  </label>
+                </div>
+                <button class="btn btn--white form__button" type="submit">Отправить</button>
+              </form>
+            </div>
+
+
 
             <div class="contacts">
               <h3 class="contacts__title">Контакты</h3>
-                <div class="contacts__wrapper">
-                  <div class="contacts__sub-wrapper">
-                    <div class="contacts__element">
-                      <h4 class="contacts__sab-title">Адрес:</h4>
-                      <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
-                    </div>
-                    <div class="contacts__element">
-                      <h4 class="contacts__sab-title">График работы:</h4>
-                      <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
-                    </div>
+              <div class="contacts__wrapper">
+                <div class="contacts__sub-wrapper">
+                  <div class="contacts__element">
+                    <h4 class="contacts__sab-title">Адрес:</h4>
+                    <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
                   </div>
-                  <div class="contacts__sub-wrapper">
-                    <div class="contacts__element">
-                      <h4 class="contacts__sab-title">Телефон:</h4>
-                      <a class="contacts__phone" href="tel:+78005555555">8-800-555-55-55
-                        <span class="visually-hidden">Наш телефон.</span>
-                      </a>
-                    </div>
-                    <div class="contacts__element">
-                      <h4 class="contacts__sab-title">Email:</h4>
-                      <a class="contacts__email" href="mailto:your-email@example.com">omsk@supergym.ru
-                        <span class="visually-hidden">Наш email.</span>
-                      </a>
-                    </div>
+                  <div class="contacts__element">
+                    <h4 class="contacts__sab-title">График работы:</h4>
+                    <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
                   </div>
                 </div>
+                <div class="contacts__sub-wrapper">
+                  <div class="contacts__element">
+                    <h4 class="contacts__sab-title">Телефон:</h4>
+                    <a class="contacts__phone" href="tel:+78005555555">8-800-555-55-55
+                      <span class="visually-hidden">Наш телефон.</span>
+                    </a>
+                  </div>
+                  <div class="contacts__element">
+                    <h4 class="contacts__sab-title">Email:</h4>
+                    <a class="contacts__email" href="mailto:your-email@example.com">omsk@supergym.ru
+                      <span class="visually-hidden">Наш email.</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
+        </div>
+      </section>
+
+      <section data-tabs="element">
+
+        <h2 class="subtitle">Пример формы с выводом общего сообщения об ошибке.</h2>
+        <div data-form-validate="data-form-validate" data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
+          <form method="post" action="https://echo.htmlacademy.ru/">
+
+            <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
+              <label><span class="custom-input__label">Введите ваше имя</span>
+                <input type="text" name="user-name-1"/>
+              </label>
+            </div>
+
+            <button class="btn btn--form" type="reset">Сбросить форму</button>
+            <button class="btn btn--form" type="submit">Отправить форму</button>
+          </form>
         </div>
       </section>
     </main>

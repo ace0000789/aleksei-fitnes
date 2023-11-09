@@ -12,6 +12,7 @@ import {initSliderReview} from './vendor/init-slider-review';
 
 window.addEventListener('DOMContentLoaded', () => {
 
+
   // Utils
   // ---------------------------------
 
