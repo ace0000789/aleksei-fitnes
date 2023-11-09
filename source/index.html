@@ -29,7 +29,8 @@
       <div class="container">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo-link" href="index.html" aria-label="Сайт SuperGym">
-            <img loading="lazy" src="img/svg/supergym.svg" width="120" height="26" alt="Изображение Логотипа SuperGym.">
+            <img loading="lazy" src="img/svg/supergym-header.svg" width="120" height="26"
+              alt="Изображение Логотипа SuperGym.">
             <span class="visually-hidden">Лого Supergym сайта </span>
           </a>
           <a class="main-header__phone" href="tel:+78005555555">8-800-555-55-55
@@ -39,7 +40,7 @@
       </div>
     </header>
 
-   <main>
+    <main>
       <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
@@ -67,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us" data-test="about">
+      <section class="about-us" id="about-us" data-test="about">
         <div class="about-us__container">
           <h2>Тренажерный зал</h2>
           <h3>Просторный зал площадью 900 кв/м</h3>
@@ -236,7 +237,7 @@
             </div>
           </div>
         </section>
-        <section class="slider">
+        <section id="jury" class="slider">
           <div class="container container--jury">
             <h2 class="slider__title">Жюри</h2>
             <div class="swiper-container" data-validate="swiper-container">
@@ -440,7 +441,7 @@
           </ul>
         </div>
       </section>
-      <section class="ofers" data-test="offers">
+      <section class="ofers" id="ofers" data-test="offers">
         <div class="container">
           <h2 class="ofers__title">Акции</h2>
           <div class="ofers__wrapper">
@@ -743,19 +744,20 @@
         <div class="container container--feedback">
           <h2 class="visually-hidden">Feedback</h2>
           <div class="feedback__wrapper">
-            <div class="form"  data-form-validate  data-callback="base">
+            <div class="form" data-form-validate data-callback="base">
               <form action="http://echo.htmlacademy.ru" method="post">
                 <h3 class="form__title">Бесплатное занятие</h3>
                 <div class="form__wrapper">
                   <label class="form__element" data-validate-type="text" data-limitation="name" ,
-                  data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
-                  data-on-input-validate data-required>
+                    data-message-base="Обязательно к заполнению" data-message-extra="Более одной буквы"
+                    data-on-input-validate data-required>
                     <input class="form__field" type="text" name="name " placeholder="Имя" aria-label="Имя" required>
                     <span class="visually-hidden">Поле для заполнения имя.</span>
                   </label>
                   <label class="form__element" data-validate-type="phone" data-on-input-validate
-                  data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
-                    <input class="form__field" type="text" name="phone" required aria-label="Телефон" placeholder="Телефон">
+                    data-message-base="Обязательно к заполнению" data-message-extra="Введите 10 цифр" data-required>
+                    <input class="form__field" type="text" name="phone" required aria-label="Телефон"
+                      placeholder="Телефон">
                     <span class="visually-hidden">Поле для заполнения телефона.</span>
                   </label>
                 </div>
@@ -770,7 +772,7 @@
                     <h4 class="contacts__sab-title">Адрес:</h4>
                     <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
                   </div>
-                  <div class="contacts__element">
+                  <div class="contacts__element" id="open-time">
                     <h4 class="contacts__sab-title">График работы:</h4>
                     <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
                   </div>
@@ -797,6 +799,54 @@
     </main>
 
     <footer class="footer">
+
+      <a class="footer__logo" href="index.html" aria-label="Сайт SuperGym">
+        <img loading="lazy" src="img/svg/supergym-footer.svg" width="100" height="26"
+          alt="Изображение Логотипа SuperGym.">
+        <span class="visually-hidden">Лого Supergym сайта </span>
+      </a>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#about-us">Услуги</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#subscription">Абонементы</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#ofers">Акции</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#jury">Тренеры</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#open-time">Расписание</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-img" width="14" height="14" role="img">
+              <use href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-img" width="14" height="14" role="img">
+              <use href="img/sprite.svg#odnoklassniki"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-img" width="25" height="25" role="img">
+              <use href="img/sprite.svg#reddit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </footer>
 
 
