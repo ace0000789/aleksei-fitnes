@@ -21,7 +21,6 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 40.5px;
-
 }
 
 .footer__item {
@@ -59,9 +58,9 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  }
+}
 
-  /* for disabled add class footer__social-item--link */
+/* for disabled add class .footer__social-link--disabled */
 
 .footer__social-link {
   position: relative;
@@ -71,23 +70,22 @@
   background-color: $color-default-white;
   border-radius: 50%;
 
-    &:hover:not(.footer__social-link--disabled),
-    &:focus:not(.footer__social-link--disabled) {
-      background-color: $color-default-blue-egypt;
-      outline: none;
-    }
+  &:hover:not(.footer__social-link--disabled),
+  &:focus:not(.footer__social-link--disabled) {
+    background-color: $color-default-blue-egypt;
+    outline: none;
+  }
 
-    &:active:not(.footer__social-link--disabled) {
-      background-color: $color-default-blue;
-    }
+  &:active:not(.footer__social-link--disabled) {
+    background-color: $color-default-blue;
+  }
 
-    &--disabled {
-      background-color: rgba(255, 255, 255, 0.3);
-      pointer-events: none;
-      outline: none;
-    }
+  &--disabled {
+    background-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    outline: none;
+  }
 }
-
 
 .footer__social-link svg {
   position: absolute;
@@ -109,6 +107,3 @@
 .footer__social-link--disabled:focus svg {
   fill: $color-default-blue-dark;
 }
-
-
-/**/
