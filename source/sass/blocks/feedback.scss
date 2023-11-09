@@ -2,9 +2,20 @@
   background: linear-gradient(to right, $color-default-blue 50%, $color-default-white 50%);
   padding: 59px 0 60px;
   border-top: 1px solid #74819c;
+
+  @include vp-1365 {
+   background: none;
+   border: none;
+   padding: 0;
+  }
 }
 
 .feedback__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
