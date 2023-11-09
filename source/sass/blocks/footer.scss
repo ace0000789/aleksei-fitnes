@@ -1,15 +1,17 @@
 .footer {
   background-color: $color-default-blue-dark;
-  padding: 42px 103px 41px;
+  padding: 39px 103px 41px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr auto 1fr;
   color: $color-default-white;
+  align-items: center;
   gap: 255px;
   border: none;
 }
 
 .footer__logo img {
-  height: 22px;
+  height: 24px;
+  width: 107px;
 }
 
 .footer__list {
@@ -18,7 +20,8 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  gap: 30px;
+  gap: 40.5px;
+
 }
 
 .footer__item {
@@ -28,6 +31,7 @@
 }
 
 .footer__link {
+  display: block;
   margin: 0;
   padding: 0;
   color: $color-default-white;
@@ -42,8 +46,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .footer__social-item {
