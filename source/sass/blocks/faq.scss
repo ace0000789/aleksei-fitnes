@@ -46,6 +46,7 @@
     padding: 19px 0 15px;
     font-size: 18px;
     line-height: 18px;
+    user-select: none;
 
     @include vp-1365 {
       min-width: 162px;
