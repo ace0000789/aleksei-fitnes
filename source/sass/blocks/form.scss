@@ -1,4 +1,4 @@
-/*.form__title {
+.form__title {
   color: $color-default-white;
   margin: 0;
   padding: 0;
@@ -21,9 +21,23 @@
 
 .form__element {
   width: 100%;
+  position: relative;
+}
+
+.input-message {
+  color: #ff121f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }
 
 .form__field {
+  padding: 0;
+  padding-top: 6px;
+  margin: 0;
   width: 100%;
   background-color: $color-default-blue;
   border: none;
@@ -33,7 +47,7 @@
   height: 36px;
   color: $color-default-white;
   border-bottom: 1px solid #74819c;
-  border-left: 1px solid $color-default-blue;
+  user-select: none;
 
   &:hover:not(:disabled) {
     border-bottom: 1px solid  $color-default-white;
@@ -43,6 +57,7 @@
   &:focus:not(:disabled) {
     border: 1px solid  $color-default-white;
     outline: none;
+    padding-left: 5px;
   }
 
   &:disabled {
@@ -53,6 +68,7 @@
 .form__field::placeholder {
   font-size: 14px;
   font-weight: 400;
+  padding-left: 0;
   line-height: 22px;
   color: $color-default-white;
 }
@@ -67,9 +83,7 @@
   color: $color-default-white;
 }
 
-
 .form__button {
   width: 410px;
-  padding: 27px;
+  padding: 26px 0 24px;
 }
-*/
