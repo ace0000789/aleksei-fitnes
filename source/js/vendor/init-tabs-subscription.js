@@ -4,13 +4,9 @@ export function initTabsSubscription() {
   const fadedPrices = document.querySelectorAll('[data-validate="shadow"]');
 
   const pricesPerPeriod = [
-    // Цены для 1 месяца (остаются неизменными)
+
     [5000, 1700, 2700],
-
-    // Цены для 6 месяцев (1-я, 2-я и 3-я карточки соответственно)
     [25000, 8500, 13500],
-
-    // Цены для 12 месяцев (1-я, 2-я и 3-я карточки соответственно)
     [50000, 16000, 25000]
   ];
 
