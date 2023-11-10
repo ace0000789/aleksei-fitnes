@@ -181,7 +181,7 @@
         transform: translate(-50%, -50%) rotate(90deg);
 
         @include vp-767 {
-          gap: 14px;
+          width: 14px;
         }
       }
       // -
@@ -196,7 +196,7 @@
         transform: translate(-50%, -50%);
 
         @include vp-767 {
-          gap: 14px;
+          width: 14px;
         }
       }
 
