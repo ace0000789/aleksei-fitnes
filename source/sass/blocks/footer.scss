@@ -12,6 +12,11 @@
   align-items: center;
   gap: auto;
   border: none;
+
+  @include vp-1365 {
+    padding: 45px 45px 45px;
+
+  }
 }
 
 .footer__logo {
@@ -21,6 +26,11 @@
 .footer__logo img {
   height: 24px;
   width: 107px;
+
+  @include vp-1365 {
+    height: 22px;
+    width: 98px;
+  }
 }
 
 .footer__list {
@@ -30,6 +40,11 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 30.5px;
+
+  @include vp-1365 {
+    gap: 20.5px;
+
+  }
 }
 
 .footer__item {
