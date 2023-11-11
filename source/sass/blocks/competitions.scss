@@ -27,7 +27,7 @@
 .competitions__content {
   background: $color-default-red;
   color: $color-default-white;
-  padding: 81px 77px 50px 80px;
+  padding: 79px 77px 50px 80px;
   width: 500px;
 
   @include vp-1365 {
@@ -63,6 +63,7 @@
 
 .competitions__title {
   padding: 0;
+  padding-top: 2px;
   margin: 0;
   font-family: $second-font;
   font-size: 82px;
@@ -86,7 +87,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 18px;
   margin-right: 3px;
 
   @include vp-1365 {
@@ -122,13 +123,14 @@
   margin: 0;
   font-weight: 300;
   font-size: 18px;
-  line-height: 19px;
-  padding-bottom: 7px;
+  line-height: 24px;
+  padding-bottom: 4px;
   word-break: break-all;
+  padding-top: 0;
 
   @include vp-1365 {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 24px;
     padding-bottom: 0;
   }
 
@@ -200,14 +202,15 @@
   padding: 0;
   margin: 0;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 14px;
+  font-weight: 400;
   max-width: max-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  min-height: 20px;
-  gap: 0;
+  gap: 4px;
   word-break: break-all;
+  padding-top: 3px;
 
   @include vp-1365 {
     padding-top: 2px;
