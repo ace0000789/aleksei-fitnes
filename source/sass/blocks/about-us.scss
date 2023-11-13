@@ -324,3 +324,34 @@
     height: 52px;
   }
 }
+
+/* TTTTEEEEEESSSSSTTTT */
+
+.first {
+  width: 50%;
+  position: absolute;
+  bottom: -60px;
+  left: 30%;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
+
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  background-color: $color-black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+/**/
