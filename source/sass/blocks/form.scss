@@ -57,7 +57,7 @@
   }
 }
 
-.form__element {
+.form__wrapper label {
   width: 100%;
   position: relative;
 }
@@ -72,7 +72,7 @@
   left: 0;
 }
 
-.form__field {
+.form__wrapper input {
   padding: 0;
   padding-top: 6px;
   margin: 0;
@@ -107,7 +107,7 @@
   }
 }
 
-.form__field::placeholder {
+.form__wrapper input::placeholder {
   font-size: 14px;
   font-weight: 400;
   padding-left: 0;
@@ -126,13 +126,13 @@
   }
 }
 
-.form__field:focus::placeholder,
-.form__field:active::placeholder {
+.form__wrapper input:focus::placeholder,
+.form__wrapper input:active::placeholder {
   color: $color-default-blue;
 }
 
-.form__field:focus:disabled::placeholder,
-.form__field:active:disabled::placeholder {
+.form__wrapper input:focus:disabled::placeholder,
+.form__wrapper input:active:disabled::placeholder {
   color: $color-default-white;
 }
 
