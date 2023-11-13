@@ -78,9 +78,19 @@
     pointer-events: none;
 
     @include hover-focus {
-      background-color: transparent;
-      color: $color-default-white;
-      outline: none;
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: transparent;
+          color: $color-default-white;
+          outline: none;
+        }
+      }
+
+      &.focus-visible:focus {
+        background-color: transparent;
+        color: $color-default-white;
+        outline: none;
+      }
     }
   }
 

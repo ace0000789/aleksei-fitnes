@@ -272,6 +272,7 @@
 
 .competitions__image {
   height: auto;
+  width: 660px;
 
   @include vp-1365 {
     width: 57%;
@@ -286,6 +287,7 @@
 .competitions__image img {
   height: 100%;
   object-fit: cover;
+  width: 660px;
 
   @include vp-1365 {
     width: 100%;
