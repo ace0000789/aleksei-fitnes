@@ -4,7 +4,6 @@ export function initTabsSubscription() {
   const fadedPrices = document.querySelectorAll('[data-validate="shadow"]');
 
   const pricesPerPeriod = [
-
     [5000, 1700, 2700],
     [25000, 8500, 13500],
     [50000, 16000, 25000]
