@@ -1,22 +1,24 @@
-//СЛАЙДЕР
+// СЛАЙДЕР
+import Swiper from './vendor/swiper';
+
 function initSliderJury() {
-const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
-  //Стрелки
+  const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
+  // Стрелки
     navigation: {
       nextEl: '[data-validate="button-next"]',
       prevEl: '[data-validate="button-prev"]',
     },
 
-    //перетаскивание на ПК
+    // перетаскивание на ПК
     simulateTouch: true,
-    //чувствительность свайпа
+    // чувствительность свайпа
     touchRatio: 1,
-    //угол срабатывания свайпа
+    // угол срабатывания свайпа
     touchAngle: 45,
-    //курсор перетаскивания
+    // курсор перетаскивания
     grabCursor: true,
 
-    //Управление клавиатурой
+    // Управление клавиатурой
     keyboard: {
       // вкл/выкл
       enbled: true,
@@ -24,11 +26,11 @@ const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
       onlyInVIewport: true,
     },
 
-    //Автовысота картинки
+    // Автовысота картинки
     autoHeight: true,
-    //Бесконечный слайдер
+    // Бесконечный слайдер
     loop: true,
-    //Количнство дублирущих слайдов
+    // Количнство дублирущих слайдов
     loopedSlides: 0,
     // Свободный режим (перетаскивание по 1 фрагменту)
     freeMod: true,
@@ -53,11 +55,11 @@ const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
 
       0: {
         slidesPerView: 1,
-        spaceBetween: 40,
         spaceBetween: 0,
         initialSlide: 2,
       },
-    }
+    },
   });
+  return myImageSlider;
 }
 export {initSliderJury};

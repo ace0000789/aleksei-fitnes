@@ -1,4 +1,4 @@
-import {Accordions} from './accordions';
+import {Accordions} from './vendor/accordions';
 let accordions;
 
 const initAccordions = () => {
