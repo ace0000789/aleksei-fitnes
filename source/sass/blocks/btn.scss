@@ -13,95 +13,65 @@
   align-items: center;
   user-select: none;
   transition: color 0.1s, background-color 0.2s;
+}
 
-  &--white {
-    color: $color-default-white;
-    border: 2px solid $color-default-white;
+.btn--white {
+  color: $color-default-white;
+  border: 2px solid $color-default-white;
 
-    @include hover-focus {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          background-color: $color-default-white;
-          color: $color-default-blue-egypt;
-          outline: none;
-        }
-      }
-
-      &.focus-visible:focus {
-        background-color: $color-default-white;
-        color: $color-default-blue-egypt;
-        outline: none;
-      }
-    }
-
-    @include active {
-      &:active:not(.focus-visible) {
-        color: $color-default-blue;
-        background-color: $color-default-white;
-      }
-    }
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-default-blue-egypt;
+    outline: none;
   }
 
-  &--black {
+  &:active {
     color: $color-default-blue;
-    border: 2px solid $color-default-blue;
-
-    @include hover-focus {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          color: #ffffff;
-          border: none;
-          background: $red-to-blue;
-          outline: none;
-        }
-      }
-
-      &.focus-visible:focus {
-        color: #ffffff;
-        border: none;
-        background: $red-to-blue;
-        outline: none;
-      }
-    }
-
-    @include active {
-      &:active:not(.focus-visible) {
-        color: rgba(255, 255, 255, 0.7);
-      }
-    }
-  }
-
-  /* for disabled add class btn--white-disabled or btn--black-disabled*/
-
-  &--white-disabled {
-    opacity: 0.5;
-    pointer-events: none;
-
-    @include hover-focus {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          background-color: transparent;
-          color: $color-default-white;
-          outline: none;
-        }
-      }
-
-      &.focus-visible:focus {
-        background-color: transparent;
-        color: $color-default-white;
-        outline: none;
-      }
-    }
-  }
-
-  &--black-disabled {
-    opacity: 0.3;
-    pointer-events: none;
-
-    @include hover-focus {
-      background-color: transparent;
-      color: $color-default-blue;
-      outline: none;
-    }
+    background-color: $color-default-white;
   }
 }
+
+.btn--black {
+  color: $color-default-blue;
+  border: 2px solid $color-default-blue;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    border: none;
+    background: $red-to-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* for disabled add class btn--white-disabled or btn--black-disabled */
+
+.btn--white-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $color-default-white;
+    outline: none;
+  }
+}
+
+.btn--black-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $color-default-blue;
+    outline: none;
+  }
+}
+
