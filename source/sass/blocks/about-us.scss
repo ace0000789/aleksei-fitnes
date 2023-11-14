@@ -103,7 +103,8 @@
 
   img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: fill;
     display: block;
   }
 }
@@ -167,8 +168,6 @@
 
  .about-us__video img {
     position: absolute;
-    height: 100%;
-    object-fit: fill
  }
 
  .about-us__video::before {
@@ -193,6 +192,7 @@
    left: 0;
    z-index: 3;
  }
+
 .about-us__video-button {
   margin: 0;
   position: absolute;
