@@ -207,7 +207,7 @@
     padding: 60px 20px 58px;
 
     &--full {
-      padding: 58px 20px 58px;
+      padding: 58px 20px;
     }
   }
 
@@ -229,7 +229,7 @@
 
 .subscription__plan-button {
   margin-left: 1px;
-  padding: 25px 40px 25px 40px;
+  padding: 25px 40px 25px;
   letter-spacing: 0.6px;
   font-size: 12px;
   font-weight: 700;
@@ -279,7 +279,9 @@
     padding: 20px 42px;
   }
 }
+
 /* for disabled add class subscription__plan-button--disabled */
+
 .subscription__plan-button--disabled {
   color: $color-default-blue;
   background-color: $color-default-white;
