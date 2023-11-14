@@ -11,7 +11,7 @@ export function initTabsSubscription() {
 
   buttonsPeriod[0].classList.add('is-active-subscription');
   buttonsPeriod.forEach((button, index) => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', () => {
 
       prices.forEach((price, idx) => {
         price.textContent = pricesPerPeriod[index][idx];
