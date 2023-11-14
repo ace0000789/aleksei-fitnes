@@ -126,72 +126,72 @@
 
 .about-us__video-container {
   position: absolute;
-   object-fit: cover;
-   width: 364px;
-   left: -63px;
-   top: 287px;
-   display: block;
-   background-color: $color-black;
-   background-blend-mode: multiply;
+  object-fit: cover;
+  width: 364px;
+  left: -63px;
+  top: 287px;
+  display: block;
+  background-color: $color-black;
+  background-blend-mode: multiply;
 
-   @include vp-1365 {
-     width: 39.09%;
-     position: absolute;
-     top: auto;
-     bottom: -83px;
-     left: 50%;
-     transform: translateX(-50%);
-   }
-
-   @include vp-767 {
-     position: relative;
-     width: 100%;
-     height: 0;
-     padding-bottom: 52.2%;
-     left: 0;
-     top: 0;
-     transform: none;
-   }
- }
-
- .about-us__video {
-   position: relative;
-   width: 100%;
-   height: 0;
-   padding-bottom: 63%;
-   background-color: #000000;
-
-   @include vp-767 {
-   padding-bottom: 52.2%;
-   }
- }
-
- .about-us__video img {
+  @include vp-1365 {
+    width: 39.09%;
     position: absolute;
+    top: auto;
+    bottom: -83px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 52.2%;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
  }
 
- .about-us__video::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(20, 54, 122, 0.5);
-   z-index: 1;
- }
+.about-us__video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 63%;
+  background-color: #000000;
 
- .about-us__video iframe {
-   width: 100%;
-   height: 100%;
-   background-color: $color-black;
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 3;
- }
+  @include vp-767 {
+  padding-bottom: 52.2%;
+  }
+}
+
+.about-us__video img {
+  position: absolute;
+}
+
+.about-us__video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 54, 122, 0.5);
+  z-index: 1;
+}
+
+.about-us__video iframe {
+  width: 100%;
+  height: 100%;
+  background-color: $color-black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
 
 .about-us__video-button {
   margin: 0;
