@@ -252,7 +252,7 @@
   }
 }
 
-.faq button.is-active:not(:disabled) {
+.faq .faq__button.is-active:not(:disabled) {
   border: none;
   background: linear-gradient(97deg, #eb0233 17.6%, #003eb7 95.31%);
   color: $color-default-white;
