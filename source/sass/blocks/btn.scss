@@ -19,58 +19,27 @@
   color: $color-default-white;
   border: 2px solid $color-default-white;
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     background-color: $color-default-white;
     color: $color-default-blue-egypt;
     outline: none;
   }
-
-  &:active {
-    color: $color-default-blue;
-    background-color: $color-default-white;
-  }
 }
 
-.btn--black {
+.btn.btn--white:active {
   color: $color-default-blue;
-  border: 2px solid $color-default-blue;
-
-  &:hover,
-  &:focus {
-    color: #ffffff;
-    border: none;
-    background: $red-to-blue;
-    outline: none;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.7);
-  }
+  background-color: $color-default-white;
 }
 
-/* for disabled add class btn--white-disabled or btn--black-disabled */
+/* for disabled add class btn--white-disabled */
 
 .btn--white-disabled {
   opacity: 0.5;
   pointer-events: none;
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     background-color: transparent;
     color: $color-default-white;
-    outline: none;
-  }
-}
-
-.btn--black-disabled {
-  opacity: 0.3;
-  pointer-events: none;
-
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    color: $color-default-blue;
     outline: none;
   }
 }
