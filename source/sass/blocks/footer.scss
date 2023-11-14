@@ -83,7 +83,7 @@
   width: min-content;
 }
 
-/* for disabled add class footer__link-disabled */
+/* for disabled add class footer__link--disabled */
 
 .footer__link {
   display: block;
@@ -123,7 +123,7 @@
   }
 }
 
-.footer__link.footer__link-disabled {
+.footer__link.footer__link--disabled {
   pointer-events: none;
   opacity: 0.4;
   outline: none;
