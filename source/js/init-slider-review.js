@@ -21,7 +21,7 @@ function initSliderReview() {
       // вкл/выкл
       enbled: true,
       // вкл/выкл только когда слайдер в пределах вьюпорта
-      onlyInVIewport: true,
+      onlyInViewport: true,
     },
 
     // Автовысота картинки
