@@ -76,21 +76,8 @@
   position: relative;
   height: 100%;
   user-select: none;
-
-  @include hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        outline: none;
-      }
-    }
-
-    &.focus-visible:focus,
-    &:focus-visible {
-      outline: none;
-    }
-  }
+  outline: none;
 }
-
 
 .slider .swiper-slide img {
   width: 100%;
@@ -260,21 +247,6 @@
     top: 62.4%;
     left: -8px;
   }
-
-  @include hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        border-radius: 50%;
-        outline: 1px solid $color-default-blue;
-      }
-    }
-
-    &.focus-visible:focus,
-    &:focus-visible {
-      border-radius: 50%;
-      outline: 1px solid $color-default-blue;
-    }
-  }
 }
 
 .slider .swiper-button-next {
@@ -289,21 +261,6 @@
   @include vp-767 {
     top: 62.4%;
     right: -8px;
-  }
-
-  @include hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        border-radius: 50%;
-        outline: 1px solid $color-default-blue;
-      }
-    }
-
-    &.focus-visible:focus,
-    &:focus-visible {
-      border-radius: 50%;
-      outline: 1px solid $color-default-blue;
-    }
   }
 }
 
@@ -333,24 +290,18 @@
 .slider .swiper-button-next.swiper-button--disabled {
   opacity: 0.3;
   cursor: default;
+  pointer-events: none;
   border: none;
   outline: none;
   background-color: none;
+}
 
-  @include hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        border-radius: 50%;
-        outline: none;
-      }
-    }
-
-    &.focus-visible:focus,
-    &:focus-visible {
-      border-radius: 50%;
-      outline: none;
-    }
-  }
+.slider .swiper-button-next.swiper-button--disabled:hover,
+.slider .swiper-button-prev.swiper-button--disabled:hover,
+.slider .swiper-button-prev.swiper-button--disabled:focus,
+.slider .swiper-button-next.swiper-button--disabled:focus {
+  border-radius: none;
+  outline: none;
 }
 
 .slider .swiper-button-prev:active.swiper-button--disabled,
@@ -358,6 +309,7 @@
   pointer-events: none;
   background-color: $color-default-white;
   stroke: $color-default-blue;
+  border: none;
 }
 
 .slider .swiper-button--disabled:active svg {
