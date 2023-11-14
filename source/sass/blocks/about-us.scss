@@ -166,7 +166,9 @@
  }
 
  .about-us__video img {
-   object-fit: cover;
+    position: absolute;
+    height: 100%;
+    object-fit: fill
  }
 
  .about-us__video::before {
