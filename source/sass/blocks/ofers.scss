@@ -299,11 +299,17 @@
   opacity: 0.5;
 }
 
-.ofers__link--disabled:focus {
+.ofers .ofers__link--disabled:focus {
   outline: none;
+  opacity: 0.3;
 }
 
-.ofers__link--disabled:focus.ofers__link::after {
+.ofers .ofers__link--white.ofers__link--disabled:focus {
+  outline: none;
+  opacity: 0.5;
+}
+
+.ofers .ofers__link--disabled:focus.ofers__link::after {
   display: block;
 }
 
