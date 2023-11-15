@@ -176,6 +176,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: stretch;
+  row-gap: 40px;
 
   @include vp-1365 {
     flex-direction: column;

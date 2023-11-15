@@ -78,8 +78,7 @@
       grid-template-columns: 1fr;
       align-items: center;
       gap: 10px;
-
-    word-break: break-word; 
+      word-break: break-word;
     }
 
     &:first-child { // первый
@@ -181,15 +180,16 @@
   }
 
   li:first-child h3 {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     font-size: 26px;
     line-height: 26px;
     font-weight: 700;
+    text-align: center;
 
     @include vp-1365 {
       font-size: 24px;
       line-height: 24px;
-      margin-bottom: 25px;
+      margin-bottom: 13px;
     }
 
     @include vp-767 {
@@ -237,6 +237,7 @@
       line-height: 64px;
       padding-top: 0;
       max-width: 80%;
+      margin: 0 auto;
     }
   }
 
@@ -302,7 +303,6 @@
   }
 }
 
-
 .features__text-block {
   max-width: 240px;
   display: flex;
@@ -318,5 +318,11 @@
     align-items: center;
     padding: 0 41px;
     row-gap: 0;
+  }
+}
+
+.features__text-block:first-of-type {
+  @include vp-767 {
+    padding: 0;
   }
 }
