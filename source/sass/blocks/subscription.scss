@@ -110,7 +110,7 @@
     outline: none;
     transition: color 0.2s;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -123,9 +123,9 @@
   }
 
   @include active {
-     color: $color-default-blue;
+    color: $color-default-blue;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       width: 100%;

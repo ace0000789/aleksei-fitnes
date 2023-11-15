@@ -28,29 +28,28 @@
 
 <body>
   <div class="wrapper">
-    <header class="main-header" data-test="hero">
-      <div class="container">
-        <div class="main-header__logo-wrapper">
-          <a class="main-header__logo-link" href="index.html" aria-label="Сайт SuperGym">
-            <img loading="lazy" src="img/svg/supergym-header.svg" width="120" height="26"
-              alt="Изображение Логотипа SuperGym.">
-            <span class="visually-hidden">Лого Supergym сайта.</span>
-          </a>
-          <a class="main-header__phone" href="tel:+78005555555">8-800-555-55-55
-            <span class="visually-hidden">Наш телефон.</span>
-          </a>
-        </div>
-      </div>
-    </header>
     <main>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <div class="container">
+          <h1 class="visually-hidden">Интро сайта</h1>
+          <header class="hero-header">
+            <div class="hero-header__logo-wrapper">
+              <a class="hero-header__logo-link" href="index.html" aria-label="Сайт SuperGym">
+                <img loading="lazy" src="img/svg/supergym-header.svg" width="120" height="26"
+                  alt="Изображение Логотипа SuperGym.">
+                <span class="visually-hidden">Лого Supergym сайта.</span>
+              </a>
+              <a class="hero-header__phone" href="tel:+78005555555">8-800-555-55-55
+                <span class="visually-hidden">Наш телефон.</span>
+              </a>
+            </div>
+          </header>
           <div class="hero__wrapper">
             <div class="hero__info">
               <p class="hero__services">Тренажёрный зал Групповые занятия Кардио-зона</p>
               <div class="hero__sub-wrapper">
                 <p class="hero__city">Омск</p>
-                <h1 class="hero__title">Фитнес<br>центр</h1>
+                <h2 class="hero__title">Фитнес<br>центр</h2>
               </div>
               <a class="hero__link btn btn--white" href="#subscription">Купить абонемент</a>
             </div>
@@ -153,7 +152,7 @@
                 </svg>
                 <span class="subscription__plan-shadow" data-validate="shadow">5000</span>
               </div>
-              <a class="subscription__plan-button" href="subcription.html">купить абонемент</a>
+              <a class="subscription__plan-button" href="subcription.html">Купить абонемент</a>
             </li>
             <li class="subscription__plan-item subscription__plan-item--day">
               <h4 class="subscription__plan-title">Дневной</h4>
@@ -165,7 +164,7 @@
                 </svg>
                 <span class="subscription__plan-shadow" data-validate="shadow">1700</span>
               </div>
-              <a class="subscription__plan-button" href="subcription.html">купить абонемент</a>
+              <a class="subscription__plan-button" href="subcription.html">Купить абонемент</a>
             </li>
             <li class="subscription__plan-item subscription__plan-item--full">
               <h4 class="subscription__plan-title subscription__plan-title--full">Полный день</h4>
@@ -177,7 +176,7 @@
                 </svg>
                 <span class="subscription__plan-shadow" data-validate="shadow">2700</span>
               </div>
-              <a class="subscription__plan-button" href="subcription.html">купить абонемент</a>
+              <a class="subscription__plan-button" href="subcription.html">Купить абонемент</a>
             </li>
           </ul>
           <div class="subscription__image">
@@ -761,7 +760,9 @@
           </div>
         </div>
       </section>
-      <section class="feedback" data-test="footer">
+    </main>
+    <footer class="footer" data-test="footer">
+      <section class="feedback">
         <div class="container container--feedback">
           <h2 class="visually-hidden">Feedback</h2>
           <div class="feedback__wrapper">
@@ -815,8 +816,6 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
       <div class="footer-wrapper">
         <a class="footer__logo" href="index.html" aria-label="Сайт SuperGym">
           <img loading="lazy" src="img/svg/supergym-footer.svg" width="109" height="24"
@@ -872,4 +871,5 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
