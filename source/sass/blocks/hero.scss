@@ -65,6 +65,7 @@
   grid-row: 1/-1;
   grid-column: 1/2;
   align-self: center;
+  word-break: break-word;
 
   @include vp-1365 {
     padding-bottom: 1px;
@@ -118,6 +119,7 @@
   line-height: 110px;
   letter-spacing: 4.6px;
   text-transform: uppercase;
+  word-break: break-word;
 
   @include vp-1365 {
     font-size: 72px;
