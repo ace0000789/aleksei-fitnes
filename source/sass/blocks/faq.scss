@@ -48,6 +48,7 @@
     line-height: 18px;
     user-select: none;
     outline: none;
+    height: 100%;
 
     @include vp-1365 {
       width: 100%;
@@ -233,6 +234,7 @@
 .faq__button-list {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
   gap: 10px;
   width: 260px;
   align-self: start;
