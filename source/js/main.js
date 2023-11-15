@@ -1,4 +1,3 @@
-import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initVideo} from './init-video';
 import {initTabsSubscription} from './init-tabs-subscription';
@@ -11,12 +10,6 @@ import {initSliderReview} from './init-slider-review';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
-
-  // Utils
-  // ---------------------------------
-
-  iosVhFix();
 
   // Modules
   // ---------------------------------
