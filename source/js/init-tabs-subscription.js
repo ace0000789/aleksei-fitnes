@@ -1,9 +1,9 @@
 export function initTabsSubscription() {
   const buttonsPeriod = document.querySelectorAll('[data-validate="period-tab"]');
-  const prices = document.querySelectorAll('[data-validate="price"]');
-  const fadedPrices = document.querySelectorAll('[data-validate="shadow"]');
+  const pricesPeriod = document.querySelectorAll('[data-validate="price"]');
+  const shadowPrices = document.querySelectorAll('[data-validate="shadow"]');
 
-  const pricesPerPeriod = [
+  const pricesProgram = [
     [5000, 1700, 2700],
     [25000, 8500, 13500],
     [50000, 16000, 25000]
@@ -13,12 +13,12 @@ export function initTabsSubscription() {
   buttonsPeriod.forEach((button, index) => {
     button.addEventListener('click', () => {
 
-      prices.forEach((price, idx) => {
-        price.textContent = pricesPerPeriod[index][idx];
+      pricesPeriod.forEach((price, idx) => {
+        price.textContent = pricesProgram[index][idx];
       });
 
-      fadedPrices.forEach((fadedPrice, idx) => {
-        fadedPrice.textContent = pricesPerPeriod[index][idx];
+      shadowPrices.forEach((fadedPrice, idx) => {
+        fadedPrice.textContent = pricesProgram[index][idx];
       });
 
       buttonsPeriod.forEach((btn) => {

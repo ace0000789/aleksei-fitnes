@@ -1,4 +1,4 @@
-// СЛАЙДЕР
+// СЛАЙДЕР Жюри
 import Swiper from './vendor/swiper';
 
 function initSliderJury() {

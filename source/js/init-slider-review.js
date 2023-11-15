@@ -1,4 +1,4 @@
-// СЛАЙДЕР
+// СЛАЙДЕР Отзывы
 import Swiper from './vendor/swiper';
 
 function initSliderReview() {
