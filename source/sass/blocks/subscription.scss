@@ -255,6 +255,7 @@
 .subscription__plan-item:focus-within .subscription__plan-button:not(.subscription__plan-button--disabled) {
   color: $color-default-white;
   background: $red-to-blue;
+  background-color: #102654;
   border: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: $red-to-blue;
@@ -274,6 +275,7 @@
 .subscription__plan-item--day .subscription__plan-button {
   color: $color-default-white;
   background: $red-to-blue;
+  background-color: #102654;
   border: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: $red-to-blue;
