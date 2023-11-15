@@ -78,6 +78,8 @@
       grid-template-columns: 1fr;
       align-items: center;
       gap: 10px;
+
+    word-break: break-word; 
     }
 
     &:first-child { // первый
@@ -234,6 +236,7 @@
       font-size: 64px;
       line-height: 64px;
       padding-top: 0;
+      max-width: 80%;
     }
   }
 
@@ -283,6 +286,7 @@
       text-align: center;
       font-size: 14px;
       line-height: 22px;
+      word-break: break-word;
     }
   }
 }
