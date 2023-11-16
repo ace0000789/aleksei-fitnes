@@ -159,21 +159,6 @@
         min-width: 30px;
       }
 
-      &:hover,
-      &:focus {
-        background-color: $color-default-blue;
-      }
-
-      &:hover::after,
-      &:focus::after {
-        background-color: $color-default-white;
-      }
-
-      &:hover::before,
-      &:focus::before {
-        background-color: $color-default-white;
-      }
-
       &:disabled {
         pointer-events: none;
         opacity: 0.3;
@@ -311,4 +296,18 @@
 
 .faq__info-item.is-active button::before {
   background-color: $color-default-white;
+}
+
+.faq__info-button {
+  @include hover-focus {
+    background-color: $color-default-blue;
+
+    &::after {
+      background-color: $color-default-white;
+    }
+
+    &::before {
+      background-color: $color-default-white;
+    }
+  }
 }
