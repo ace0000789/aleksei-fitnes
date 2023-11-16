@@ -88,15 +88,15 @@
 
     li {
       margin: 0;
-      padding: 25px 0 24px;
+      padding: 25px 0 20px;
       border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
       @include vp-1365 {
-        padding: 25px 0 24px;
+        padding: 25px 0 22px;
       }
 
       @include vp-767 {
-        padding: 21px 0;
+        padding: 21px 0 1px;
       }
     }
 
@@ -256,10 +256,16 @@
   grid-template-columns: auto 40px;
   gap: auto;
   align-items: center;
+  margin-bottom: 4px;
+
+  @include vp-1365 {
+    margin-bottom: 2px;
+  }
 
   @include vp-767 {
     grid-template-columns: auto 30px;
     padding-top: 1px;
+    margin-bottom: 20px;
   }
 }
 
@@ -274,14 +280,14 @@
 }
 
 .faq__info-item.is-active p {
-  margin-top: 4px;
+  margin-bottom: 4px;
 
   @include vp-1365 {
-    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   @include vp-767 {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
