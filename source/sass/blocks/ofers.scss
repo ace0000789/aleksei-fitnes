@@ -295,10 +295,20 @@
   opacity: 0.3;
   cursor: default;
   pointer-events: none;
+
+  @include focus {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+    border: none;
+    outline: none;
+  }
 }
 
 .ofers__link--white.ofers__link--disabled {
-  opacity: 0.5;
+  @include focus {
+    opacity: 0.5;
+  }
 }
 
 .ofers .ofers__link--disabled:focus {
@@ -306,7 +316,7 @@
   opacity: 0.3;
 }
 
-.ofers .ofers__link--white.ofers__link--disabled:focus {
+.ofers .ofers__link--white.ofers__link--disabled {
   outline: none;
   opacity: 0.5;
 }
@@ -359,3 +369,4 @@
     display: block;
   }
 }
+
