@@ -97,7 +97,7 @@
   width: 100%;
   position: relative;
   user-select: none;
-  
+
   @include hover {
     &::after {
     position: absolute;
@@ -133,6 +133,12 @@
   pointer-events: none;
   opacity: 0.4;
   outline: none;
+  
+  @include focus {
+    pointer-events: none;
+    opacity: 0.4;
+    outline: none;
+  }
 }
 
 .footer__social-list {
