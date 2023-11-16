@@ -179,6 +179,11 @@
     top: 58.1%;
     left: 2.7%;
   }
+
+  @include hover-focus {
+    border-radius: 50%;
+    outline: 1px solid $color-default-blue;
+  }
 }
 
 .review .swiper-button-next {
@@ -194,8 +199,13 @@
     top: 58.1%;
     right: 2.7%;
   }
-}
 
+  @include hover-focus {
+    border-radius: 50%;
+    outline: 1px solid $color-default-blue;
+  }
+}
+/*
 .review .swiper-button-next:hover:not(.swiper-button-disabled),
 .review .swiper-button-prev:hover:not(.swiper-button-disabled),
 .review .swiper-button-prev:focus:not(.swiper-button-disabled),
@@ -203,13 +213,16 @@
   border-radius: 50%;
   outline: 1px solid $color-default-blue;
 }
+*/
 
 .review .swiper-button-prev:active,
 .review .swiper-button-next:active {
   outline: none;
   background-color: $color-default-blue;
   transition: background-color 0.1s;
+  border-radius: 50%;
 }
+
 
 .review .swiper-button-prev:active svg,
 .review .swiper-button-next:active svg {
