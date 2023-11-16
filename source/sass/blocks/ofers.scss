@@ -172,12 +172,10 @@
       padding: 10px;
       margin-top: auto;
       word-break: break-all;
-    }
 
-    a:focus {
-      opacity: 1;
-      outline: 1px solid $color-default-white;
-      outline-offset: -1px;
+      @include focus {
+        outline: 1px solid $color-default-white;
+      }
     }
 
     a::after {
@@ -209,21 +207,28 @@
     @include vp-767 {
       margin: 0 auto;
     }
-  }
 
-  a:hover {
-    opacity: 0.8;
-  }
+    @include hover {
+      opacity: 0.8;
+    }
 
-  a:focus {
-    opacity: 1;
-    outline: 1px solid #1c3374;
-    outline-offset: -1px;
-  }
+    @include focus {
+      opacity: 1;
+      outline: 1px solid #1c3374;
+      outline-offset: -1px;
 
-  a:active {
-    outline: none;
-    opacity: 1;
+      &::after {
+        display: none;
+      }
+    }
+
+    @include active {
+      opacity: 1;
+
+      &::after {
+        display: block;
+      }
+    }
   }
 
   a::after {
@@ -235,14 +240,6 @@
     left: 0;
     bottom: 5px;
     background-color: #1c3374;
-  }
-
-  a:focus::after {
-    display: none;
-  }
-
-  a:active::after {
-    display: block;
   }
 
   img {
@@ -351,5 +348,14 @@
   @include vp-767 {
     padding: 39px 44px 28px;
     text-align: center;
+  }
+}
+
+.ofers .ofers__wrapper .ofers__link:active {
+  outline: none;
+  opacity: 1;
+
+  &::after {
+    display: block;
   }
 }
