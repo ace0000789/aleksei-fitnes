@@ -97,8 +97,9 @@
   width: 100%;
   position: relative;
   user-select: none;
-
-  &:hover::after {
+  
+  @include hover {
+    &::after {
     position: absolute;
     content: "";
     width: calc(100% - 10px);
@@ -106,22 +107,27 @@
     left: 5px;
     bottom: -5px;
     background-color: $color-default-white;
+    }
   }
 
-  &:focus {
+  @include focus {
     outline: 1px solid $color-default-white;
     outline-offset: 5px;
-  }
 
-  &:focus::after,
-  &:active::after {
-    display: none;
-  }
-
-  &:active {
-    outline: none;
+    &::after {
+      display: none;
+    }
   }
 }
+
+.footer .footer__link:active {
+  outline: none;
+
+  &::after {
+    display: none;
+  }
+}
+
 
 .footer__link.footer__link--disabled {
   pointer-events: none;
