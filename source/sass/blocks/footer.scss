@@ -100,13 +100,13 @@
 
   @include hover {
     &::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 10px);
-    height: 1px;
-    left: 5px;
-    bottom: -5px;
-    background-color: $color-default-white;
+      position: absolute;
+      content: "";
+      width: calc(100% - 10px);
+      height: 1px;
+      left: 5px;
+      bottom: -5px;
+      background-color: $color-default-white;
     }
   }
 
@@ -176,6 +176,10 @@
   @include hover-focus {
     background-color: $color-default-blue-egypt;
     outline: none;
+
+    svg {
+      fill: $color-default-white;
+    }
   }
 
   &:active:not(.footer__social-link--disabled) {
@@ -196,12 +200,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.footer__social-link:hover svg,
-.footer__social-link:focus-visible svg {
-  fill: $color-default-white;
-}
-
 
 .footer__social-link--disabled svg {
   fill: $color-default-blue-dark;
