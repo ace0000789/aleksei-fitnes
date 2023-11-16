@@ -166,7 +166,7 @@
     outline: none;
   }
 
-  @include focus {
+  @include hover-focus {
     @include vp-1365 {
       outline: 1px solid $color-default-white;
     }
