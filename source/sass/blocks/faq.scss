@@ -62,12 +62,7 @@
       padding: 15px 0 11px;
     }
 
-    &:hover {
-      border: 1px solid $color-default-blue;
-      outline: none;
-    }
-
-    &:focus {
+    @include hover-focus {
       border: 1px solid $color-default-blue;
       outline: none;
     }
@@ -75,6 +70,11 @@
     &:disabled {
       border: 1px solid rgba(16, 38, 84, 0.2);
       color: #c8c9cc;
+      
+      @include hover-focus {
+        border: 1px solid rgba(16, 38, 84, 0.2);
+        color: #c8c9cc;
+      }
     }
   }
 
