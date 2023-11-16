@@ -152,7 +152,7 @@
     opacity: 0.8;
   }
 
-  &:focus {
+  &:focus:not(.contacts__link--disabled) {
     opacity: 1;
     outline: 1px solid #1c3374;
     outline-offset: 5px;
@@ -165,5 +165,6 @@
   &--disabled {
     pointer-events: none;
     opacity: 0.3;
+    outline: none;
   }
 }

@@ -165,4 +165,14 @@
     border: 2px solid $color-default-white;
     outline: none;
   }
+
+  @include focus {
+    @include vp-1365 {
+      outline: 1px solid $color-default-white;
+    }
+
+    @include vp-767 {
+      outline: none;
+    }
+  }
 }
