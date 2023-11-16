@@ -128,12 +128,11 @@
   }
 }
 
-
 .footer__link.footer__link--disabled {
   pointer-events: none;
   opacity: 0.4;
   outline: none;
-  
+
   @include focus {
     pointer-events: none;
     opacity: 0.4;
@@ -174,8 +173,7 @@
   background-color: $color-default-white;
   border-radius: 50%;
 
-  &:hover:not(.footer__social-link--disabled),
-  &:focus:not(.footer__social-link--disabled) {
+  @include hover-focus {
     background-color: $color-default-blue-egypt;
     outline: none;
   }
@@ -200,9 +198,10 @@
 }
 
 .footer__social-link:hover svg,
-.footer__social-link:focus svg {
+.footer__social-link:focus-visible svg {
   fill: $color-default-white;
 }
+
 
 .footer__social-link--disabled svg {
   fill: $color-default-blue-dark;
