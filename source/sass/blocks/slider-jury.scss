@@ -247,6 +247,11 @@
     top: 62.4%;
     left: -8px;
   }
+
+  @include hover-focus {
+    border-radius: 50%;
+    outline: 1px solid $color-default-blue;
+  }
 }
 
 .slider .swiper-button-next {
@@ -263,18 +268,15 @@
     right: -8px;
   }
 
-}
-
-.slider .swiper-button-next:hover,
-.slider .swiper-button-prev:hover,
-.slider .swiper-button-prev:focus,
-.slider .swiper-button-next:focus {
-  border-radius: 50%;
-  outline: 1px solid $color-default-blue;
+  @include hover-focus {
+    border-radius: 50%;
+    outline: 1px solid $color-default-blue;
+  }
 }
 
 .slider .swiper-button-prev:active,
 .slider .swiper-button-next:active {
+  border-radius: 50%;
   outline: none;
   background-color: $color-default-blue;
   transition: background-color 0.1s;
