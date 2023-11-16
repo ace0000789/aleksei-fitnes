@@ -191,6 +191,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
   outline: none;
+
   @include hover-focus {
     background-color: rgba(255, 255, 255, 0.3);
 
