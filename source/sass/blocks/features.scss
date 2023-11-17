@@ -277,7 +277,6 @@
 
     @include vp-767 {
       font-size: 18px;
-      line-height: 20px;
       margin-bottom: 12px;
     }
   }
@@ -288,11 +287,6 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-
-    @include vp-1365 {
-      font-size: 16px;
-      line-height: 24px;
-    }
 
     @include vp-767 {
       text-align: center;
