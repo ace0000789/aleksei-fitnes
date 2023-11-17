@@ -220,18 +220,59 @@
 
   @include hover-focus {
     border: 2px solid $color-default-blue;
+
+    &::before {
+      background: $color-default-white;
+      top: 50%;
+      left: 50%;
+    }
+
+    &::after {
+      border-left: 12px solid $color-default-blue;
+      top: 50%;
+      left: 56%;
+
+      @include vp-1365 {
+        border: 5px solid transparent;
+        border-left: 9px solid $color-default-blue;
+        left: 57%;
+      }
+    }
   }
 
   @include active {
     &:active:not(.focus-visible):not(:disabled) {
       border: 2px solid $color-default-blue;
+
+      &::before {
+        background: $color-default-white;
+        width: 58px;
+        height: 58px;
+        transition: width 0.3s, height 0.3s;
+        top: 50%;
+        left: 50%;
+
+        @include vp-1365 {
+          width: 41px;
+          height: 41px;
+          top: 50%;
+          left: 50%;
+        }
+      }
+
+      &::after {
+        border-left: 12px solid $color-default-blue;
+        top: 50%;
+        left: 56%;
+
+        @include vp-1365 {
+          border: 5px solid transparent;
+          border-left: 9px solid $color-default-blue;
+          left: 57%;
+        }
+      }
     }
   }
-}
-
-.about-us__video-button:hover,
-.about-us__video-button:focus {
-  border: 2px solid  $color-default-blue;
 }
 
 .about-us__video-button::before {
@@ -272,41 +313,6 @@
   }
 }
 
-.about-us__video-button:hover::before,
-.about-us__video-button:focus::before {
-  background: $color-default-white;
-  top: 50%;
-  left: 50%;
-}
-
-.about-us__video-button:hover::after,
-.about-us__video-button:focus::after {
-  border-left: 12px solid $color-default-blue;
-  top: 50%;
-  left: 56%;
-
-  @include vp-1365 {
-    border: 5px solid transparent;
-    border-left: 9px solid $color-default-blue;
-    left: 57%;
-  }
-}
-
-.about-us__video-button:active::before {
-  width: 58px;
-  height: 58px;
-  transition: width 0.3s, height 0.3s;
-  top: 50%;
-  left: 50%;
-
-  @include vp-1365 {
-    width: 41px;
-    height: 41px;
-    top: 50%;
-    left: 50%;
-  }
-}
-
 .about-us__video-button:disabled,
 .about-us__video-button:disabled:hover {
   border: 2px solid rgba(16, 38, 84, 0.4);
@@ -314,10 +320,11 @@
   box-shadow: none;
 }
 
-.about-us__video-button:disabled::after {
+.about-us__video .about-us__video-button:disabled::after {
   border-left: 10px solid rgba(16, 38, 84, 0.4);
   top: 50%;
   left: 55%;
+
 
   @include vp-1365 {
     left: 57%;
