@@ -7,8 +7,6 @@ import {initTabsFaq} from './init-tabs';
 import {initClickElementAccordion} from './init-click-element-accordion';
 import {initSliderReview} from './init-slider-review';
 
-// ---------------------------------
-
 window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
