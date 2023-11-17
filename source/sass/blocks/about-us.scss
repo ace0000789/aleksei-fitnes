@@ -239,38 +239,36 @@
       }
     }
   }
+}
 
-  @include active {
-    &:active:not(.focus-visible):not(:disabled) {
-      border: 2px solid $color-default-blue;
+.about-us__video-button:active:not(:disabled) {
+  border: 2px solid $color-default-blue;
 
-      &::before {
-        background: $color-default-white;
-        width: 58px;
-        height: 58px;
-        transition: width 0.3s, height 0.3s;
-        top: 50%;
-        left: 50%;
+  &::before {
+    background: $color-default-white;
+    width: 58px;
+    height: 58px;
+    transition: width 0.3s, height 0.3s;
+    top: 50%;
+    left: 50%;
 
-        @include vp-1365 {
-          width: 41px;
-          height: 41px;
-          top: 50%;
-          left: 50%;
-        }
-      }
+    @include vp-1365 {
+      width: 41px;
+      height: 41px;
+      top: 50%;
+      left: 50%;
+    }
+  }
 
-      &::after {
-        border-left: 12px solid $color-default-blue;
-        top: 50%;
-        left: 56%;
+  &::after {
+    border-left: 12px solid $color-default-blue;
+    top: 50%;
+    left: 56%;
 
-        @include vp-1365 {
-          border: 5px solid transparent;
-          border-left: 9px solid $color-default-blue;
-          left: 57%;
-        }
-      }
+    @include vp-1365 {
+      border: 5px solid transparent;
+      border-left: 9px solid $color-default-blue;
+      left: 57%;
     }
   }
 }
