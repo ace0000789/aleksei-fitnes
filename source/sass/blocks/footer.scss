@@ -184,8 +184,14 @@
 
   &:active:not(.footer__social-link--disabled) {
     background-color: $color-default-blue;
+
+    svg {
+      fill: $color-default-white;
+    }
   }
 }
+
+
 
 .footer__social-link--disabled {
   background-color: rgba(255, 255, 255, 0.3);
