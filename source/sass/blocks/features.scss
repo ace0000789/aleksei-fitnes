@@ -192,6 +192,7 @@
     line-height: 26px;
     font-weight: 700;
     text-align: center;
+    word-break: break-word;
 
     @include vp-1365 {
       font-size: 24px;
@@ -212,6 +213,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    word-break: break-word;
 
     @include vp-767 {
       font-size: 14px;
@@ -255,6 +257,7 @@
 
     @include vp-767 {
       line-height: 20px;
+      padding: 0 15px;
     }
   }
 
@@ -265,6 +268,7 @@
     font-size: 22px;
     line-height: 22px;
     font-weight: 400;
+    word-break: break-word;
 
     @include vp-1365 {
       font-size: 20px;
@@ -303,10 +307,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 120px;
 
   @include vp-767 {
     align-items: center;
     row-gap: 0;
+    max-width: none;
   }
 }
 

@@ -330,6 +330,7 @@
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr;
+  word-break: break-word;
 
   @include vp-1365 {
     max-width: none;
@@ -340,7 +341,6 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     gap: 30px;
-    word-break: break-word;
   }
 }
 

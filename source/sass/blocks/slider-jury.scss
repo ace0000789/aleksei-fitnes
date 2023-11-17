@@ -161,6 +161,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  word-break: break-word;
 
 
   @include vp-1365 {
@@ -205,6 +206,7 @@
   padding-left: 16px;
   text-align: left;
   position: relative;
+  word-break: break-word;
 }
 
 .slider .slider__item::before {

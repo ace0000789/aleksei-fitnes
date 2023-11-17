@@ -21,6 +21,8 @@
   letter-spacing: 1.62px;
   margin-bottom: 32px;
   margin-right: 15px;
+  word-break: break-word;
+
 
   @include vp-1365 {
     font-size: 42px;
@@ -152,11 +154,13 @@
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @include vp-1365 {
     max-width: 100%;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 15px;
     border: 1px solid $color-default-white;
     outline: 1px solid $color-default-white;
   }

@@ -1,6 +1,8 @@
 .contacts {
   background-color: $color-default-white;
   margin-left: 120px;
+  word-break: break-word;
+
 
   @include vp-1365 {
     padding: 105px 133px 98px;
