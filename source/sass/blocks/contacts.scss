@@ -148,23 +148,33 @@
     line-height: 20px;
   }
 
-  &:hover {
+  @include hover {
     opacity: 0.8;
   }
 
-  &:focus:not(.contacts__link--disabled) {
+  @include focus {
     opacity: 1;
     outline: 1px solid #1c3374;
     outline-offset: 5px;
-  }
-
-  &:active {
-    outline: none;
   }
 
   &--disabled {
     pointer-events: none;
     opacity: 0.3;
     outline: none;
+
+    @include hover-focus {
+      pointer-events: none;
+      opacity: 0.3;
+      outline: none;
+    }
+
   }
+}
+
+/* for disabled add class contacts__link--disabled */
+
+.contacts .contacts__link:active {
+  opacity: 1;
+  outline: none;
 }
