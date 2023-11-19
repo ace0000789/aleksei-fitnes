@@ -50,6 +50,7 @@ input:-webkit-autofill {
 }
 
 // firefox placeholder \ invalid fix + ios bdrs
+// ie11 X removal
 input {
   border-radius: 0;
 
@@ -60,10 +61,7 @@ input {
   &:invalid {
     box-shadow: none;
   }
-}
 
-// ie11 X removal
-input {
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
