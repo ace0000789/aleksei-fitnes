@@ -9,6 +9,10 @@ export function initTabsSubscription() {
     [50000, 16000, 25000]
   ];
 
+  if (!buttonsPeriod.length || !pricesPeriod.length || !shadowPrices.length) {
+    return;
+  }
+
   buttonsPeriod[0].classList.add('is-active-subscription');
   buttonsPeriod.forEach((button, index) => {
     button.addEventListener('click', () => {
